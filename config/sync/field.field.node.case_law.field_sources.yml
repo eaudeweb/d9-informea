@@ -1,0 +1,21 @@
+uuid: 8cde199c-d4cf-4d73-9530-80b99e4de656
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sources
+    - node.type.case_law
+  module:
+    - options
+id: node.case_law.field_sources
+field_name: field_sources
+entity_type: node
+bundle: case_law
+label: Sources
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

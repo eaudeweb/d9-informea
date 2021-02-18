@@ -1,0 +1,13 @@
+uuid: 41b85209-cfc0-48c9-811c-d5bb3ec3b901
+langcode: en
+status: true
+dependencies: {  }
+title: CBD
+id: cbd
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/CBD'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

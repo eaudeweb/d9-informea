@@ -1,0 +1,14 @@
+uuid: d55c6992-cf03-4f60-8c34-c319f14a0b74
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.montevideo_partner
+  module:
+    - user
+id: user_add_role_action.montevideo_partner
+label: 'Add the Montevideo Partner role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: montevideo_partner

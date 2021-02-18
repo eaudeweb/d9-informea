@@ -1,0 +1,17 @@
+uuid: 52577d30-1d94-4a9d-aefe-4ba2d38550cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: News
+type: news
+description: '<b>NOT IN USE</b> - It used to appear in a block on the home page.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

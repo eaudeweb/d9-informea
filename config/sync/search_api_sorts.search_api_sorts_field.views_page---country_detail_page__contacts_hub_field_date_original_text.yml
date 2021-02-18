@@ -1,0 +1,11 @@
+uuid: 183b3f31-9135-4778-b67b-168bd09c2348
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---country_detail_page__contacts_hub_field_date_original_text
+display_id: views_page---country_detail_page__contacts_hub
+field_identifier: field_date_original_text
+default_sort: false
+default_order: asc
+label: 'Date of original text'
+weight: 0

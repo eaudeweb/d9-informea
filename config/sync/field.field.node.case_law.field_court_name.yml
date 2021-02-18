@@ -1,0 +1,19 @@
+uuid: 4887f9e0-9ad5-4448-81b0-5ff45209ed7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_court_name
+    - node.type.case_law
+id: node.case_law.field_court_name
+field_name: field_court_name
+entity_type: node
+bundle: case_law
+label: 'Court name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

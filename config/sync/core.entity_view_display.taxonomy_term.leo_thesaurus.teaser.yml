@@ -1,0 +1,41 @@
+uuid: ed8a3c9a-4de1-4c8b-8055-aa320a27ef4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.leo_thesaurus.field_alt_labels
+    - field.field.taxonomy_term.leo_thesaurus.field_exact_match
+    - field.field.taxonomy_term.leo_thesaurus.field_hidden_labels
+    - field.field.taxonomy_term.leo_thesaurus.field_related_concepts
+    - field.field.taxonomy_term.leo_thesaurus.field_scope_notes
+    - field.field.taxonomy_term.leo_thesaurus.field_topics
+    - field.field.taxonomy_term.leo_thesaurus.field_uri
+    - taxonomy.vocabulary.leo_thesaurus
+  module:
+    - text
+id: taxonomy_term.leo_thesaurus.teaser
+targetEntityType: taxonomy_term
+bundle: leo_thesaurus
+mode: teaser
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_alt_labels: true
+  field_exact_match: true
+  field_hidden_labels: true
+  field_related_concepts: true
+  field_scope_notes: true
+  field_topics: true
+  field_uri: true
+  langcode: true
+  search_api_excerpt: true

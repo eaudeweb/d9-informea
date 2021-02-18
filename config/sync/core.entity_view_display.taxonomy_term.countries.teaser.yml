@@ -1,0 +1,45 @@
+uuid: 9fe5f45f-5db5-4079-9295-d928651a71e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.countries.field_flag
+    - field.field.taxonomy_term.countries.field_iso2
+    - field.field.taxonomy_term.countries.field_iso3
+    - field.field.taxonomy_term.countries.field_official_name
+    - field.field.taxonomy_term.countries.field_region
+    - field.field.taxonomy_term.countries.field_un_member
+    - taxonomy.vocabulary.countries
+  module:
+    - svg_image
+id: taxonomy_term.countries.teaser
+targetEntityType: taxonomy_term
+bundle: countries
+mode: teaser
+content:
+  field_flag:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_iso2: true
+  field_iso3: true
+  field_official_name: true
+  field_region: true
+  field_un_member: true
+  langcode: true
+  search_api_excerpt: true

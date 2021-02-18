@@ -1,0 +1,11 @@
+uuid: 9b9d7be8-228a-4cb1-80d4-08143aac34ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slider_information
+id: block_content.slider_information
+target_entity_type_id: block_content
+target_bundle: slider_information
+default_langcode: site_default
+language_alterable: false

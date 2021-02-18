@@ -1,0 +1,35 @@
+uuid: be219f87-077c-4028-9d8e-68682fb1e026
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_partners
+    - taxonomy.vocabulary.topics
+id: taxonomy_term.topics.field_partners
+field_name: field_partners
+entity_type: taxonomy_term
+bundle: topics
+label: 'Montevideo partners'
+description: 'Montevideo partners responsible for support requests on this topic'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        montevideo_partner: montevideo_partner
+        administrator: '0'
+        edw_healthcheck_role: '0'
+        content_manager: '0'
+        montevideo_focal_point: '0'
+        admin_support_request: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

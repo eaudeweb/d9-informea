@@ -1,0 +1,90 @@
+#block-partnersandsynergiestabmenu, #block-meetingssubmenu, #block-activitytrackertabmenu {
+  font-size: 22px;
+  font-weight: bold;
+  color: #828282;
+  margin-bottom: 30px;
+
+  a {
+    color: #999999;
+    border-bottom: 3px solid white;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-item {
+    padding-right: 30px;
+  }
+
+  a.active {
+    color: $secondary-shade;
+    border-bottom: 3px solid $secondary-shade;
+  }
+
+  a:hover {
+    color: $secondary-shade;
+  }
+
+  li.is-active {
+    a {
+      color: $secondary-shade;
+      border-bottom: 3px solid $secondary-shade;
+    }
+  }
+
+  .nav-link {
+    padding: 0;
+  }
+}
+
+#block-leap-theme-main-menu {
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 34px;
+  }
+}
+
+nav#block-useractions,
+nav#block-mainnavigation,
+nav#block-mainnavigation-2,
+nav#block-mainnavigation-3,
+nav#block-mainnavigation-4 {
+  width: 100%;
+  border: none;
+  ul {
+    width: 100%;
+  }
+}
+
+#block-menucountrydetailpage {
+  margin-right: 0;
+}
+
+nav#block-useractions {
+  margin-top: 16px;
+}
+
+.menu--horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  li {
+    display: flex;
+    list-style-type: none;
+    &:not(:last-child) {
+      &:after {
+        display: block;
+        content: '|';
+        padding: 0 0.5rem;
+      }
+    }
+  }
+  a {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+}

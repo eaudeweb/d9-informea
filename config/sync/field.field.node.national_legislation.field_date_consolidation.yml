@@ -1,0 +1,21 @@
+uuid: c5098b7e-7366-4c86-973c-8dffd32754e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_consolidation
+    - node.type.national_legislation
+  module:
+    - datetime
+id: node.national_legislation.field_date_consolidation
+field_name: field_date_consolidation
+entity_type: node
+bundle: national_legislation
+label: 'Date of consolidation/reprint'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

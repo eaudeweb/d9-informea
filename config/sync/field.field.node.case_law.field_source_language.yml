@@ -1,0 +1,21 @@
+uuid: 94e1b909-8bec-4a0a-a426-a29218e4ebb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source_language
+    - node.type.case_law
+  module:
+    - languagefield
+id: node.case_law.field_source_language
+field_name: field_source_language
+entity_type: node
+bundle: case_law
+label: 'Original language'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: language_field

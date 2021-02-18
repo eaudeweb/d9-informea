@@ -1,0 +1,14 @@
+/**
+ * @file
+ * Visual styles for comments in Barrio.
+ */
+
+.alert-wrapper {
+  position: unset;
+}
+.toast-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}

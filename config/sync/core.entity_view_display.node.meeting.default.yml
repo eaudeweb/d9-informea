@@ -1,0 +1,78 @@
+uuid: 10eea0fe-f24d-451b-a85a-d80cb2ad1d84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.meeting.body
+    - field.field.node.meeting.field_country
+    - field.field.node.meeting.field_date
+    - field.field.node.meeting.field_informative_sections
+    - field.field.node.meeting.field_leo_tags
+    - field.field.node.meeting.field_meeting_frequency
+    - field.field.node.meeting.field_meeting_target_audience
+    - field.field.node.meeting.field_reports
+    - field.field.node.meeting.field_support_tags
+    - field.field.node.meeting.field_venue
+    - node.type.meeting
+  module:
+    - entity_reference_revisions
+    - options
+    - powertagging
+    - user
+id: node.meeting.default
+targetEntityType: node
+bundle: meeting
+mode: default
+content:
+  field_informative_sections:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_leo_tags:
+    weight: 3
+    label: above
+    settings:
+      add_hidden_info: {  }
+      tag_sort_order: score
+      freeterms_at_end: false
+    third_party_settings: {  }
+    type: powertagging_tags_list
+    region: content
+  field_meeting_frequency:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_reports:
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_country: true
+  field_date: true
+  field_meeting_target_audience: true
+  field_support_tags: true
+  field_venue: true
+  langcode: true
+  search_api_excerpt: true

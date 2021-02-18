@@ -1,0 +1,19 @@
+uuid: 21dde07e-1869-4641-afb9-fb30b0af058b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_relations_legislation
+field_name: field_relations_legislation
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: 44a7f3d7-3cf8-44bd-9c23-b92ed71df5d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keywords
+    - node.type.course
+    - taxonomy.vocabulary.keywords
+id: node.course.field_keywords
+field_name: field_keywords
+entity_type: node
+bundle: course
+label: Keywords
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      keywords: keywords
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

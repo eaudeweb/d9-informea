@@ -1,0 +1,17 @@
+uuid: 1aad7ebb-433f-4dab-ba6c-502a56fd704c
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_12_5
+  module:
+    - crop
+name: crop_image_style_12_5
+label: 'Crop Image Style 12:5'
+effects:
+  79bb01e5-542b-4aac-b2be-2885c1456e18:
+    uuid: 79bb01e5-542b-4aac-b2be-2885c1456e18
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_12_5

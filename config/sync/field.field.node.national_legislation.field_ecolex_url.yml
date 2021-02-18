@@ -1,0 +1,23 @@
+uuid: 14283025-3838-46f5-a9f8-01f2708e8a51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ecolex_url
+    - node.type.national_legislation
+  module:
+    - link
+id: node.national_legislation.field_ecolex_url
+field_name: field_ecolex_url
+entity_type: node
+bundle: national_legislation
+label: 'ECOLEX URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

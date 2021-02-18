@@ -1,0 +1,40 @@
+.focal--points {
+  tr, tr th {
+    border-top: 1px solid transparent;
+    background: transparent;
+    color: #737373;
+    td:first-child{
+      width: 1px;
+    }
+  }
+  table thead, .table thead, tbody tr td {
+    border: unset;
+  }
+  table tr th, tbody:last-child {
+    color: #737373;
+    border: 0;
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
+  }
+  tbody tr {
+    color: #303030;
+    &:first-child {
+      border-top: 2px solid #000000;
+    }
+    &:nth-child(even) {
+      background: #ffffff;
+    }
+    &:nth-child(odd) {
+      background: #F9F9F9;
+    }
+    td, td:not(:last-child) a {
+      width: 30%;
+      color: #303030;
+      text-decoration: unset;
+    }
+  }
+  table thead th{
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,29 @@
+uuid: 4ecbe921-5f95-4667-8ba7-83fffcf04261
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_source
+    - node.type.national_legislation
+    - taxonomy.vocabulary.data_sources
+id: node.national_legislation.field_data_source
+field_name: field_data_source
+entity_type: node
+bundle: national_legislation
+label: 'Data source (Enter the original data source for this record, if not present new item will be created)'
+description: 'Enter the original data source for this record. Choose carefully and if not present, the new term can be created - something not desirable unless required.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      data_sources: data_sources
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

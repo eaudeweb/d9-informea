@@ -1,0 +1,19 @@
+uuid: 0f52d94b-bc6a-4c69-b1e1-4a4e29391eed
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_ecolex_url
+field_name: field_ecolex_url
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

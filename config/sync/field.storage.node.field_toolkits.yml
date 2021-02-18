@@ -1,0 +1,33 @@
+uuid: 26681202-e0e8-4243-a06e-164a6e23aff3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_toolkits
+field_name: field_toolkits
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: plastic
+      label: Plastic
+    -
+      value: climate_change
+      label: 'Climate Change'
+    -
+      value: pollution
+      label: Pollution
+    -
+      value: lead_in_paint
+      label: 'Lead in Paint'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

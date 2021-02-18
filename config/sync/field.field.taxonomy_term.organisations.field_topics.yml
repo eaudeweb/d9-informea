@@ -1,0 +1,29 @@
+uuid: 7252821d-a702-455b-85f1-fbd6920e49df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_topics
+    - taxonomy.vocabulary.organisations
+    - taxonomy.vocabulary.topics
+id: taxonomy_term.organisations.field_topics
+field_name: field_topics
+entity_type: taxonomy_term
+bundle: organisations
+label: Topics
+description: 'Please select the topics that apply to this partner organisation'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topics: topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,13 @@
+uuid: 25322aeb-ca03-4845-a9f7-ded46e9d4b12
+langcode: en
+status: true
+dependencies: {  }
+title: RAMSAR
+id: ramsar
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/RAMSAR'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

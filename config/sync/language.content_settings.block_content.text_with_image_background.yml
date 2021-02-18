@@ -1,0 +1,11 @@
+uuid: 6348fda8-ee9b-4cb5-9b72-532efa595db5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_with_image_background
+id: block_content.text_with_image_background
+target_entity_type_id: block_content
+target_bundle: text_with_image_background
+default_langcode: site_default
+language_alterable: false

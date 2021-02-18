@@ -1,0 +1,74 @@
+uuid: 8b2dd29a-dfd3-48a9-91d9-f05bc85afc87
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.homepage_calendar
+    - field.field.node.meeting.body
+    - field.field.node.meeting.field_country
+    - field.field.node.meeting.field_date
+    - field.field.node.meeting.field_informative_sections
+    - field.field.node.meeting.field_leo_tags
+    - field.field.node.meeting.field_meeting_frequency
+    - field.field.node.meeting.field_meeting_target_audience
+    - field.field.node.meeting.field_reports
+    - field.field.node.meeting.field_support_tags
+    - field.field.node.meeting.field_venue
+    - node.type.meeting
+  module:
+    - datetime_range
+    - smart_trim
+    - user
+id: node.meeting.homepage_calendar
+targetEntityType: node
+bundle: meeting
+mode: homepage_calendar
+content:
+  body:
+    type: smart_trim
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 30
+      trim_type: words
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      wrap_output: false
+      more_link: false
+      trim_options:
+        text: false
+        trim_zero: false
+    third_party_settings: {  }
+  field_date:
+    weight: 3
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_country: true
+  field_informative_sections: true
+  field_leo_tags: true
+  field_meeting_frequency: true
+  field_meeting_target_audience: true
+  field_reports: true
+  field_support_tags: true
+  field_venue: true
+  langcode: true
+  search_api_excerpt: true

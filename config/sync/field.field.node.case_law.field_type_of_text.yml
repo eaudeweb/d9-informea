@@ -1,0 +1,29 @@
+uuid: 0c3b8de4-2fa0-4249-a43f-b9b9d89d533c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_of_text
+    - node.type.case_law
+    - taxonomy.vocabulary.types_of_text
+id: node.case_law.field_type_of_text
+field_name: field_type_of_text
+entity_type: node
+bundle: case_law
+label: 'Type of text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      types_of_text: types_of_text
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 36b8e5e3-b30e-48ae-9042-328d43de180b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_abbreviation
+    - node.type.national_legislation
+id: node.national_legislation.field_title_abbreviation
+field_name: field_title_abbreviation
+entity_type: node
+bundle: national_legislation
+label: 'Title abbreviation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

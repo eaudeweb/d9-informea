@@ -1,0 +1,11 @@
+uuid: fc4d7ac9-2437-4295-a372-24207c32e063
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search__page_1_field_indicators
+display_id: views_page---search__page_1
+field_identifier: field_indicators
+default_sort: true
+default_order: asc
+label: Indicators
+weight: 0

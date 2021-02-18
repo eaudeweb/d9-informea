@@ -1,0 +1,15 @@
+uuid: cce6bc0f-0136-4e8f-b00a-8cfa1770513b
+langcode: en
+status: true
+dependencies: {  }
+title: 'BRS Dev Server'
+id: brs_dev_server
+type: pp_server
+url: 'http://dpoolparty.brsmeas.org'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  version: false
+  projects: {  }
+  graphsearch_configuration: {  }

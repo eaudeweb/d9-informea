@@ -1,0 +1,43 @@
+uuid: 7b5e7047-bdb5-450d-82e2-687836947111
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slider_information
+    - field.storage.block_content.field_informations
+    - paragraphs.paragraphs_type.home_page_slider
+  module:
+    - entity_reference_revisions
+id: block_content.slider_information.field_informations
+field_name: field_informations
+entity_type: block_content
+bundle: slider_information
+label: Informations
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      home_page_slider: home_page_slider
+    target_bundles_drag_drop:
+      home_page_information:
+        weight: 6
+        enabled: false
+      home_page_slider:
+        enabled: true
+        weight: 7
+      meeting_document:
+        weight: 8
+        enabled: false
+      meeting_informative_section:
+        weight: 9
+        enabled: false
+      ratification_status:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,10 @@
+uuid: b678c82e-cfc4-499b-8d04-41fa587de9c7
+langcode: en
+status: true
+dependencies: {  }
+id: home_page_slider
+label: 'Jumbotron image slide'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

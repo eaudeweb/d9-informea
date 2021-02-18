@@ -1,0 +1,268 @@
+{
+    "name": "unep/leap",
+    "description": "UNEP LEAP project",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Eau de Web"
+        }
+    ],
+    "repositories": {
+        "drupal" : {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "chosen" : {
+            "type": "package",
+            "package": {
+                "name": "harvesthq/chosen",
+                "version": "1.8.7",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "^1.2.0"
+                }
+            }
+        },
+        "colorbox": {
+            "type"    : "package",
+            "package" : {
+                "name"    : "jackmoore/colorbox",
+                "version" : "1.6.4",
+                "type"    : "drupal-library",
+                "dist"    : {
+                    "url"  : "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+                    "type" : "zip"
+                }
+            }
+        },
+        "masonry": {
+            "type": "package",
+            "package": {
+                "name": "desandro/masonry",
+                "version": "3.3.1",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/desandro/masonry/archive/v3.3.1.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "imagesloaded": {
+            "type": "package",
+            "package": {
+                "name": "desandro/imagesloaded",
+                "version": "3.1.8",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/desandro/imagesloaded/archive/v3.1.8.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "dropzone": {
+            "type"    : "package",
+            "package" : {
+                "name"    : "enyoo/dropzone",
+                "version" : "4.3.0",
+                "type"    : "drupal-library",
+                "dist"    : {
+                    "url"  : "https://github.com/enyo/dropzone/archive/v4.3.0.zip",
+                    "type" : "zip"
+                }
+            }
+        },
+        "datatables": {
+            "type": "package",
+            "package": {
+                "name": "datatables/datatables",
+                "version": "1.10.19",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/DataTables/DataTables/archive/1.10.19.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        }
+    },
+    "require": {
+        "php": ">=7.0.8",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "bower-asset/jquery-ui-slider-pips": "^1.11",
+        "composer/installers": "1.9.0",
+        "cweagans/composer-patches": "1.7.0",
+        "datatables/datatables": "1.10.19",
+        "desandro/imagesloaded": "3.1.8",
+        "desandro/masonry": "3.3.1",
+        "drupal/admin_toolbar": "2.2.0",
+        "drupal/autocomplete_deluxe": "^2.0@RC",
+        "drupal/autologout": "1.0.0",
+        "drupal/better_exposed_filters": "5.0.0-beta1",
+        "drupal/block_field": "1.0.0-rc1",
+        "drupal/bootstrap_barrio": "4.28.0",
+        "drupal/bootstrap_sass": "^5.0",
+        "drupal/captcha": "1.1.0",
+        "drupal/chosen": "2.9.0",
+        "drupal/ckeditor_bootstrap_grid": "1.3.0",
+        "drupal/colorbox": "1.6.0",
+        "drupal/core-composer-scaffold": "8.9.11",
+        "drupal/core-recommended": "^8.9.11",
+        "drupal/csv_serialization": "1.4.0",
+        "drupal/ctools": "3.4.0",
+        "drupal/datatables": "1.0.0-rc1",
+        "drupal/date_popup": "1.1.0",
+        "drupal/date_range_formatter": "3.1.0",
+        "drupal/dropzonejs": "2.1.0",
+        "drupal/dropzonejs_eb_widget": "2.1.0",
+        "drupal/ds": "3.9.0",
+        "drupal/editor_file": "1.5.0",
+        "drupal/edw_healthcheck": "1.8.0",
+        "drupal/entity_print": "2.1.0",
+        "drupal/entity_reference_revisions": "1.8.0",
+        "drupal/facets": "dev-1.x",
+        "drupal/facets_pretty_paths": "1.0.0",
+        "drupal/features": "3.11.0",
+        "drupal/field_group": "3.1.0",
+        "drupal/file_browser": "1.3.0",
+        "drupal/google_analytics": "^3.0",
+        "drupal/honeypot": "1.30.0",
+        "drupal/image_widget_crop": "2.3.0",
+        "drupal/imce": "2.3.0",
+        "drupal/lang_dropdown": "2.0.0-beta3",
+        "drupal/languagefield": "1.5.0",
+        "drupal/mail_login": "^2.4",
+        "drupal/masquerade": "2.0.0-beta4",
+        "drupal/menu_block": "1.6.0",
+        "drupal/metatag": "1.13.0",
+        "drupal/migrate_plus": "4.2.0",
+        "drupal/migrate_tools": "4.5.0",
+        "drupal/paragraphs": "1.12.0",
+        "drupal/pathauto": "1.8.0",
+        "drupal/pet": "1.0.0-rc1",
+        "drupal/powertagging": "1.1.0",
+        "drupal/pp_taxonomy_manager": "1.0.0",
+        "drupal/purge": "dev-3.x",
+        "drupal/raven": "2.26.0",
+        "drupal/recaptcha": "3.0.0",
+        "drupal/redirect": "1.6.0",
+        "drupal/remove_username": "1.0.0",
+        "drupal/role_hierarchy": "2.1.0",
+        "drupal/search_api": "1.17.0",
+        "drupal/search_api_attachments": "1.0.0-beta16",
+        "drupal/search_api_autocomplete": "1.3.0",
+        "drupal/search_api_solr": "4.1.1",
+        "drupal/search_api_sorts": "1.0.0-beta1",
+        "drupal/search_autocomplete": "1.3.0",
+        "drupal/semantic_connector": "1.0.0",
+        "drupal/smart_trim": "1.3.0",
+        "drupal/smtp": "1.0.0-rc2",
+        "drupal/social_media_links": "2.6.0",
+        "drupal/stage_file_proxy": "1.0.0",
+        "drupal/svg_image": "1.14.0",
+        "drupal/title_length": "1.1.0",
+        "drupal/token": "1.7.0",
+        "drupal/varnish_purge": "2.0.0",
+        "drupal/video_embed_field": "2.4.0",
+        "drupal/video_embed_html5": "1.2.0",
+        "drupal/views_data_export": "1.0.0-rc1",
+        "drupal/webform": "5.16.0",
+        "drupal/xls_serialization": "1.2.0",
+        "drupal/xmlsitemap": "1.0.0-rc1",
+        "drush/drush": "^10.3",
+        "eaudeweb/heavy-lifter": "^1.3.8",
+        "enyoo/dropzone": "4.3.0",
+        "harvesthq/chosen": "1.8.7",
+        "jackmoore/colorbox": "1.6.4",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "phpmailer/phpmailer": "6.1.4",
+        "symfony/event-dispatcher": "3.4.41",
+        "vlucas/phpdotenv": "2.6.1",
+        "webflo/drupal-finder": "1.2.0",
+        "webmozart/path-util": "2.3.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ],
+        "files": ["load.environment.php"]
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::copyDefaultSettingsFiles",
+            "DrupalProject\\composer\\ScriptHandler::copyLocalSettingsFiles"
+        ],
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "enable-patching": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            },
+            "file-mapping": {
+                "[project-root]/.editorconfig": false,
+                "[project-root]/.gitattributes": false,
+                "[web-root]/.csslintrc": false,
+                "[web-root]/.eslintignore": false,
+                "[web-root]/.eslintrc.json": false,
+                "[web-root]/.ht.router.php": false,
+                "[web-root]/example.gitignore": false,
+                "[web-root]/INSTALL.txt": false,
+                "[web-root]/README.txt": false,
+                "[web-root]/update.php": false,
+                "[web-root]/web.config": false,
+                "[web-root]/sites/README.txt": false,
+                "[web-root]/sites/development.services.yml": false,
+                "[web-root]/sites/example.settings.local.php": false,
+                "[web-root]/modules/README.txt": false,
+                "[web-root]/profiles/README.tx": false,
+                "[web-root]/themes/README.txt": false
+            }
+        },
+        "installer-types": ["bower-asset", "npm-asset"],
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches-file": "composer.patches.json"
+    }
+}

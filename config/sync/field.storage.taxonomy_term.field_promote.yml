@@ -1,0 +1,18 @@
+uuid: a28505b8-e9d3-43e7-8a15-ee0915bf7270
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_promote
+field_name: field_promote
+entity_type: taxonomy_term
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

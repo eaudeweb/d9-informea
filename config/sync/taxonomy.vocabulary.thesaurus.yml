@@ -1,0 +1,8 @@
+uuid: acedd58d-8322-475b-a30b-bcbeccea2f2e
+langcode: en
+status: true
+dependencies: {  }
+name: Thesaurus
+vid: thesaurus
+description: 'Store term concepts.'
+weight: 0

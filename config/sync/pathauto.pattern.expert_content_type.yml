@@ -1,0 +1,22 @@
+uuid: da4f40e0-d34d-45e4-9dee-23d8a3991ebc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: expert_content_type
+label: 'Expert content type'
+type: 'canonical_entities:node'
+pattern: '/experts/[node:title]'
+selection_criteria:
+  16b97362-a587-47ab-88e8-d8c837553ede:
+    id: node_type
+    bundles:
+      expert: expert
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 16b97362-a587-47ab-88e8-d8c837553ede
+selection_logic: and
+weight: -5
+relationships: {  }

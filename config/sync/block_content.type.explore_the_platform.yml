@@ -1,0 +1,8 @@
+uuid: 8174d902-c80a-430f-bbb3-c9c671918079
+langcode: en
+status: true
+dependencies: {  }
+id: explore_the_platform
+label: 'Explore the platform'
+revision: 0
+description: ''

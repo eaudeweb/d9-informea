@@ -1,0 +1,226 @@
+/**
+ * @file
+ * Visual styles for Bootstrap Barrio's field components.
+ */
+
+.field--type-entity-reference {
+    margin: 0 0 ($spacer * 1.2);
+}
+
+.field--type-entity-reference .field__label {
+    font-weight: bold;
+    margin: 0;
+    padding-right: ($spacer * .3);
+    /* LTR */
+}
+
+[dir="rtl"] .field--type-entity-reference .field__label {
+    padding-left: ($spacer * .3);
+    padding-right: 0;
+}
+
+.field--type-entity-reference ul.links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.field--type-entity-reference ul.links li {
+    float: left;
+    /* LTR */
+    padding: 0 $spacer 0 0;
+    /* LTR */
+    white-space: nowrap;
+}
+
+[dir="rtl"] .field--type-entity-reference ul.links li {
+    padding: 0 0 0 $spacer;
+    float: right;
+}
+
+@media all and (min-width: 560px) {
+    .node .field--type-image {
+        float: left;
+        /* LTR */
+        margin: 0 $spacer 0 0;
+        /* LTR */
+
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+    }
+    [dir="rtl"] .node .field--type-image {
+        float: right;
+        margin: 0 0 0 $spacer;
+    }
+    .node .field--type-image+.field--type-image {
+        clear: both;
+    }
+}
+
+.field--type-image img,
+.field--name-field-user-picture img {
+    margin: 0 0 $spacer;
+}
+
+.field--type-image a {
+    border-bottom: none;
+}
+
+.field--name-field-tags {
+    margin: 0 0 ($spacer * 1.2);
+}
+
+.field--name-field-tags .field__label {
+    font-weight: normal;
+    margin: 0;
+    padding-right: 5px;
+    /* LTR */
+}
+
+[dir="rtl"] .field--name-field-tags .field__label {
+    padding-left: 5px;
+    padding-right: 0;
+}
+
+.field--name-field-tags .field__label,
+.field--name-field-tags ul.links {
+    font-size: $font-size-sm;
+}
+
+.node--view-mode-teaser .field--name-field-tags .field__label,
+.node--view-mode-teaser .field--name-field-tags ul.links {
+    font-size: $font-size-sm;
+}
+
+.field--name-field-tags ul.links {
+    padding: 0;
+    margin: 0;
+}
+
+.field--name-field-tags ul.links li {
+    float: left;
+    /* LTR */
+    padding: 0 $spacer 0 0;
+    /* LTR */
+    white-space: nowrap;
+}
+
+[dir="rtl"] .field--name-field-tags ul.links li {
+    padding: 0 0 0 $spacer;
+    float: right;
+}
+
+.field--label-inline .field__label,
+.field--label-inline .field__item {
+    display: inline-block
+}
+
+.field__label {
+  font-weight: bold;
+}
+
+.field-label-inline .field__label {
+    &::after {
+        content: ": ";
+    }
+}
+
+.node--type-learning-material {
+    .video-embed-field-provider-vimeo.video-embed-field-responsive-video,
+    .video-embed-field-provider-html-5.video-embed-field-responsive-video,
+    .video-embed-field-provider-youtube.video-embed-field-responsive-video{
+        width: 80%;
+    }
+}
+
+.node--type-support-request.node--view-mode-full .node__content,
+.node--type-support-request.node--view-mode-support-request-full-view .node__content{
+    display: block;
+
+    .comment-add {
+        padding: 15px 0;
+    }
+
+    #edit-comment-body-0-format {
+        display: none;
+    }
+
+    .field:not(.field--type-image) {
+        border-bottom: 1px solid #d3d3d3;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .field--type-image {
+        float: none;
+    }
+
+    .field__label {
+        width: 50%;
+    }
+
+    .field__items {
+        width: 50%;
+    }
+
+    .field--type-comment {
+        margin-top: 40px;
+        h2.comment-form__title {
+            margin-bottom: 10px !important;
+        }
+
+        article {
+            display: block;
+
+            h3 {
+                display: none;
+            }
+
+            .comment-reply {
+                display: none;
+            }
+
+            .card {
+                padding: 15px;
+            }
+        }
+    }
+
+    .field {
+        &.field--label-inline {
+            display: flex;
+
+            .field--label {
+                min-width: 135px;
+            }
+
+            .field--items {
+                display: block;
+
+                .field--item {
+                    display: inline-block;
+                }
+
+                .field--item:not(:last-child):after {
+                    content: ", ";
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+.node--view-mode-full, .node--view-mode-default {
+    .field--type-entity-reference {
+        margin-bottom: 0;
+    }
+    .field__label {
+        min-width: 200px;
+    }
+    .field.field--label-inline {
+        display: flex;
+    }
+}

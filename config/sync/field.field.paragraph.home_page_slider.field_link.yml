@@ -1,0 +1,23 @@
+uuid: 1fe07ba7-87d1-40bf-8080-879436ef0cac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.home_page_slider
+  module:
+    - link
+id: paragraph.home_page_slider.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: home_page_slider
+label: Link
+description: 'Enter a link for the slide. You can enter links to internal pages by start typing their title, or links to external websites.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

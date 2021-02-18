@@ -1,0 +1,21 @@
+uuid: f7784aa4-83a4-4846-8236-0941a2773374
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sub_file_code
+    - node.type.national_legislation
+  module:
+    - options
+id: node.national_legislation.field_sub_file_code
+field_name: field_sub_file_code
+entity_type: node
+bundle: national_legislation
+label: 'Sub file code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

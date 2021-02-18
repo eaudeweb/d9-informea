@@ -1,0 +1,40 @@
+uuid: 992c9838-b07b-4f13-b8c6-e501d3a2b212
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_informative_sections
+    - node.type.meeting
+    - paragraphs.paragraphs_type.meeting_informative_section
+  module:
+    - entity_reference_revisions
+id: node.meeting.field_informative_sections
+field_name: field_informative_sections
+entity_type: node
+bundle: meeting
+label: 'Meeting informative sections'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      meeting_informative_section: meeting_informative_section
+    target_bundles_drag_drop:
+      home_page_information:
+        weight: 5
+        enabled: false
+      meeting_document:
+        weight: 6
+        enabled: false
+      meeting_informative_section:
+        enabled: true
+        weight: 7
+      ratification_status:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

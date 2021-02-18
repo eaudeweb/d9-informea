@@ -1,0 +1,229 @@
+a.tabledrag-handle .handle {
+  width: 30px;
+  height: 30px;
+}
+
+#node-support-request-request-public-form-form {
+
+  #edit-field-support-request-status--description {
+    font-size: 12px;
+    color: #737373 !important;
+  }
+
+  #edit-status-wrapper label {
+    width: 100%;
+  }
+}
+
+div.autocomplete-deluxe-multiple {
+  border-color: #ccc;
+  background: none;
+}
+
+div.autocomplete-deluxe-container input.autocomplete-deluxe-form {
+  margin: 0 10px;
+  height: auto;
+  padding: 0;
+}
+
+.autocomplete-deluxe-item-delete {
+  background: url('../images/x.gif');
+}
+
+.ui-autocomplete li {
+  padding: 2px 10px;
+}
+
+.nfp-notification {
+  font-size: 14px;
+  color: #424242;
+}
+
+.view-filters .views-exposed-form {
+  label {
+    display: block;
+  }
+
+  .chosen-single, .chosen-container-active.chosen-with-drop .chosen-single {
+    border: none;
+    background: none;
+  }
+
+  .chosen-drop {
+    border-color: #f1f1f1;
+  }
+
+  .chosen-container {
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+  }
+
+  .form-row {
+    flex-wrap: wrap;
+
+    > div {
+      margin-right: 10px !important;
+    }
+
+    > div:nth-last-child(n+4) {
+      display: flex;
+      flex-direction: column;
+    }
+    > div.form-item-field-support-request-status-value {
+      width: 25%;
+    }
+
+    .form-group.form-item_inner {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    > div.form-item-field-country-target-id {
+      width: 20%;
+    }
+    > div.form-item-category {
+      display: block;
+      width: 100%;
+    }
+
+    > div:nth-child(3), > .form-item-theme {
+      width: 25%;
+
+      .form-group.form-item_inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    > div.form-item-field-leo-tags-target-id {
+      width: 25%;
+    }
+  }
+
+  .chosen-search {
+    display: none;
+  }
+
+  ul.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front li.ui-menu-item:hover {
+    a.ui-menu-item-wrapper:hover {
+      color: #000 !important;
+    }
+  }
+}
+
+.node-support-request-edit-form {
+  input.form-checkbox {
+    margin-top: 1px;
+  }
+  .ajax-progress .throbber {
+    position: absolute;
+    margin-top: -3px;
+  }
+  .ajax-progress .message {
+    margin-left: 13px;
+  }
+  .js-filter-wrapper {
+    display: none;
+  }
+  .form-group>label {
+    font-size: 1.5rem;
+  }
+  .form-type-textfield, .form-type-select, .form-type-email {
+    margin-top: 30px;
+  }
+  fieldset {
+    padding: 0;
+  }
+
+  .field-description {
+    color: #737373;
+  }
+
+  small.description {
+    font-size: 1rem;
+  }
+  .fieldset-wrapper .checkbox {
+    margin-top: 0.25rem;
+  }
+
+  .field--type-powertagging-tags {
+    margin-top: 60px;
+  }
+  .powertagging-legend-item-colorbox {
+    line-height: 15px;
+  }
+
+  #edit-field-files-wrapper {
+    input {
+      background-color: white;
+    }
+  }
+}
+
+.node-support-request-request-public-form-form {
+  .js-filter-wrapper {
+    display: none;
+  }
+  label {
+    font-size: 1.3em;
+  }
+}
+
+
+.node--type-support-request {
+  &.node--view-mode-default, &.node--view-mode-full, &.node--view-mode-support-request-full-view {
+    h2 {
+      display: none;
+    }
+  }
+  .node .field--type-image {
+    margin: 0;
+    float: none;
+
+    img {
+      margin: 0;
+      max-width: 100%;
+    }
+  }
+
+  #edit-group-facts .details-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+
+    @include media-breakpoint-down(md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &.node--view-mode-default {
+    .node__content > .field > .field__label {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+#views-exposed-form-support-requests-page-assigned {
+  .form-row {
+      align-items: flex-end;
+    .form-item-field-consent-value, .form-item-field-support-request-status-value, .form-item-field-country-target-id, .form-item-field-region-value {
+      @media (min-width: 500px) {
+        display: flex;
+        width: 23%;
+      }
+    }
+    .form-item-field-topics, .form-item-field-leo-tags-target-id, .form-item-field-request-manager {
+      @media (min-width: 500px) {
+        width: 25%;
+      }
+    }
+  }
+}

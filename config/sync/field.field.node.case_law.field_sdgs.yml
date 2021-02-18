@@ -1,0 +1,29 @@
+uuid: c6a2f175-dbb7-4cf5-ba8f-ff0507f8b2ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sdgs
+    - node.type.case_law
+    - taxonomy.vocabulary.sdgs
+id: node.case_law.field_sdgs
+field_name: field_sdgs
+entity_type: node
+bundle: case_law
+label: 'Relations to SDGs'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sdgs: sdgs
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

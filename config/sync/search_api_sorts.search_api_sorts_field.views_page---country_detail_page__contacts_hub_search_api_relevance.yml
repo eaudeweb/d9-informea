@@ -1,0 +1,11 @@
+uuid: 607f8b4f-a0d5-4498-98d8-8f5cc687ed00
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---country_detail_page__contacts_hub_search_api_relevance
+display_id: views_page---country_detail_page__contacts_hub
+field_identifier: search_api_relevance
+default_sort: false
+default_order: desc
+label: Relevance
+weight: 0

@@ -1,0 +1,26 @@
+.download-link {
+  margin-bottom: 30px;
+  background: #EFEFEF;
+  @include font-size(15px);
+  align-items: center;
+  display: flex;
+  color: #5c5c5c;
+  min-height: 3em;
+  text-decoration: none;
+}
+
+.download-link--excel {
+  width: 200px;
+  padding: 5px;
+
+  &:before {
+    content: "";
+    background-image: url(../images/microsoft-excel.svg);
+    background-repeat: no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+  }
+
+}

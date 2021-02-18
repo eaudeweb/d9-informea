@@ -1,0 +1,23 @@
+uuid: 9fe91a96-c590-45e4-ade8-f931027b5689
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: organisation_taxonomy
+label: 'Organisations taxonomy'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/organisations/[term:name]'
+selection_criteria:
+  e0ebe247-8bba-4fc6-b75a-806d3642cc0e:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      organisations: organisations
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: e0ebe247-8bba-4fc6-b75a-806d3642cc0e
+selection_logic: and
+weight: -5
+relationships: {  }

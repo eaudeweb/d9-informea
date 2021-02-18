@@ -1,0 +1,18 @@
+uuid: 1457a53b-47d0-4a3f-9654-dee2ea2c599d
+langcode: en
+status: true
+dependencies:
+  module:
+    - pet
+id: pet.pet.metatag
+field_name: metatag
+entity_type: pet
+bundle: pet
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

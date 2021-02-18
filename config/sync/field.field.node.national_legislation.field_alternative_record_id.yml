@@ -1,0 +1,19 @@
+uuid: edd375b4-cad1-4b41-af68-6e85e16945b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alternative_record_id
+    - node.type.national_legislation
+id: node.national_legislation.field_alternative_record_id
+field_name: field_alternative_record_id
+entity_type: node
+bundle: national_legislation
+label: 'Alternative Record ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

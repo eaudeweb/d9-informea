@@ -1,0 +1,25 @@
+.full-width {
+  background-color: #F4F4F4;
+  padding: 6rem 4rem; }
+
+.cke_panel_listItem a .lead-paint-alliance,
+.lead-paint-alliance {
+  padding: 8px;
+  margin: 10px auto;
+  background: #eee;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 1px 1px #fff inset, 0 -1px 0px #ccc inset;
+          box-shadow: 0 1px 1px #fff inset, 0 -1px 0px #ccc inset; }
+
+.cke_panel_listItem a .full-width {
+  padding: 0.3rem 1rem; }
+
+.cke_editable .lead-paint-alliance > .container {
+  background-color: #fff;
+  padding: 2rem; }
+
+@media (min-width: 769px) {
+  .complex-page .full-width {
+    margin-right: calc(-30% - 43px); } }
+
+/*# sourceMappingURL=ckeditor_style.css.map */

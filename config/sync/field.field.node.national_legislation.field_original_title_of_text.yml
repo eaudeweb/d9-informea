@@ -1,0 +1,19 @@
+uuid: 97b8c70e-b081-428d-a5f6-ee55ab601f9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_original_title_of_text
+    - node.type.national_legislation
+id: node.national_legislation.field_original_title_of_text
+field_name: field_original_title_of_text
+entity_type: node
+bundle: national_legislation
+label: 'Original title'
+description: 'Title in original language.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

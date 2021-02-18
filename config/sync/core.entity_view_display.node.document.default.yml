@@ -1,0 +1,262 @@
+uuid: dfb43d5d-0c12-4ee7-819f-cf642856cfae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.document.body
+    - field.field.node.document.field_author
+    - field.field.node.document.field_content
+    - field.field.node.document.field_data_source
+    - field.field.node.document.field_date_of_text
+    - field.field.node.document.field_document_types
+    - field.field.node.document.field_download
+    - field.field.node.document.field_files
+    - field.field.node.document.field_image
+    - field.field.node.document.field_image_header
+    - field.field.node.document.field_keywords
+    - field.field.node.document.field_leo_tags
+    - field.field.node.document.field_link_url
+    - field.field.node.document.field_original_id
+    - field.field.node.document.field_sdgs
+    - field.field.node.document.field_sidebar_content
+    - field.field.node.document.field_standfirst
+    - field.field.node.document.field_support_request_category
+    - field.field.node.document.field_support_request_theme
+    - field.field.node.document.field_topics
+    - node.type.document
+  module:
+    - datetime
+    - ds
+    - entity_reference_revisions
+    - link
+    - options
+    - powertagging
+    - svg_image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked_fluid
+      library: ds/ds_2col_stacked_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      header:
+        - links
+        - field_image_header
+        - field_standfirst
+      left:
+        - field_content
+      right:
+        - field_sidebar_content
+      footer:
+        - langcode
+        - field_original_id
+        - field_data_source
+        - field_image
+        - field_date_of_text
+        - field_author
+        - field_document_types
+        - field_support_request_category
+        - field_topics
+        - field_support_request_theme
+        - field_sdgs
+        - field_download
+        - field_link_url
+        - field_leo_tags
+id: node.document.default
+targetEntityType: node
+bundle: document
+mode: default
+content:
+  field_author:
+    weight: 10
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: footer
+  field_content:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: left
+  field_data_source:
+    type: entity_reference_label
+    weight: 7
+    region: footer
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_date_of_text:
+    weight: 9
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: european_date_format
+    third_party_settings: {  }
+    type: datetime_default
+    region: footer
+  field_document_types:
+    weight: 11
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: footer
+  field_download:
+    weight: 16
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: footer
+  field_image:
+    weight: 8
+    label: hidden
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: footer
+  field_image_header:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: header
+  field_leo_tags:
+    weight: 18
+    label: above
+    settings:
+      add_hidden_info: {  }
+      tag_sort_order: score
+      freeterms_at_end: false
+      split_terms: 0
+    third_party_settings: {  }
+    type: powertagging_tags_list
+    region: footer
+  field_link_url:
+    weight: 17
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: footer
+  field_original_id:
+    type: string
+    weight: 6
+    region: footer
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_sdgs:
+    weight: 15
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: footer
+  field_sidebar_content:
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: right
+  field_standfirst:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: header
+  field_support_request_category:
+    weight: 12
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: footer
+  field_support_request_theme:
+    weight: 14
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: footer
+  field_topics:
+    weight: 13
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: footer
+  langcode:
+    type: language
+    weight: 5
+    region: footer
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: header
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_files: true
+  field_keywords: true
+  search_api_excerpt: true

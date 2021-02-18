@@ -1,0 +1,27 @@
+uuid: 6ff35523-eba8-4137-973d-c4ca7249c681
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regulatory_approach
+    - node.type.national_legislation
+id: node.national_legislation.field_regulatory_approach
+field_name: field_regulatory_approach
+entity_type: node
+bundle: national_legislation
+label: 'Regulatory Approach'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

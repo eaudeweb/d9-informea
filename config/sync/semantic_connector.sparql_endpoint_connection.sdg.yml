@@ -1,0 +1,13 @@
+uuid: c26237b8-1270-4ff4-ac51-1b96c032ab35
+langcode: en
+status: true
+dependencies: {  }
+title: SDG
+id: sdg
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/SDG'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

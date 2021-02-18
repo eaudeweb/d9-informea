@@ -1,0 +1,23 @@
+uuid: 3e33532b-1764-4bad-bc4e-a352aa349b4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_url
+    - node.type.document
+  module:
+    - link
+id: node.document.field_link_url
+field_name: field_link_url
+entity_type: node
+bundle: document
+label: 'UNEP Source'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

@@ -1,0 +1,11 @@
+uuid: 3c0641d9-4c54-48c0-af2f-1d00646e1620
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---country_detail_page__contacts_hub_field_indicators
+display_id: views_page---country_detail_page__contacts_hub
+field_identifier: field_indicators
+default_sort: false
+default_order: asc
+label: Indicators
+weight: 0

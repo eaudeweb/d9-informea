@@ -1,0 +1,27 @@
+uuid: 16fe4524-ae7e-42fa-9db8-b372de409ee8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.treaty
+  module:
+    - file
+id: node.treaty.field_files
+field_name: field_files
+entity_type: node
+bundle: treaty
+label: Files
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: treaty
+  file_extensions: 'pdf doc docx txt'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

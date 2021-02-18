@@ -1,0 +1,21 @@
+uuid: 89ee892a-5d15-4dc9-806d-c6602c999491
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_language
+    - paragraphs.paragraphs_type.meeting_document
+  module:
+    - options
+id: paragraph.meeting_document.field_language
+field_name: field_language
+entity_type: paragraph
+bundle: meeting_document
+label: Language
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

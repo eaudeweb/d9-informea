@@ -1,0 +1,23 @@
+uuid: adfbf953-96e9-4f8c-88cb-930dabd48ede
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_uri
+    - taxonomy.vocabulary.leo_thesaurus
+  module:
+    - link
+id: taxonomy_term.leo_thesaurus.field_uri
+field_name: field_uri
+entity_type: taxonomy_term
+bundle: leo_thesaurus
+label: URI
+description: 'URI of the concept.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

@@ -1,0 +1,19 @@
+uuid: 8eaefe12-9c5a-42fd-a722-1fee2ea3d6a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_long_title_of_text
+field_name: field_long_title_of_text
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

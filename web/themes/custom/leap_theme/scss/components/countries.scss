@@ -1,0 +1,293 @@
+//Countries view page
+.menu--countries-regions a {
+  color: #999999;
+}
+
+.view-id-countries {
+  .taxonomy--term-country {
+    display: flex;
+    width: 350px;
+
+    .countries-list-item {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin: 0 0 1rem
+    }
+    .country-flag {
+      display: table;
+      width: 70px;
+      margin-right: 10px;
+    }
+    .country-flag img {
+      padding: 6px;
+      border: 1px solid #c6cedb;
+      margin: unset;
+    }
+    img {
+      height: auto;
+      vertical-align: middle;
+      width: 70px;
+      max-height: 48px;
+    }
+    a {
+      font-size: 20px;
+      font-weight: normal;
+      color: #000000;
+      display: flex;
+
+      &:hover {
+        color: $primary-shade;
+      }
+    }
+  }
+
+  .col-md-4 {
+    flex: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    max-width: 350px;
+  }
+  .views-row .hidden{
+    width: 0;
+    max-width: 0;
+    padding: 0;
+  }
+  .contextual-region.hidden {
+    .taxonomy--term-country, .country-flag {
+      width: 0;
+    }
+    .taxonomy--term-country .country-flag img {
+      width: 0;
+      height: 0;
+      padding: 0;
+      margin: 0;
+    }
+    .field.field--name-name.field--type-string.field--label-hidden.field__item {
+      width: 0;
+      display: none;
+    }
+  }
+  .view-content > .views-view-unformatted {
+    margin-left: 20px;
+  }
+
+  .view-filters {
+    border: none;
+    margin-bottom: 30px;
+  }
+}
+
+.menu--countries-regions {
+  font-size: 22px;
+  font-weight: bold;
+  color: #828282;
+
+  ul.list-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .list-group-item {
+    padding-right: 30px;
+    margin-bottom: 15px;
+  }
+  li {
+    border: unset;
+  }
+
+  a.active {
+    color: $secondary-shade;
+    border-bottom: 3px solid $secondary-shade;
+  }
+
+  a:hover {
+    color: $secondary-shade;
+  }
+
+  .menu-item--active-trail {
+    a {
+      color: $secondary-shade;
+      border-bottom: 3px solid $secondary-shade;
+    }
+  }
+  .nav-link {
+    padding: unset;
+  }
+}
+
+#views-exposed-form-countries-page-1 {
+  button[value='Apply'] {
+    visibility: hidden;
+  }
+  label.option {
+    padding-left: 20px;
+  }
+  .form-row {
+    flex-wrap: wrap;
+  }
+
+  .menu--countries-regions {
+    max-width: 100%;
+
+    ul.list-group {
+      flex-wrap: wrap;
+    }
+  }
+
+  fieldset#edit-filter-content--wrapper {
+    background: #f5f5f5;
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    margin-bottom: 0;
+    font-size: 14px;
+    legend {
+      display: none;
+    }
+    .fieldset-wrapper {
+      display: flex;
+      align-items: baseline;
+      small#edit-filter-content--wrapper--description {
+        margin-right: 30px;
+        color: black !important;
+        font-size: 15px;
+        font-weight: bold;
+        width: 125px;
+      }
+    }
+    #edit-filter-content {
+      display: flex;
+      flex-flow: row wrap;
+      -webkit-align-items: stretch;
+      align-items: stretch;
+    }
+    #edit-filter-content > div {
+      width: 180px;
+      margin-right: 10px;
+    }
+  }
+
+  input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+    min-height: 15px;
+    min-width: 15px;
+    border: 1px solid #bcbcbc;
+    outline: none;
+    appearance: none;
+    transition-duration: 0.3s;
+    background-color: #FFF;
+    position: absolute;
+    top: 3px;
+  }
+  input[type="checkbox"]:checked + label:before {
+    content: 'x';
+    display: block;
+    text-align: center;
+    color: #676767;
+    position: absolute;
+    left: 4px;
+    top: -1px;
+    z-index: 1;
+  }
+
+}
+
+.has-national-legislation.hidden,
+.has-case-law.hidden,
+.has-support-request.hidden,
+.has-focal-point.hidden,
+.has-case-study.hidden {
+  display: none !important;
+  width: 0px;
+  height: 0px;
+}
+
+//Country page search extends search page
+.view:not(.view-id-event) .node-teaser:not(.node-search-index) {
+  * + .country-information {
+    margin-left: 10px;
+  }
+
+  .country-information {
+    > div:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  .field--name-field-court-name {
+    margin-left: 2px;
+  }
+  .origin {
+    margin: 0 5px 8px 0;
+    .field {
+      margin-bottom: 0;
+    }
+  }
+
+  .more-information {
+    span {
+      margin-left: 2px;
+    }
+  }
+
+  .informations {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+
+    > * {
+      margin-right: 10px;
+    }
+    a {
+      color: #474747;
+    }
+    .content-type {
+      color: #474747;
+      background-color: #DBDBDB;
+      padding: 3px 5px;
+      margin-right: 10px;
+    }
+  }
+}
+
+#edit-submit-case-studies {
+  height: 40px;
+}
+
+.case-studies {
+  .field__items {
+    display: block;
+  }
+
+  .field--name-field-country, .field--name-field-indicators {
+    margin: 0;
+  }
+
+  .indicators .field__item a{
+    color: #000;
+    text-decoration: none;
+    padding: 4px 6px 2px 6px;
+    font-size: 15px;
+    background-color: #DBDBDB;
+  }
+}
+
+.view-case-studies {
+  .item-list {
+    width: 100%;
+  }
+}
+
+.excerpt {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.expert .content {
+  display: flex;
+  flex-direction: column;
+}

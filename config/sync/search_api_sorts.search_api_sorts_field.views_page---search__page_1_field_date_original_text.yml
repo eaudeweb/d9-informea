@@ -1,0 +1,11 @@
+uuid: 8e66ab00-373e-4f6f-b173-d41ee967ec58
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search__page_1_field_date_original_text
+display_id: views_page---search__page_1
+field_identifier: field_date_original_text
+default_sort: true
+default_order: asc
+label: 'Date of original text'
+weight: 0

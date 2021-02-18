@@ -1,0 +1,54 @@
+uuid: cfea2843-b6ed-49d8-b9f6-5e3e1abbbfb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_page_slider.field_description
+    - field.field.paragraph.home_page_slider.field_image
+    - field.field.paragraph.home_page_slider.field_link
+    - field.field.paragraph.home_page_slider.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.home_page_slider
+  module:
+    - image_widget_crop
+    - link
+id: paragraph.home_page_slider.default
+targetEntityType: paragraph
+bundle: home_page_slider
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - crop_12_5
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 120
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  field_description: true
+  status: true

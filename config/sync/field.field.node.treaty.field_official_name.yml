@@ -1,0 +1,19 @@
+uuid: 234f690c-9ee5-4daf-94f4-24f9cae34e2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_official_name
+    - node.type.treaty
+id: node.treaty.field_official_name
+field_name: field_official_name
+entity_type: node
+bundle: treaty
+label: 'Official name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

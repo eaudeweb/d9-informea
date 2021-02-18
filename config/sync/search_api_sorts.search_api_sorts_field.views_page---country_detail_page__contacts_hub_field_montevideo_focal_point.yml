@@ -1,0 +1,11 @@
+uuid: a7ba2050-5234-4a50-979f-47eb4fc1416d
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---country_detail_page__contacts_hub_field_montevideo_focal_point
+display_id: views_page---country_detail_page__contacts_hub
+field_identifier: field_montevideo_focal_point
+default_sort: false
+default_order: asc
+label: 'Montevideo focal point'
+weight: 0

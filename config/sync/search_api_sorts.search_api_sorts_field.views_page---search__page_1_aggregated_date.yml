@@ -1,0 +1,11 @@
+uuid: ad8a1294-add1-4b6c-a787-3d47efc111ba
+langcode: en
+status: true
+dependencies: {  }
+id: views_page---search__page_1_aggregated_date
+display_id: views_page---search__page_1
+field_identifier: aggregated_date
+default_sort: true
+default_order: desc
+label: Date
+weight: 0

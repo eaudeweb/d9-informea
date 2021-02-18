@@ -1,0 +1,28 @@
+uuid: 80aa415f-4c7e-4d61-9d32-13f276039769
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_relations_legislation
+    - node.type.case_law
+    - node.type.national_legislation
+id: node.case_law.field_relations_legislation
+field_name: field_relations_legislation
+entity_type: node
+bundle: case_law
+label: 'Relations to legislation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      national_legislation: national_legislation
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

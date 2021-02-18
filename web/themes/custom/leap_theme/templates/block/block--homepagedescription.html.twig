@@ -1,0 +1,20 @@
+{%
+  set classes = [
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+  'homepage-description'
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}{{ title_suffix }}
+  {% block content %}
+  <div class="content">
+    {{ content.field_image }}
+    <div class="information">
+      {{ content.field_title }}
+      {{ content.body }}
+    </div>
+  </div>
+  {% endblock %}
+</div>

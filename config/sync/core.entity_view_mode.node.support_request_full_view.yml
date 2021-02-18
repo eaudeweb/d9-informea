@@ -1,0 +1,10 @@
+uuid: 3470747b-9a73-47c6-8264-2bf5915a7357
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.support_request_full_view
+label: 'Support request full view'
+targetEntityType: node
+cache: true

@@ -1,0 +1,11 @@
+uuid: 79402a9a-39b6-4a42-83f7-c480245efbd4
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search__page_1_field_keywords
+display_id: views_page---search__page_1
+field_identifier: field_keywords
+default_sort: true
+default_order: asc
+label: Keywords
+weight: 0

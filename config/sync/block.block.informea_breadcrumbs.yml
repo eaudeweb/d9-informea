@@ -1,0 +1,22 @@
+uuid: d7ff07dd-a933-4abf-8550-9b492e5ee55f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - informea
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: informea_breadcrumbs
+theme: informea
+region: featured_top
+weight: -47
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

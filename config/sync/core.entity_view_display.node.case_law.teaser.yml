@@ -1,0 +1,166 @@
+uuid: cb9b1779-f12d-4890-9c52-66d53cb1d6df
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.case_law.body
+    - field.field.node.case_law.field_available_website
+    - field.field.node.case_law.field_country
+    - field.field.node.case_law.field_court_name
+    - field.field.node.case_law.field_data_source
+    - field.field.node.case_law.field_date_of_text
+    - field.field.node.case_law.field_files
+    - field.field.node.case_law.field_justices
+    - field.field.node.case_law.field_key_questions
+    - field.field.node.case_law.field_keywords
+    - field.field.node.case_law.field_landmark_case
+    - field.field.node.case_law.field_leo_tags
+    - field.field.node.case_law.field_link
+    - field.field.node.case_law.field_make_public
+    - field.field.node.case_law.field_meas
+    - field.field.node.case_law.field_notes
+    - field.field.node.case_law.field_original_id
+    - field.field.node.case_law.field_original_title
+    - field.field.node.case_law.field_reference_number
+    - field.field.node.case_law.field_relations_court_case
+    - field.field.node.case_law.field_relations_legislation
+    - field.field.node.case_law.field_relations_treaties
+    - field.field.node.case_law.field_relevance
+    - field.field.node.case_law.field_sdgs
+    - field.field.node.case_law.field_seat_of_court
+    - field.field.node.case_law.field_source_language
+    - field.field.node.case_law.field_sources
+    - field.field.node.case_law.field_status
+    - field.field.node.case_law.field_tags
+    - field.field.node.case_law.field_topics
+    - field.field.node.case_law.field_type_of_text
+    - node.type.case_law
+  module:
+    - datetime
+    - file
+    - link
+    - options
+    - powertagging
+    - text
+    - user
+id: node.case_law.teaser
+targetEntityType: node
+bundle: case_law
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_country:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_court_name:
+    type: string
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_date_of_text:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: european_date_format
+    third_party_settings: {  }
+  field_files:
+    type: file_default
+    weight: 10
+    region: content
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+  field_leo_tags:
+    type: powertagging_tags_list
+    weight: 8
+    region: content
+    label: hidden
+    settings:
+      add_hidden_info: {  }
+      tag_sort_order: score
+      freeterms_at_end: false
+    third_party_settings: {  }
+  field_link:
+    type: link
+    weight: 9
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_status:
+    type: list_default
+    weight: 7
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_type_of_text:
+    type: entity_reference_label
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  search_api_excerpt:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_available_website: true
+  field_data_source: true
+  field_justices: true
+  field_key_questions: true
+  field_keywords: true
+  field_landmark_case: true
+  field_make_public: true
+  field_meas: true
+  field_notes: true
+  field_original_id: true
+  field_original_title: true
+  field_reference_number: true
+  field_relations_court_case: true
+  field_relations_legislation: true
+  field_relations_treaties: true
+  field_relevance: true
+  field_sdgs: true
+  field_seat_of_court: true
+  field_source_language: true
+  field_sources: true
+  field_tags: true
+  field_topics: true
+  langcode: true

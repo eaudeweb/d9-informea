@@ -1,0 +1,16 @@
+uuid: 919d36a5-862e-4714-bff7-7d6da583dc75
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.leo_thesaurus
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.leo_thesaurus
+target_entity_type_id: taxonomy_term
+target_bundle: leo_thesaurus
+default_langcode: site_default
+language_alterable: false

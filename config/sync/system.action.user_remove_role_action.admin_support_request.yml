@@ -1,0 +1,14 @@
+uuid: 089c07e4-0dc3-4c71-99f9-5796fdff8993
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.admin_support_request
+  module:
+    - user
+id: user_remove_role_action.admin_support_request
+label: 'Remove the Admin Support request role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: admin_support_request

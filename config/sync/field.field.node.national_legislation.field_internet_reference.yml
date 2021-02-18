@@ -1,0 +1,23 @@
+uuid: 8908d7bc-7fd6-478c-84d2-7487f12da29e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_internet_reference
+    - node.type.national_legislation
+  module:
+    - link
+id: node.national_legislation.field_internet_reference
+field_name: field_internet_reference
+entity_type: node
+bundle: national_legislation
+label: 'Internet Reference'
+description: 'Add URL for main website where legislation can be found (e.g https://www.ecolex.org/details/court-decision/save-lamu-et-al-vs-national-environmental-management-authority-and-amu-power-co-ltd-e6f6526d-6f2b-4e44-82d3-0727c09b6140)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

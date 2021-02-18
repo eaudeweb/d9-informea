@@ -1,0 +1,11 @@
+uuid: 28f08605-9b45-4320-a8fa-0f4da46b6111
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search__page_1_field_sdgs
+display_id: views_page---search__page_1
+field_identifier: field_sdgs
+default_sort: true
+default_order: asc
+label: SDGs
+weight: 0

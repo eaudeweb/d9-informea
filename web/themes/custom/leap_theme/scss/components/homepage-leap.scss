@@ -1,0 +1,558 @@
+.homepage-courses, .homepage-explore-platform, .calendar-wrapper {
+  h2 {
+    color: #303030;
+    padding: 25px 0;
+    font-size: 37px;
+  }
+}
+
+#block-views-block-courses-homepage-course,
+.homepage-explore-calendar-wrapper, .homepage-partners {
+  width: 100vw;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  //padding: 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #F5F5F5;
+}
+
+
+#block-views-block-courses-homepage-course {
+  background: #fff;
+
+  h2, ul {
+    margin-left: calc(100vw - 87%);
+  }
+}
+
+.homepage-explore-calendar-wrapper {
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.homepage-partners {
+  h2 {
+    color: #303030;
+    width: 100vw;
+    margin-left: calc(100vw - 87%);
+    padding: 25px 0;
+    font-size: 37px;
+  }
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: calc(100vw - 87%);
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  li {
+    flex: 0 50%;
+    list-style: none;
+    display: flex;
+    max-width: 210px;
+  }
+
+  .views-field-field-logo {
+    background: #fff;
+    width: 210px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      padding: 20px;
+      width: 100%;
+      max-height: 180px;
+      object-fit: contain;
+    }
+  }
+  .see-all-partners{
+    height: 100px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    a {
+      font-size: 14px;
+      padding: 10px 50px;
+      background: #FFF;
+      color: #0d6cb3;
+      &:hover {
+        color: #0d6cb3;
+        text-decoration: none;
+
+      }
+    }
+  }
+}
+.homepage-explore-platform {
+  padding-left: 0;
+  margin-left: 21%;
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  li {
+    background: #FFF;
+    max-width: 400px;
+    max-height: 250px;
+    min-height: 250px;
+    margin: 10px;
+    flex: 0 47%;
+    list-style: none;
+    text-align: center;
+    font-size: 22px;
+    color: #00548B;
+    padding: 50px;
+  }
+  span.submit, span.resources, span.one-more, span.country-profiles {
+    display: inline-flex;
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  span.resources {
+    background-image: url(../images/description-24px.svg);
+  }
+  span.submit {
+    background-image: url(../images/contact_support-24px.svg);
+  }
+  span.country-profiles, span.one-more {
+    background-image: url(../images/outlined_flag-24px.svg);
+  }
+
+}
+
+.homepage-slider {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  margin-left: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  img {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    margin-left: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  h5 {
+    color: #fff !important;
+    font-family: Roboto;
+    font-size: 37px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 48px;
+    text-shadow: 1px 1px 4px #000000;
+
+    a {
+      color: white !important;
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+  p {
+    font-size: 22px;
+    color: #6E6E6E;
+  }
+  .content {
+    justify-content: left;
+  }
+  .carousel-caption {
+    bottom: 0;
+    text-align: left;
+    padding-bottom: 0;
+    display: flex !important;
+  }
+  .slide-content {
+    padding: 30px 10px 10px 15px;
+    flex: 1;
+  }
+  .controls {
+    display: flex;
+    width: 80px;
+    align-items: center;
+  }
+
+  .carousel-item.item {
+    max-height: 500px;
+  }
+  .carousel-indicators li {
+    display: none;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    bottom: 0;
+    z-index: 11;
+    opacity: unset;
+    width: 65px;
+  }
+  .carousel-control-prev-icon {
+    background-image: url(../images/prev.svg);
+    background-size: 47px;
+    width: 30px;
+    height: 48px;
+  }
+  .carousel-control-next-icon {
+    background-size: 45px;
+    width: 30px;
+    height: 48px;
+    background-image: url(../images/next.svg);
+  }
+}
+
+.homepage-explore-calendar-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.left-wrapper.explore-content-wrapper {
+  width: 58%;
+  margin-left: 2%;
+}
+.right-wrapper.calendar-wrapper {
+  width: 30%;
+  position: relative;
+  .see-more {
+    position: absolute;
+    bottom: -37px;
+    width: 100%;
+    display: block;
+    background: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 14px;
+    a {
+      color: #00548B;
+    }
+  }
+}
+.homepage-calendar {
+  background: #FFF;
+}
+
+.calendar-meeting {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #303030;
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+    font-weight: 700;
+    padding-bottom: 5px;
+  }
+  a {
+    color: #00548B;
+  }
+
+  > div, .content > div {
+    padding: 5px 0;
+
+  }
+}
+
+.homepage-calendar {
+  margin-top: 20px;
+  li {
+    padding-right: 0 !important;
+  }
+  article {
+    border-bottom: 1px solid #cccccc7a;
+  }
+
+}
+
+.homepage-courses {
+  ul {
+    display: flex;
+  }
+
+  li {
+    max-width: 400px;
+  }
+
+  .views-field.views-field-field-image {
+    padding-bottom: 15px;
+  }
+
+  .field-content img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  span.field-content {
+    width: 300px;
+    text-align: left;
+    font-size: 20px;
+    a{
+      color: #000;
+      font-weight: bold;
+      font-size: 20px;
+      &:hover{
+        color: #1C7BA7;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .see-all-courses{
+    height: 100px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    a {
+      font-size: 14px;
+      padding: 10px 50px;
+      background: #F5F5F5;
+      color: #0d6cb3;
+      &:hover {
+        color: #0d6cb3;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.homepage-information {
+  background: #00558A;
+  color: #fff;
+  width: 100vw;
+  margin-left: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding: 20px;
+  align-items: center;
+
+  > div {
+    width: 70%;
+    margin-left: 15%;
+    padding-bottom: 20px;
+  }
+
+  nav {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .nav-item {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 15px;
+  }
+
+  .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #ffffff;
+    font-size: 20px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    padding: 0;
+    border-bottom: 3px solid #fff;
+  }
+  .nav-tabs .nav-link {
+    color: #303030;
+    font-size: 20px;
+    padding-bottom: 0;
+    padding-top: 0;
+    font-weight: bold;
+    &:hover:not(.active) {
+      border-bottom: 3px solid transparent;
+    }
+  }
+
+  .tab-pane a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+}
+
+.homepage-description {
+  position: relative;
+  img {
+    display: none;
+  }
+  .information {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    bottom: 10%;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 40px;
+    div:nth-child(1) {
+      font-size: #{'min(5.2vw, 47px)'};
+      display: none;
+    }
+    div:nth-child(2) {
+      font-size: 23px;
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .homepage-explore-platform {
+    li {
+      flex: 0 46%;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #block-views-block-courses-homepage-course h2, #block-views-block-courses-homepage-course ul, .homepage-partners h2, .homepage-partners ul {
+      margin-left: 0;
+  }
+  .homepage-explore-platform {
+    margin-left: 0;
+  }
+  .left-wrapper.explore-content-wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+  .right-wrapper.calendar-wrapper {
+    width: 50% !important;
+  }
+  .homepage-partners {
+    ul {
+      justify-content: center;
+    }
+    li {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .homepage-courses span.field-content a {
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (max-width: 790px) {
+  .homepage-slider {
+    h5 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .homepage-explore-platform li {
+    flex: 0 45%;
+    padding: 45px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homepage-slider {
+    .carousel-caption {
+      position: static;
+      padding: 0;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+      height: 45%;
+      max-height: 750px;
+      min-height: 150px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .slide-content h5 {
+    color: #2b2b2b !important;
+    text-shadow: none;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .homepage-explore-platform li {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 682px) {
+  .homepage-explore-platform li {
+    font-size: 20px;
+    min-width: 150px;
+  }
+  .homepage-slider .slide-content {
+    padding: 30px 10px 10px 25px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .homepage-explore-platform li {
+    flex: 1 47%;
+  }
+  .homepage-explore-calendar-wrapper {
+    padding-bottom: 60px;
+  }
+  .homepage-courses {
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+    li {
+      max-width: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .homepage-explore-calendar-wrapper {
+    flex-direction: column;
+  }
+  .right-wrapper.calendar-wrapper {
+    width: 100% !important;
+  }
+  .homepage-courses > h2, .homepage-partners > h2, .homepage-explore-platform > h2, .calendar-wrapper > h2 {
+    font-size: 30px;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .homepage-courses,
+  .homepage-partners {
+    padding: 0;
+    ul {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    img {
+      min-width: 200px;
+    }
+  }
+}

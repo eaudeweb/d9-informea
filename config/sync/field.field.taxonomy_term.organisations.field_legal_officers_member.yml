@@ -1,0 +1,23 @@
+uuid: 07b02809-eb01-464c-ba11-b9badde44215
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_legal_officers_member
+    - taxonomy.vocabulary.organisations
+id: taxonomy_term.organisations.field_legal_officers_member
+field_name: field_legal_officers_member
+entity_type: taxonomy_term
+bundle: organisations
+label: 'This is a Legal Officers Network Member'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

@@ -1,0 +1,29 @@
+uuid: 19780140-6f20-4f3b-b1cc-018abf72b417
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sdgs
+    - node.type.document
+    - taxonomy.vocabulary.sdgs
+id: node.document.field_sdgs
+field_name: field_sdgs
+entity_type: node
+bundle: document
+label: SDGs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sdgs: sdgs
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

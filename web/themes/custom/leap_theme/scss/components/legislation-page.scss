@@ -1,0 +1,135 @@
+.node--type-national-legislation.node--view-mode-full{
+  > div {
+    margin-bottom: 11px;
+  }
+
+  .header {
+    text-align: center;
+
+    > a {
+      margin-left: 2px;
+    }
+  }
+
+  .faolex-logo {
+    width: 56px;
+    height: 64px;
+    display: inline-block;
+    margin: 5px;
+    background: url(../images/faolex-logo.png) no-repeat top left;
+  }
+
+
+  div > .field__item {
+    color: #666666;
+  }
+
+  hr {
+    border-top: 1px solid #dddddd;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .field--name-field-internet-reference {
+    display: flex;
+  }
+
+  .record-title {
+    h1.title {
+      font-family: inherit;
+      font-weight: 400;
+      line-height: 1.2;
+      color: #212121;
+      margin-bottom: 11px;
+      font-size: 18px;
+      margin-top: 0;
+    }
+  }
+
+  ul.list-group {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+    li {
+      margin-bottom: 4px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      padding: 1px 5px;
+      font-size: 14px;
+      line-height: 1.5;
+      border-radius: 3px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      background-color: #d5d5d5;
+      border: unset;
+      box-shadow: 0 1px 4px -2px rgba(0, 0, 0, 0.4) !important;
+
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+
+      a {
+        color: #666666;
+      }
+
+    }
+  }
+
+  @media (max-width: 767px) {
+    .header:nth-child(1) {
+        display: flex;
+        margin-left: 40%;
+      }
+    }
+
+  @media (min-width: 768px) {
+    .header {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .icon-legislation:before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: url(../images/legislation-justice.svg) no-repeat top left;
+      margin-left: 153px;
+    }
+
+    .field__label {
+      color: #212121;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 22px;
+      text-align: end;
+      padding-right: 1rem;
+    }
+
+    .record-title h1 {
+      display: table-cell;
+      vertical-align: middle;
+      margin-bottom: 0;
+    }
+
+    .record-icon {
+      float: none;
+      display: table-cell;
+      width: 200px;
+      padding-right: 15px;
+      font-size: 200%;
+      text-align: right;
+      vertical-align: middle;
+    }
+  }
+}

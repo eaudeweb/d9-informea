@@ -1,0 +1,11 @@
+uuid: 5617529b-7be2-4897-9c6f-eecb5b243416
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---country_detail_page__contacts_hub_field_treaty
+display_id: views_page---country_detail_page__contacts_hub
+field_identifier: field_treaty
+default_sort: false
+default_order: asc
+label: Treaty
+weight: 0

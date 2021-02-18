@@ -1,0 +1,58 @@
+.news-updates {
+  line-height: 1.42857;
+  color: #000;
+  margin: 10px 0;
+  .date > time.datetime {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .date {
+    color: #737373;
+    letter-spacing: -0.05rem;
+  }
+  .content {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  a {
+    color: #333;
+  }
+  a.read-more {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+  }
+  a.read-more:after {
+    content: " »";
+  }
+}
+
+.latest-new {
+  padding: 1em;
+  .view-content {
+    display: flex;
+  }
+  .views-row {
+    width: 33.33%;
+    img {
+      width: 95%;
+      height: auto;
+      max-height: 200px;
+    }
+  }
+  .views-field-field-date-of-text {
+    display: block;
+    color: #303030;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .views-field-title   {
+    a {
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+    }
+  }
+}

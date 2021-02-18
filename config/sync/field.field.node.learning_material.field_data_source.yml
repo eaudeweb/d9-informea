@@ -1,0 +1,29 @@
+uuid: 450a1636-f2ff-4847-a7c3-f7457bf48113
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_source
+    - node.type.learning_material
+    - taxonomy.vocabulary.data_sources
+id: node.learning_material.field_data_source
+field_name: field_data_source
+entity_type: node
+bundle: learning_material
+label: 'Data source'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      data_sources: data_sources
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: e3e6cb6a-4a38-4c76-9ce8-8063e2b16aa4
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_internet_reference
+field_name: field_internet_reference
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

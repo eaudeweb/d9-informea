@@ -1,0 +1,31 @@
+uuid: dc988bfd-25a6-4680-9ca9-26af576ab892
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.heading.field_include_in_page_menu
+    - field.field.paragraph.heading.field_title
+    - paragraphs.paragraphs_type.heading
+id: paragraph.heading.default
+targetEntityType: paragraph
+bundle: heading
+mode: default
+content:
+  field_include_in_page_menu:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

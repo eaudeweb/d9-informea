@@ -1,0 +1,7 @@
+<div{{ attributes.addClass(classes) }}>
+  <ul>
+    {% for item in items %}
+      <li class="{{ item.content['#title']|replace({' ' : '-'})|lower  }}">{{ item.content }}</li>
+    {% endfor %}
+  </ul>
+</div>

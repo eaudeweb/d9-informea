@@ -1,0 +1,11 @@
+uuid: c6e0821c-47ef-4af9-9aa4-33e7bc9f61d5
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search__page_1_field_document_types
+display_id: views_page---search__page_1
+field_identifier: field_document_types
+default_sort: true
+default_order: asc
+label: 'Document type'
+weight: 0

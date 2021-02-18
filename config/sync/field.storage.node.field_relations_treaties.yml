@@ -1,0 +1,20 @@
+uuid: 50937ca9-8c5a-49d9-aefa-60267da1df30
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_relations_treaties
+field_name: field_relations_treaties
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

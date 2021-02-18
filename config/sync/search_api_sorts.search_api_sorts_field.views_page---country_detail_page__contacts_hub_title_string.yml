@@ -1,0 +1,11 @@
+uuid: 5bb1103a-77a7-4bed-bacd-e2f132928dbd
+langcode: en
+status: true
+dependencies: {  }
+id: views_page---country_detail_page__contacts_hub_title_string
+display_id: views_page---country_detail_page__contacts_hub
+field_identifier: title_string
+default_sort: false
+default_order: asc
+label: 'Sorted from A to Z'
+weight: 0

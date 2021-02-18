@@ -1,0 +1,11 @@
+uuid: d957e448-6e63-4ad8-9f0e-fe2dd5d75407
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---country_detail_page__contacts_hub_field_country
+display_id: views_page---country_detail_page__contacts_hub
+field_identifier: field_country
+default_sort: false
+default_order: asc
+label: Country
+weight: 0

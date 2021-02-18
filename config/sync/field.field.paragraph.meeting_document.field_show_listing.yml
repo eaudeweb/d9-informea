@@ -1,0 +1,23 @@
+uuid: fadb1416-f9eb-4b2c-a534-6f22a56299a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_show_listing
+    - paragraphs.paragraphs_type.meeting_document
+id: paragraph.meeting_document.field_show_listing
+field_name: field_show_listing
+entity_type: paragraph
+bundle: meeting_document
+label: 'Show in listing'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

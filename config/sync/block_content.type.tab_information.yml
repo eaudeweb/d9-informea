@@ -1,0 +1,8 @@
+uuid: 205e7aa0-e3ff-42e6-a146-2732d0c971cb
+langcode: en
+status: true
+dependencies: {  }
+id: tab_information
+label: 'Tab information'
+revision: 0
+description: ''

@@ -1,0 +1,60 @@
+uuid: 8d420041-57a6-41b8-a31d-a2d20c5e55e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sidebar_content
+    - node.type.document
+    - paragraphs.paragraphs_type.block_content
+    - paragraphs.paragraphs_type.content
+  module:
+    - entity_reference_revisions
+id: node.document.field_sidebar_content
+field_name: field_sidebar_content
+entity_type: node
+bundle: document
+label: 'Sidebar content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      block_content: block_content
+      content: content
+    target_bundles_drag_drop:
+      block_content:
+        enabled: true
+        weight: 11
+      content:
+        enabled: true
+        weight: 12
+      heading:
+        weight: 13
+        enabled: false
+      home_page_information:
+        weight: 14
+        enabled: false
+      home_page_slider:
+        weight: 15
+        enabled: false
+      image_header:
+        weight: 16
+        enabled: false
+      meeting_document:
+        weight: 17
+        enabled: false
+      meeting_informative_section:
+        weight: 18
+        enabled: false
+      ratification_status:
+        weight: 19
+        enabled: false
+      standfirst:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: d6724ec2-ca14-44da-94ee-6ac827ab2265
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ecolex_legislation_status
+    - node.type.national_legislation
+  module:
+    - options
+id: node.national_legislation.field_ecolex_legislation_status
+field_name: field_ecolex_legislation_status
+entity_type: node
+bundle: national_legislation
+label: 'Legislation status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,13 @@
+uuid: 7112e36e-b0df-40dd-a31b-1191249554ca
+langcode: en
+status: true
+dependencies: {  }
+title: 'UNFCCC Taxonomy'
+id: unfccc_taxonomy
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/UNFCCCTaxonomy'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

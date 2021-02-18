@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Bootstrap Barrio's theme implementation for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ */
+#}
+{% set attributes = attributes.addClass('site-branding') %}
+  {% if site_logo or site_name %}
+    <div class="unep-eu-logo">
+      <a href="https://www.unenvironment.org" title="{{ 'Home'|t }}" rel="home" class="navbar-brand d-flex align-items-center">
+        {% if site_logo %}
+          {# @todo: add setting in branding block for inverse logo #}
+          <img src="{{ base_path ~ directory ~ '/logo--inverse.svg' }}" width="109" height="100" alt="{{ 'Home'|t }}" class="img-fluid d-inline-block align-top" />
+        {% endif %}
+        {% if site_name %}
+          <span class="d-inline-block site-name">{{ 'UNEP Law<br>and Environment Assistance<br>Platform'|t }}</span>
+        {% endif %}
+      </a>
+      <a href="https://ec.europa.eu/" target="_blank" class="brand brand-hover brand-eu">
+        <div class="row">
+          <img src="{{ base_path ~ directory ~ '/logo-eu.png' }}" width="100" height="60" class="img-fluid d-inline-block align-top" />
+          <span>{{ 'This website is supported by and contributing to the InforMEA Project which is funded by the European Union' |t }}</span>
+        </div>
+      </a>
+    </div>
+  {% endif %}
+  {% if site_slogan %}
+    <div class="d-inline-block align-top site-name-slogan">
+      {{ site_slogan }}
+    </div>
+  {% endif %}

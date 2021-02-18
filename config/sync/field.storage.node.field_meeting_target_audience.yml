@@ -1,0 +1,30 @@
+uuid: 55d292e3-92ff-41bd-bf00-83a6228d544c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_meeting_target_audience
+field_name: field_meeting_target_audience
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: lo
+      label: 'Legal Officers'
+    -
+      value: nfp
+      label: 'National Focal Points'
+    -
+      value: sc
+      label: 'Steering Committee'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

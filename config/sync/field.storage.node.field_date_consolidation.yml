@@ -1,0 +1,20 @@
+uuid: 5a2c10de-8fe5-442b-a252-7da88bad8021
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_date_consolidation
+field_name: field_date_consolidation
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

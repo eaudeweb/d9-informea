@@ -1,0 +1,21 @@
+uuid: aec8e11a-ab78-4129-9934-8fc5f78ee33c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ratification
+    - paragraphs.paragraphs_type.ratification_status
+  module:
+    - datetime
+id: paragraph.ratification_status.field_ratification
+field_name: field_ratification
+entity_type: paragraph
+bundle: ratification_status
+label: Ratification
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

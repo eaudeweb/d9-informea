@@ -1,0 +1,13 @@
+uuid: 63259be1-bb53-455c-ad94-a26c9d5a87f1
+langcode: en
+status: true
+dependencies: {  }
+id: user_account_manager
+label: 'User Account Manager'
+weight: -7
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'administer users'
+  - 'edit user roles'
+  - 'skip CAPTCHA'

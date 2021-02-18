@@ -1,0 +1,35 @@
+uuid: a5df1831-270a-4a08-9154-180447ce0187
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.meeting_informative_section.field_description
+    - field.field.paragraph.meeting_informative_section.field_title
+    - paragraphs.paragraphs_type.meeting_informative_section
+  module:
+    - text
+id: paragraph.meeting_informative_section.default
+targetEntityType: paragraph
+bundle: meeting_informative_section
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  search_api_excerpt: true

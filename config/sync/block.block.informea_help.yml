@@ -1,0 +1,22 @@
+uuid: 48b4bf4b-248f-432a-a08c-4ac5c77580cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - informea
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: informea_help
+theme: informea
+region: content
+weight: -47
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,45 @@
+.block-title {
+  .icon {
+    fill: currentColor;
+    // @todo: replace with em
+    height: 2.5rem;
+    margin-right: .4em;
+    width: 2.5rem;
+  }
+}
+
+//lead in paint alliance block
+.lead-paint-alliance {
+  > .container {
+    background-color: #fff;
+    padding: 2rem;
+  }
+  .container:not(:first-child) {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: map-get($grid-breakpoints, 'xl') - 1) {
+      justify-content: center;
+    }
+    flex-wrap: wrap;
+    padding-bottom: 1.5rem;
+    padding-left: 0;
+  }
+  .group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+  .row.two-col {
+    text-align: left;
+    @media (max-width: map_get($grid-breakpoints, 'md')) {
+      text-align: center;
+    }
+  }
+  img {
+    max-height: 75px;
+    max-width: 150px;
+  }
+}

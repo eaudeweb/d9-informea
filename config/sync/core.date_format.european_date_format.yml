@@ -1,0 +1,8 @@
+uuid: 669033f3-10f2-473e-9a17-8f54949d1fb9
+langcode: en
+status: true
+dependencies: {  }
+id: european_date_format
+label: 'European date format'
+locked: false
+pattern: 'd M Y'

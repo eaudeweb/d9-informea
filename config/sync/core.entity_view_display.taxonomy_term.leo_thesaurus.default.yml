@@ -1,0 +1,101 @@
+uuid: 06b53931-78e1-4d9e-86eb-b1ccd62f2b54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.leo_thesaurus.field_alt_labels
+    - field.field.taxonomy_term.leo_thesaurus.field_exact_match
+    - field.field.taxonomy_term.leo_thesaurus.field_hidden_labels
+    - field.field.taxonomy_term.leo_thesaurus.field_related_concepts
+    - field.field.taxonomy_term.leo_thesaurus.field_scope_notes
+    - field.field.taxonomy_term.leo_thesaurus.field_topics
+    - field.field.taxonomy_term.leo_thesaurus.field_uri
+    - taxonomy.vocabulary.leo_thesaurus
+  module:
+    - link
+    - text
+id: taxonomy_term.leo_thesaurus.default
+targetEntityType: taxonomy_term
+bundle: leo_thesaurus
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_alt_labels:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_exact_match:
+    type: link
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_hidden_labels:
+    type: string
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_related_concepts:
+    type: link
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_scope_notes:
+    type: basic_string
+    weight: 7
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_topics:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_uri:
+    type: link
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,21 @@
+uuid: 39c9ea15-8f51-4c94-883b-649e8dfa999c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_toolkits
+    - node.type.national_legislation
+  module:
+    - options
+id: node.national_legislation.field_toolkits
+field_name: field_toolkits
+entity_type: node
+bundle: national_legislation
+label: 'Toolkit legislation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

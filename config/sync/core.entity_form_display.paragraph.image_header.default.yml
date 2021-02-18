@@ -1,0 +1,36 @@
+uuid: e4bd0a75-8321-47de-89f8-3f8a4b4124c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_header.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.image_header
+  module:
+    - image_widget_crop
+    - imce
+id: paragraph.image_header.default
+targetEntityType: paragraph
+bundle: image_header
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - crop_12_5
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
+    third_party_settings:
+      imce:
+        enabled: false
+    type: image_widget_crop
+    region: content
+hidden:
+  created: true
+  status: true

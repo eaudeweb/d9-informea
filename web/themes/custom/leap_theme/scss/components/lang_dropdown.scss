@@ -1,0 +1,31 @@
+.lang-dropdown-select-element {
+  appearance: none;
+  width: auto !important;
+  color: inherit;
+  font-size: .9em;
+
+  @include media-breakpoint-down(md) {
+    padding-left: 0;
+  }
+
+  &,
+  &:focus {
+    background-color: transparent;
+  }
+}
+
+.form-item-lang-dropdown-select {
+  color: #666;
+  .form-item_inner {
+    display: flex;
+    align-items: center;
+
+    &:after {
+      @extend %fa-icon;
+      content: fa-content($fa-var-angle-down);
+      color: #666;
+      font-size: 1.5em;
+    }
+  }
+}
+

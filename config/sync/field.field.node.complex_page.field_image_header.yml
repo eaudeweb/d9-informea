@@ -1,0 +1,52 @@
+uuid: 9249e055-6721-43c1-9236-7f15862de369
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_header
+    - node.type.complex_page
+    - paragraphs.paragraphs_type.image_header
+  module:
+    - entity_reference_revisions
+id: node.complex_page.field_image_header
+field_name: field_image_header
+entity_type: node
+bundle: complex_page
+label: 'Image Header'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_header: image_header
+    target_bundles_drag_drop:
+      content:
+        weight: 9
+        enabled: false
+      heading:
+        weight: 10
+        enabled: false
+      home_page_information:
+        weight: 11
+        enabled: false
+      home_page_slider:
+        weight: 12
+        enabled: false
+      image_header:
+        enabled: true
+        weight: 13
+      meeting_document:
+        weight: 14
+        enabled: false
+      meeting_informative_section:
+        weight: 15
+        enabled: false
+      ratification_status:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

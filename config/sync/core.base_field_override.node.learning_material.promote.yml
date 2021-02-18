@@ -1,0 +1,22 @@
+uuid: 76b4af0d-f3fe-422a-af04-eee63f9aafdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.learning_material
+id: node.learning_material.promote
+field_name: promote
+entity_type: node
+bundle: learning_material
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

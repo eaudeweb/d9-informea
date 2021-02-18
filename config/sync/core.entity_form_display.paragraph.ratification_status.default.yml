@@ -1,0 +1,50 @@
+uuid: 0f86e991-3d3b-4cc5-8eb5-6b7a0d13b37f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ratification_status.field_country
+    - field.field.paragraph.ratification_status.field_ratification
+    - field.field.paragraph.ratification_status.field_signature
+    - field.field.paragraph.ratification_status.field_status
+    - paragraphs.paragraphs_type.ratification_status
+  module:
+    - datetime
+id: paragraph.ratification_status.default
+targetEntityType: paragraph
+bundle: ratification_status
+mode: default
+content:
+  field_country:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_ratification:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_signature:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_status:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

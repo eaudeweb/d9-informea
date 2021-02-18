@@ -1,0 +1,15 @@
+uuid: 48225931-c7cc-4534-b07f-1a1f3df88284
+langcode: en
+status: true
+dependencies: {  }
+name: landscape_300_x_150
+label: 'Landscape 300 x 150'
+effects:
+  7dcba7b0-3b6d-4559-8147-a5c9be94c03e:
+    uuid: 7dcba7b0-3b6d-4559-8147-a5c9be94c03e
+    id: image_scale
+    weight: 2
+    data:
+      width: 300
+      height: null
+      upscale: false

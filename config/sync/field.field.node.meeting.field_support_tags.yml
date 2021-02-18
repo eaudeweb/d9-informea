@@ -1,0 +1,33 @@
+uuid: 1b2b8765-3f08-429e-ba40-5a2e86bcddc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_support_tags
+    - node.type.meeting
+    - taxonomy.vocabulary.support_tags
+  content:
+    - 'taxonomy_term:support_tags:3cf0ebd4-bbbb-44b5-bfa3-991dae12eb55'
+id: node.meeting.field_support_tags
+field_name: field_support_tags
+entity_type: node
+bundle: meeting
+label: 'Support tags'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 3cf0ebd4-bbbb-44b5-bfa3-991dae12eb55
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      support_tags: support_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 8eb3541d-fc74-4a5d-8e8b-fa564ff0e6b6
+langcode: en
+status: true
+dependencies: {  }
+name: 'LEO Thesaurus'
+vid: leo_thesaurus
+description: 'Automatically created by PoolParty Taxonomy Manager. '
+weight: 0

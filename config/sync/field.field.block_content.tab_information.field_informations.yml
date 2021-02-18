@@ -1,0 +1,40 @@
+uuid: 08a5c593-c537-442b-93d7-05fdf957dac6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tab_information
+    - field.storage.block_content.field_informations
+    - paragraphs.paragraphs_type.home_page_information
+  module:
+    - entity_reference_revisions
+id: block_content.tab_information.field_informations
+field_name: field_informations
+entity_type: block_content
+bundle: tab_information
+label: Informations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      home_page_information: home_page_information
+    target_bundles_drag_drop:
+      contact_roles:
+        weight: 6
+        enabled: false
+      home_page_information:
+        enabled: true
+        weight: 5
+      meeting_document:
+        weight: 7
+        enabled: false
+      ratification_status:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

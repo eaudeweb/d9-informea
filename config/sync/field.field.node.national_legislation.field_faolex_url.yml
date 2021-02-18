@@ -1,0 +1,23 @@
+uuid: 54b42ff5-168b-4676-bd3a-98ad41e59b22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faolex_url
+    - node.type.national_legislation
+  module:
+    - link
+id: node.national_legislation.field_faolex_url
+field_name: field_faolex_url
+entity_type: node
+bundle: national_legislation
+label: 'FAOLEX URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

@@ -1,0 +1,23 @@
+uuid: dc56347e-37df-4062-b24b-19bf07bb01ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: leo_thesaurus
+label: 'Leo Thesaurus'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/knowledge/glossary/[term:name]'
+selection_criteria:
+  7614b37b-494d-4a10-8b2d-5fb0722d9cf8:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      leo_thesaurus: leo_thesaurus
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 7614b37b-494d-4a10-8b2d-5fb0722d9cf8
+selection_logic: and
+weight: -5
+relationships: {  }

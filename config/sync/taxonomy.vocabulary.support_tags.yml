@@ -1,0 +1,8 @@
+uuid: 0f2d5fe1-6587-47e4-a07c-1d818c1b6f83
+langcode: en
+status: true
+dependencies: {  }
+name: 'Support tags'
+vid: support_tags
+description: ''
+weight: 0

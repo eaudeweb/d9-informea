@@ -1,0 +1,27 @@
+uuid: 6295e88e-723b-473d-9cc4-36a4b64e2590
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_relations_court_case
+    - node.type.case_law
+id: node.case_law.field_relations_court_case
+field_name: field_relations_court_case
+entity_type: node
+bundle: case_law
+label: 'Relations to other Court Decisions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      case_law: case_law
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

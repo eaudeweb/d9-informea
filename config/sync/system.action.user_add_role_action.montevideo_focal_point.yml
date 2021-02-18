@@ -1,0 +1,14 @@
+uuid: b7e1b8cd-14a7-4005-b7a0-068bcec33ce8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.montevideo_focal_point
+  module:
+    - user
+id: user_add_role_action.montevideo_focal_point
+label: 'Add the Montevideo focal point role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: montevideo_focal_point

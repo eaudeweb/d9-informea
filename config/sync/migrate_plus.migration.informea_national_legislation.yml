@@ -1,0 +1,356 @@
+uuid: 64d1a3d8-ceef-40dc-9639-481ad12220da
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: TlPhjoQIBqzvWVRQ-02dkEAj5OByQba9UdPywV6Z-Rg
+id: informea_national_legislation
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: null
+label: 'National Legislation'
+source:
+  plugin: informea_national_legislation
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  ws_url: 'https://www.informea.org/ws/legislation'
+  last_update_state_key: migrate_informea.informea_national_legislation.last_run
+  item_selector: false
+  ids:
+    uuid:
+      type: string
+  fields:
+    -
+      name: uuid
+      label: UUID
+      selector: uuid
+    -
+      name: title
+      label: Title
+      selector: title
+    -
+      name: url
+      selector: url/default
+    -
+      name: body
+      label: Body
+      selector: body/en/0/value
+    -
+      name: field_abstract
+      label: Abstract
+      selector: field_abstract/en/0/value
+    -
+      name: field_amends
+      label: Amends
+      selector: field_amends/0/uuid
+    -
+      name: field_country
+      value: Country
+      selector: field_country
+    -
+      name: field_date_of_consolidation
+      label: 'Date of consolidation'
+      selector: field_date_of_consolidation/und/0/value
+    -
+      name: field_date_of_original_text
+      label: 'Date of original text'
+      selector: field_date_of_original_text/und/0/value
+    -
+      name: field_ecolex_tags
+      label: 'Ecolex tags'
+      selector: field_ecolex_tags
+    -
+      name: field_ecolex_url
+      label: 'Ecolex url'
+      selector: field_ecolex_url/en/0/url
+    -
+      name: field_entry_into_force_notes
+      label: 'Entry into force notes'
+      selector: field_entry_into_force_notes/und/0/value
+    -
+      name: field_faolex_url
+      label: 'Faolex url'
+      selector: field_faolex_url/en/0/url
+    -
+      name: field_implements
+      label: Implements
+      selector: field_implements/0/uuid
+    -
+      name: field_original_id
+      label: 'Origial id'
+      selector: field_original_id/und/0/value
+    -
+      name: field_repeals
+      label: Repeals
+      selector: field_repeals/0/uuid
+    -
+      name: field_source_language
+      label: 'Source language'
+      selector: field_source_language/und/0/value
+    -
+      name: field_type_of_text
+      labbel: 'Type of text'
+      selector: field_type_of_text
+    -
+      name: field_url
+      label: Url
+      selector: field_url/en/0
+    -
+      name: field_available_web_site
+      selector: field_avaiable_web_site/und/0
+    -
+      name: field_date_of_entry
+      label: 'Date of entry'
+      selector: field_date_of_entry/und/0/value
+    -
+      name: field_date_of_modification
+      label: 'Date of modification'
+      selector: field_date_of_modification/und/0/value
+    -
+      name: field_internet_reference_url
+      value: 'Internet reference'
+      selector: field_internet_reference_url/en/0
+    -
+      name: field_notes
+      value: Notes
+      selector: field_notes/und/0/value
+    -
+      name: field_reference_number
+      value: 'Reference number'
+      selector: field_reference_number/und/0/value
+    -
+      name: field_repealed
+      value: Repealed
+      selector: field_repealed/und/0/value
+    -
+      name: field_serial_imprint
+      value: 'Serial imprint'
+      selector: field_serial_imprint/und/0/value
+    -
+      name: field_informea_tags
+      value: 'Informea tags'
+      selector: field_informea_tags
+    -
+      name: field_sorting_date
+      value: 'Sorting date'
+      selector: field_sorting_date/und/0/value
+    -
+      name: field_files
+      value: Files
+      selector: field_files/en
+    -
+      name: field_ecolex_keywords
+      value: 'Ecolex keywords'
+      selector: field_ecolex_keywords
+    -
+      name: field_ecolex_legislation_status
+      value: 'Legislation status'
+      selector: field_ecolex_legislation_status/0/label
+    -
+      name: field_title_abbreviation
+      value: 'Title abbreviation'
+      selector: field_title_abbreviation/und/0/value
+    -
+      name: field_mea_topic
+      value: 'Mea Topic'
+      selector: field_mea_topic
+    -
+      name: field_treaty
+      value: Treaty
+      selector: field_treaty
+    -
+      name: field_alternative_record_id
+      selector: field_alternative_record_id/und/0/value
+    -
+      name: field_faolex_id
+      selector: field_faolex_id/und/0/value
+    -
+      name: field_isis_number
+      selector: field_isis_number
+    -
+      name: field_sub_file_code
+      selector: field_sub_file_code
+    -
+      name: field_territorial_subdivision
+      selector: field_territorial_subdivision
+    -
+      name: field_topics
+      selector: field_topics
+process:
+  status:
+    plugin: default_value
+    default_value: 1
+  title:
+    plugin: skip_on_empty
+    method: row
+    source: title
+    message: 'Field title is missing'
+  type:
+    plugin: default_value
+    default_value: national_legislation
+  field_abstract: field_abstract
+  field_amends:
+    plugin: sub_process
+    source: field_amends
+    process:
+      target_id:
+        plugin: entity_lookup
+        source: title
+        value_key: title
+        bundle_key: type
+        bundle: national_legislation
+        entity_type: node
+        ignore_case: true
+  field_country:
+    plugin: sub_process
+    source: countries
+    process:
+      target_id:
+        plugin: entity_lookup
+        source: iso
+        value_key: field_iso3
+        bundle_key: vid
+        bundle: countries
+        entity_type: taxonomy_term
+        ignore_case: true
+  field_date_consolidation:
+    plugin: format_date
+    from_format: 'Y-m-d H:i:s'
+    to_format: 'Y-m-d\TH:i:s'
+    source: field_date_of_consolidation
+  field_date_start:
+    plugin: format_date
+    from_format: 'Y-m-d H:i:s'
+    to_format: Y-m-d
+    source: field_date_of_entry
+  field_last_update:
+    plugin: format_date
+    from_format: 'Y-m-d H:i:s'
+    to_format: 'Y-m-d\TH:i:s'
+    source: field_date_of_modification
+  field_date_original_text:
+    plugin: format_date
+    from_format: 'Y-m-d H:i:s'
+    to_format: 'Y-m-d\TH:i:s'
+    source: field_date_of_original_text
+  field_date_of_text:
+    plugin: format_date
+    from_format: 'Y-m-d H:i:s'
+    to_format: Y-m-d
+    source: field_sorting_date
+  field_ecolex_url: field_ecolex_url
+  field_entry_into_force_notes: field_entry_into_force_notes
+  field_faolex_url: field_faolex_url
+  field_implements:
+    plugin: sub_process
+    source: field_implements
+    process:
+      target_id:
+        plugin: entity_lookup
+        source: title
+        value_key: title
+        bundle_key: type
+        bundle: national_legislation
+        entity_type: node
+        ignore_case: true
+  field_original_id: informea_node_id
+  field_repeals:
+    plugin: sub_process
+    source: field_repeals
+    process:
+      target_id:
+        plugin: entity_lookup
+        source: title
+        value_key: title
+        bundle_key: type
+        bundle: national_legislation
+        entity_type: node
+        ignore_case: true
+  field_source_language: field_source_language
+  field_type_of_text:
+    plugin: sub_process
+    source: field_type_of_text
+    process:
+      target_id:
+        plugin: entity_generate
+        source: label
+        value_key: name
+        bundle_key: vid
+        bundle: types_of_text
+        entity_type: taxonomy_term
+        ignore_case: true
+  field_link_url/uri:
+    plugin: url_fix
+    source: field_link_url_uri
+  field_link_url/title: field_link_url_title
+  field_internet_reference/uri:
+    plugin: url_fix
+    source: field_internet_reference_uri
+  field_internet_reference/title: field_internet_reference_title
+  field_available_website/uri:
+    plugin: url_fix
+    source: field_available_web_site_uri
+  field_available_website/title: field_available_web_site_title
+  field_publication_reference: field_reference_number
+  field_notes: field_notes
+  field_repealed: repealed
+  field_serial_imprint: field_serial_imprint
+  field_attached_files:
+    plugin: sub_process
+    source: field_files
+    process:
+      target_id:
+        plugin: fid_download
+        filemime: text/html
+        destination: 'public://national-legislation'
+        source: url
+  field_leo_tags:
+    plugin: sub_process
+    source: tags
+    process:
+      target_id:
+        plugin: entity_lookup
+        source: label
+        value_key: name
+        bundle_key: vid
+        bundle: leo_thesaurus
+        entity_type: taxonomy_term
+        ignore_case: true
+  field_title_abbreviation: field_title_abbreviation
+  field_alternative_record_id: field_alternative_record_id
+  field_faolex_id: field_faolex_id
+  body/value: body
+  body/format:
+    plugin: default_value
+    default_value: basic_html
+  field_topics:
+    plugin: entity_lookup
+    source: mea_topics
+    value_key: name
+    bundle_key: vid
+    bundle: topics
+    entity_type: taxonomy_term
+    ignore_case: true
+  field_sub_file_code:
+    plugin: sub_process
+    source: sub_file_code
+    process:
+      value: label
+  field_territorials:
+    plugin: sub_process
+    source: territorials
+    process:
+      value: label
+  field_data_source:
+    plugin: entity_lookup
+    source: data_source
+    value_key: name
+    bundle_key: vid
+    bundle: data_sources
+    entity_type: taxonomy_term
+    ignore_case: true
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

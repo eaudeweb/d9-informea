@@ -1,0 +1,22 @@
+uuid: e14ce7cf-76b1-465f-8533-e204be19b5fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - informea
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: informea_content
+theme: informea
+region: content
+weight: -34
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

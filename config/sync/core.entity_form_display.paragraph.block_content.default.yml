@@ -1,0 +1,34 @@
+uuid: b5add676-e110-49b0-8e80-daba144ae510
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block_content.field_block
+    - field.field.paragraph.block_content.field_include_in_page_menu
+    - paragraphs.paragraphs_type.block_content
+  module:
+    - block_field
+id: paragraph.block_content.default
+targetEntityType: paragraph
+bundle: block_content
+mode: default
+content:
+  field_block:
+    weight: 0
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+  field_include_in_page_menu:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  status: true

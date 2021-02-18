@@ -1,0 +1,58 @@
+uuid: 21a70c6e-924f-435f-a63d-16f3c14169ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_standfirst
+    - node.type.complex_page
+    - paragraphs.paragraphs_type.standfirst
+  module:
+    - entity_reference_revisions
+id: node.complex_page.field_standfirst
+field_name: field_standfirst
+entity_type: node
+bundle: complex_page
+label: Standfirst
+description: 'Add a standfirst that will be displayed prominently at the top of the content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      standfirst: standfirst
+    target_bundles_drag_drop:
+      block_content:
+        weight: 11
+        enabled: false
+      content:
+        weight: 10
+        enabled: false
+      heading:
+        weight: 11
+        enabled: false
+      home_page_information:
+        weight: 12
+        enabled: false
+      home_page_slider:
+        weight: 13
+        enabled: false
+      image_header:
+        weight: 14
+        enabled: false
+      meeting_document:
+        weight: 15
+        enabled: false
+      meeting_informative_section:
+        weight: 16
+        enabled: false
+      ratification_status:
+        weight: 17
+        enabled: false
+      standfirst:
+        enabled: true
+        weight: 18
+field_type: entity_reference_revisions

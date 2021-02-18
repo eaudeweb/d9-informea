@@ -1,0 +1,19 @@
+div.block-views-blockresources-block-1 {
+  thead {
+    display: none;
+  }
+  tbody tr:nth-child(1) td {
+    border-top: 0;
+  }
+  .views-field-field-link {
+    vertical-align: middle;
+    width: 20%;
+  }
+}
+.resources-list {
+  td.views-field-field-image, td.views-field-title {
+    display: table-cell;
+    vertical-align: middle;
+    justify-content: center;
+  }
+}

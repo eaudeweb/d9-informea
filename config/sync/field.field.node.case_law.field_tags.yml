@@ -1,0 +1,29 @@
+uuid: 63cd99c7-101c-46df-bb7e-ac033a82d19c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.case_law
+    - taxonomy.vocabulary.tags
+id: node.case_law.field_tags
+field_name: field_tags
+entity_type: node
+bundle: case_law
+label: 'Free tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

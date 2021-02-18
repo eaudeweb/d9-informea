@@ -1,0 +1,29 @@
+uuid: 728f6072-c12b-4384-8fcc-4660bd919493
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_document_type
+    - paragraphs.paragraphs_type.meeting_document
+    - taxonomy.vocabulary.document_types
+id: paragraph.meeting_document.field_document_type
+field_name: field_document_type
+entity_type: paragraph
+bundle: meeting_document
+label: 'Document type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      document_types: document_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

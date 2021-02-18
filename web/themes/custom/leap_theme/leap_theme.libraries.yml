@@ -1,0 +1,16 @@
+global-styling:
+  version: VERSION
+  js:
+    js/global.js: {}
+  css:
+    component:
+      //maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css: { type: external }
+      css/style.css: {}
+bootstrap:
+  js:
+    js/popper.min.js: {}
+    js/bootstrap.min.js: {}
+
+thesaurus:
+  js:
+    js/thesaurus.js: {}

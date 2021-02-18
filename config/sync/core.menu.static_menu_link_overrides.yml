@@ -1,0 +1,99 @@
+definitions:
+  contact__site_page:
+    enabled: false
+    menu_name: footer
+    parent: ''
+    expanded: false
+    weight: 0
+  'admin_toolbar_tools__extra_links:node__add__case_study':
+    weight: 1
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    enabled: true
+    expanded: false
+  'admin_toolbar_tools__extra_links:node__add__document':
+    weight: 2
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add__course':
+    weight: 3
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add__learning_material':
+    weight: 4
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add__event':
+    weight: 5
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add__expert':
+    weight: 6
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add__focal_point':
+    weight: 7
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add__meeting':
+    weight: 8
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add__case_law':
+    weight: 9
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add__national_legislation':
+    weight: 10
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add__news':
+    weight: 11
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add__resource':
+    weight: 12
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add__support_request':
+    weight: 13
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add__treaty':
+    weight: 14
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add__unea_resolution':
+    weight: 15
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    enabled: true
+_core:
+  default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ

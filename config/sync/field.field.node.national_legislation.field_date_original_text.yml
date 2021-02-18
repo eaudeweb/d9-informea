@@ -1,0 +1,21 @@
+uuid: b234c554-8b99-4bce-98e2-75a0b4c1522c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_original_text
+    - node.type.national_legislation
+  module:
+    - datetime
+id: node.national_legislation.field_date_original_text
+field_name: field_date_original_text
+entity_type: node
+bundle: national_legislation
+label: 'Date of original text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,19 @@
+uuid: 58e97b3d-49fb-4903-9ac0-9d57c2954bda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_reference
+    - node.type.national_legislation
+id: node.national_legislation.field_publication_reference
+field_name: field_publication_reference
+entity_type: node
+bundle: national_legislation
+label: 'Publication reference'
+description: 'First publication when this document appeared.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

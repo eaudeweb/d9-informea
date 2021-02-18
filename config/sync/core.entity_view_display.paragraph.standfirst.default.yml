@@ -1,0 +1,26 @@
+uuid: f28fd043-3561-423d-a56f-0898c950c998
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.standfirst.field_standfirst
+    - paragraphs.paragraphs_type.standfirst
+  module:
+    - text
+id: paragraph.standfirst.default
+targetEntityType: paragraph
+bundle: standfirst
+mode: default
+content:
+  field_standfirst:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  search_api_excerpt: true

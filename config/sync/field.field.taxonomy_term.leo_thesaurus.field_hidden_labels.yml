@@ -1,0 +1,19 @@
+uuid: c1c85cb0-7a8e-44f6-a60a-f85243f725ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_hidden_labels
+    - taxonomy.vocabulary.leo_thesaurus
+id: taxonomy_term.leo_thesaurus.field_hidden_labels
+field_name: field_hidden_labels
+entity_type: taxonomy_term
+bundle: leo_thesaurus
+label: 'Hidden labels'
+description: 'A list of secondary variants of this term.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

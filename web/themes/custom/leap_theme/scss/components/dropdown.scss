@@ -1,0 +1,12 @@
+.dropdown-item {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  line-height: 3.125;
+}
+
+.dropdown-toggle {
+  &:after {
+    @extend %fa-icon;
+    content: fa-content($fa-var-angle-down);
+    margin-left: $input-padding-x;
+  }
+}

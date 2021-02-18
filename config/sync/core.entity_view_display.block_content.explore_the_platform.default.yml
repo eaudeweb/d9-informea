@@ -1,0 +1,27 @@
+uuid: 8fb50502-9e4d-4ab6-a2de-36f00d647166
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.explore_the_platform
+    - field.field.block_content.explore_the_platform.body
+  module:
+    - text
+id: block_content.explore_the_platform.default
+targetEntityType: block_content
+bundle: explore_the_platform
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

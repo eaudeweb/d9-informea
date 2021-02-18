@@ -1,0 +1,19 @@
+uuid: 53da25e6-cb7e-4f21-9e4c-f6b1f1a1ccce
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - taxonomy
+id: taxonomy_term.field_related_concepts
+field_name: field_related_concepts
+entity_type: taxonomy_term
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

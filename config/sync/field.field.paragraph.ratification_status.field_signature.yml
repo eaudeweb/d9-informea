@@ -1,0 +1,21 @@
+uuid: b4498b33-c955-4909-938f-9133c93e2f79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_signature
+    - paragraphs.paragraphs_type.ratification_status
+  module:
+    - datetime
+id: paragraph.ratification_status.field_signature
+field_name: field_signature
+entity_type: paragraph
+bundle: ratification_status
+label: Signature
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,13 @@
+uuid: 94db3f37-d190-47d4-826a-aa48e4ef70ee
+langcode: en
+status: true
+dependencies: {  }
+title: 'BRS Trial Predefined Ontologies'
+id: brs_trial_predefined_ontologies
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/BRS_Trial_Predefined_Ontologies'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

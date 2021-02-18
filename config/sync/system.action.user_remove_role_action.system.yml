@@ -1,0 +1,14 @@
+uuid: f3049099-0314-42de-9d6c-52fb6aa5ae0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.system
+  module:
+    - user
+id: user_remove_role_action.system
+label: 'Remove the System role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: system

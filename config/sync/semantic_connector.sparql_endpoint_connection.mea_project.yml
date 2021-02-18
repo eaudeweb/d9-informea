@@ -1,0 +1,13 @@
+uuid: cde1be38-2363-49c5-8b44-d693b523a500
+langcode: en
+status: true
+dependencies: {  }
+title: 'MEA Project'
+id: mea_project
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/MEAProject'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

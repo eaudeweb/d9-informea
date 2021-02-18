@@ -1,0 +1,21 @@
+uuid: 5f19b16a-d626-45ae-948f-dbced3f09f5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_type
+    - node.type.learning_material
+  module:
+    - options
+id: node.learning_material.field_resource_type
+field_name: field_resource_type
+entity_type: node
+bundle: learning_material
+label: 'Resource type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,16 @@
+uuid: a7b568f6-e25e-4fa9-962a-04c1170225c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.treaty
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.treaty
+target_entity_type_id: node
+target_bundle: treaty
+default_langcode: site_default
+language_alterable: true

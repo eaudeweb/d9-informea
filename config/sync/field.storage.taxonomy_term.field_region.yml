@@ -1,0 +1,42 @@
+uuid: 60e5bc4e-c3fc-4ae3-8509-d2d0b10c7187
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_region
+field_name: field_region
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Africa
+      label: Africa
+    -
+      value: 'Asia and the Pacific'
+      label: 'Asia and the Pacific'
+    -
+      value: Europe
+      label: Europe
+    -
+      value: 'Latin America and the Caribbean'
+      label: 'Latin America and the Caribbean'
+    -
+      value: 'North America'
+      label: 'North America'
+    -
+      value: 'West Asia'
+      label: 'West Asia'
+    -
+      value: 'Polar: Arctic'
+      label: 'Polar: Arctic'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

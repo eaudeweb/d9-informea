@@ -1,0 +1,100 @@
+uuid: ba5afb56-c277-4780-b62a-d274ae2a665d
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+    - editor_file
+third_party_settings:
+  editor_file:
+    status: true
+    scheme: public
+    directory: inline-files
+    extensions: 'txt pdf doc docx xls xlsx odt svg'
+    max_size: ''
+_core:
+  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Strike
+            - Underline
+            - Superscript
+            - Subscript
+            - '-'
+            - RemoveFormat
+            - JustifyRight
+            - JustifyCenter
+            - JustifyBlock
+            - JustifyLeft
+            - Indent
+            - Outdent
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - DrupalFile
+            - Table
+            - HorizontalRule
+            - ImceImage
+        -
+          name: 'Block Formatting'
+          items:
+            - Format
+            - PasteFromWord
+            - Styles
+        -
+          name: Tools
+          items:
+            - WidgetTemplateMenu
+            - ShowBlocks
+            - Source
+            - SpecialChar
+        -
+          name: Actions
+          items:
+            - Copy
+            - Cut
+            - Paste
+            - PasteText
+        -
+          name: Layout
+          items:
+            - widgetbootstrapLeftCol
+            - widgetbootstrapRightCol
+            - widgetbootstrapTwoCol
+            - widgetbootstrapThreeCol
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: "div.full-width|Container full width\r\ndiv.lead-paint-alliance|Container with border\r\ndiv.container|Normal container"
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

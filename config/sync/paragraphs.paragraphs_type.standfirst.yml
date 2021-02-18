@@ -1,0 +1,10 @@
+uuid: 52ec1dbd-aad7-49c0-8dbf-37c741d403d9
+langcode: en
+status: true
+dependencies: {  }
+id: standfirst
+label: Standfirst
+icon_uuid: null
+icon_default: null
+description: 'Add a standfirst that will be displayed prominently at the top of the content above the main content.'
+behavior_plugins: {  }

@@ -1,0 +1,23 @@
+uuid: 87bf8c84-a978-4dcb-9d56-65776622fd89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.national_legislation
+  module:
+    - text
+id: node.national_legislation.body
+field_name: body
+entity_type: node
+bundle: national_legislation
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

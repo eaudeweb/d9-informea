@@ -1,0 +1,23 @@
+uuid: dc2f743d-776c-4bb2-8d57-869f31e33b35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_frequency
+    - node.type.meeting
+  module:
+    - options
+id: node.meeting.field_meeting_frequency
+field_name: field_meeting_frequency
+entity_type: node
+bundle: meeting
+label: Frequency
+description: 'How often is this meeting happening, if recurrent'
+required: false
+translatable: false
+default_value:
+  -
+    value: ad-hoc
+default_value_callback: ''
+settings: {  }
+field_type: list_string

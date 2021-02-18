@@ -1,0 +1,13 @@
+uuid: 2cbc82fe-e8ac-4304-aa83-3b31d55b0336
+langcode: en
+status: true
+dependencies: {  }
+title: ECOLEX
+id: ecolex
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/ECOLEX'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

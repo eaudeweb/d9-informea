@@ -1,0 +1,13 @@
+uuid: 2659326e-31ab-4f35-ae7e-3f47dbcbade8
+langcode: en
+status: true
+dependencies: {  }
+title: 'Species Taxonomy'
+id: species_taxonomy
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/SpeciesTaxonomy'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

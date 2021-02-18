@@ -1,0 +1,54 @@
+.page-user-login {
+  .row-center {
+    margin-top: 25%;
+  }
+
+  .layout-main > .row {
+    margin-top: 25%;
+  }
+}
+
+.user-login-form,
+.user-pass,
+.user-register-form {
+  max-width: 600px;
+  .form-description {
+    color: #777777;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  [data-drupal-selector="edit-pass"] {
+    margin: 0;
+  }
+  .user-pass {
+    color: #666666;
+    font-size: 13px;
+    line-height: 26px;
+  }
+
+  .form-description  {
+    margin-bottom: 1.25em;
+  }
+  .form-item-field-country .chosen-container {
+    width: 350px !important;
+  }
+  .form-item-field-organisation .chosen-container {
+    width: 80% !important;
+  }
+}
+
+.user-form {
+  .password-field, .password-confirm {
+    width: 350px;
+  }
+}
+
+.user-form {
+  .form-item-field-country .chosen-container {
+    width: 350px !important;
+  }
+  .form-item-field-organisation .chosen-container {
+    width: 80% !important;
+  }
+}

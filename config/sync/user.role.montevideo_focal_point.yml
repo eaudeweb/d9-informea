@@ -1,0 +1,12 @@
+uuid: b7af7c53-a7d8-489e-9424-48aa5ec25b40
+langcode: en
+status: true
+dependencies: {  }
+id: montevideo_focal_point
+label: 'Montevideo Focal Point'
+weight: -5
+is_admin: null
+permissions:
+  - 'access own unpublished support requests'
+  - 'create support_request content'
+  - 'view own unpublished content'

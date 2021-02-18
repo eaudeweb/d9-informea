@@ -1,0 +1,48 @@
+{% if page.featured_top %}
+  {% block featured %}
+    <div class="featured-top">
+      {% if is_complex_page %}
+        <div class="header-image">
+          {{ image_header }}
+        </div>
+      {% endif %}
+      <aside class="featured-top__inner section {{ container }} clearfix" role="complementary">
+        {{ page.featured_top }}
+      </aside>
+      {% if is_complex_page and horizontal_navigation %}
+        {% if horizontal_navigation %}
+          {% include "@leap_theme/includes/_menu-horizontal.twig" with { "items": horizontal_navigation } %}
+        {% endif %}
+      {% endif %}
+    </div>
+  {% endblock %}
+{% endif %}
+<div id="main-wrapper" class="layout-main-wrapper clearfix holygrail-body">
+  {% block content %}
+    <div id="main" class="{{ container }}">
+      {{ page.breadcrumb }}
+      <div class="row row-offcanvas row-offcanvas-left clearfix">
+        <main{{ content_attributes }}>
+          <section class="section">
+            <a id="main-content" tabindex="-1"></a>
+            {{ page.content }}
+          </section>
+        </main>
+        {% if page.sidebar_first and (is_complex_page == false)%}
+          <div{{ sidebar_first_attributes }}>
+            <aside class="section" role="complementary">
+              {{ page.sidebar_first }}
+            </aside>
+          </div>
+        {% endif %}
+        {% if page.sidebar_second %}
+          <div{{ sidebar_second_attributes }}>
+            <aside class="section" role="complementary">
+              {{ page.sidebar_second }}
+            </aside>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endblock %}
+</div>

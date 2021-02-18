@@ -1,0 +1,14 @@
+uuid: 06b97506-2242-4331-aef3-f0c2f4c6fc09
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.legal_officer
+  module:
+    - user
+id: user_add_role_action.legal_officer
+label: 'Add the Legal Officer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: legal_officer

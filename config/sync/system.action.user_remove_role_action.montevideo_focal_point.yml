@@ -1,0 +1,14 @@
+uuid: e62e92f2-28f5-4482-b244-5f66c3d5d707
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.montevideo_focal_point
+  module:
+    - user
+id: user_remove_role_action.montevideo_focal_point
+label: 'Remove the Montevideo focal point role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: montevideo_focal_point

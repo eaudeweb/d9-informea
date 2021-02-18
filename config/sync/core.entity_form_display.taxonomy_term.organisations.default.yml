@@ -1,0 +1,139 @@
+uuid: c2a64554-0da7-4561-bce2-a89d0ad38335
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.organisations.field_academic_member
+    - field.field.taxonomy_term.organisations.field_data_source
+    - field.field.taxonomy_term.organisations.field_donor
+    - field.field.taxonomy_term.organisations.field_legal_officers_member
+    - field.field.taxonomy_term.organisations.field_logo
+    - field.field.taxonomy_term.organisations.field_montevideo_partners
+    - field.field.taxonomy_term.organisations.field_partner
+    - field.field.taxonomy_term.organisations.field_promote
+    - field.field.taxonomy_term.organisations.field_topics
+    - field.field.taxonomy_term.organisations.field_url
+    - image.style.thumbnail
+    - taxonomy.vocabulary.organisations
+  module:
+    - link
+    - path
+    - svg_image
+    - text
+id: taxonomy_term.organisations.default
+targetEntityType: taxonomy_term
+bundle: organisations
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_academic_member:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_data_source:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_donor:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_legal_officers_member:
+    weight: 6
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_logo:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_montevideo_partners:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_partner:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_promote:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_topics:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_url:
+    weight: 11
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  langcode:
+    type: language_select
+    weight: 0
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 12
+    region: content
+    third_party_settings: {  }
+  translation:
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

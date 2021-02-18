@@ -1,0 +1,10 @@
+uuid: a352c662-013c-4121-ba59-976e0d304b95
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: GrjZxJOYhYdLHACep_9AN3LiU0olXhRABIawViXXd6o
+name: SDGs
+vid: sdgs
+description: ''
+weight: 0

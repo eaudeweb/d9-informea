@@ -1,0 +1,19 @@
+uuid: 7e3c6842-004e-4e4c-b350-12af7f6900bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_original_id
+    - node.type.national_legislation
+id: node.national_legislation.field_original_id
+field_name: field_original_id
+entity_type: node
+bundle: national_legislation
+label: 'Record ID/Reference'
+description: 'If available eg LEX - 143552'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

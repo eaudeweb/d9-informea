@@ -1,0 +1,13 @@
+uuid: a1932a76-9cde-4375-9f00-ea61e5d17c45
+langcode: en
+status: true
+dependencies: {  }
+title: 'BRS Trial Project'
+id: brs_trial_project
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/BRSTrialProject'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

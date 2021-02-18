@@ -1,0 +1,23 @@
+uuid: 1fd7a58f-d095-4492-911a-fd3ad3e71f1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_promote
+    - taxonomy.vocabulary.organisations
+id: taxonomy_term.organisations.field_promote
+field_name: field_promote
+entity_type: taxonomy_term
+bundle: organisations
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

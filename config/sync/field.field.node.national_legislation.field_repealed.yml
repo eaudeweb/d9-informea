@@ -1,0 +1,21 @@
+uuid: 76bd221a-23b5-4234-bb15-ffeaa564ea91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_repealed
+    - node.type.national_legislation
+  module:
+    - options
+id: node.national_legislation.field_repealed
+field_name: field_repealed
+entity_type: node
+bundle: national_legislation
+label: Repealed
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

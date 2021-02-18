@@ -1,0 +1,37 @@
+uuid: d95ac964-6b86-4134-aec5-5b2cc5420835
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reports
+    - node.type.meeting
+    - paragraphs.paragraphs_type.meeting_document
+  module:
+    - entity_reference_revisions
+id: node.meeting.field_reports
+field_name: field_reports
+entity_type: node
+bundle: meeting
+label: Documents
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      meeting_document: meeting_document
+    target_bundles_drag_drop:
+      home_page_information:
+        weight: 4
+        enabled: false
+      meeting_document:
+        enabled: true
+        weight: 2
+      ratification_status:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

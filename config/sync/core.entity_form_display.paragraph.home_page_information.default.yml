@@ -1,0 +1,34 @@
+uuid: 4503cd4e-a351-485a-b41d-783b99be2520
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_page_information.field_description
+    - field.field.paragraph.home_page_information.field_title
+    - paragraphs.paragraphs_type.home_page_information
+  module:
+    - text
+id: paragraph.home_page_information.default
+targetEntityType: paragraph
+bundle: home_page_information
+mode: default
+content:
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

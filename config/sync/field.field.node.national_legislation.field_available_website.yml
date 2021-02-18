@@ -1,0 +1,23 @@
+uuid: f57c0053-5f81-401a-abfe-b0d9a177d24c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_available_website
+    - node.type.national_legislation
+  module:
+    - link
+id: node.national_legislation.field_available_website
+field_name: field_available_website
+entity_type: node
+bundle: national_legislation
+label: 'Web site'
+description: 'Add URL for main website where legislation can be found.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

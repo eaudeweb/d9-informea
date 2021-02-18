@@ -1,0 +1,23 @@
+uuid: 1ed71630-9693-4aa5-b11e-c0b4444a6180
+langcode: en
+status: true
+dependencies: {  }
+title: 'LEO Thesaurus'
+id: leo_thesaurus
+connection_id: brs_dev_server
+project_id: 1E14D822-E5A8-0001-74E6-1F7013D017FE
+config:
+  taxonomies:
+    leo_thesaurus: 'https://dvocabulary.brsmeas.org/Mastertest/0'
+  root_level: conceptscheme
+  languages:
+    leo_thesaurus:
+      en: en
+      fr: fr
+  data_properties:
+    leo_thesaurus:
+      - 'skos:altLabel'
+      - 'skos:hiddenLabel'
+      - 'skos:scopeNote'
+      - 'skos:related'
+      - 'skos:exactMatch'

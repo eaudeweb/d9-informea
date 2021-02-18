@@ -1,0 +1,27 @@
+uuid: fa03326b-31a7-43df-8473-a9d4a5d06cae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_repealed_by
+    - node.type.national_legislation
+id: node.national_legislation.field_repealed_by
+field_name: field_repealed_by
+entity_type: node
+bundle: national_legislation
+label: 'Repealed by'
+description: 'Add the record ID or the title'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      national_legislation: national_legislation
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

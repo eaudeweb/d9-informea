@@ -1,0 +1,23 @@
+uuid: cb7543bb-1383-4354-b607-8a34dcfa8a02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_academic_member
+    - taxonomy.vocabulary.organisations
+id: taxonomy_term.organisations.field_academic_member
+field_name: field_academic_member
+entity_type: taxonomy_term
+bundle: organisations
+label: 'This is a Academic Engagement Network Member'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

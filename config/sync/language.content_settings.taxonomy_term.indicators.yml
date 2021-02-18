@@ -1,0 +1,11 @@
+uuid: a600dffe-63ac-48c1-9495-da97292687bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.indicators
+id: taxonomy_term.indicators
+target_entity_type_id: taxonomy_term
+target_bundle: indicators
+default_langcode: site_default
+language_alterable: false

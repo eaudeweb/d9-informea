@@ -1,0 +1,20 @@
+uuid: 1b6f204c-8671-4fe5-8792-1dadef1db0c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_regulatory_approach
+field_name: field_regulatory_approach
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

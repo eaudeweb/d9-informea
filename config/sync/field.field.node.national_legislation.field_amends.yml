@@ -1,0 +1,27 @@
+uuid: 719c4edf-cacc-4917-a4eb-d23aaa5a1381
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_amends
+    - node.type.national_legislation
+id: node.national_legislation.field_amends
+field_name: field_amends
+entity_type: node
+bundle: national_legislation
+label: Amends
+description: 'Add the record ID or the title'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      national_legislation: national_legislation
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,138 @@
+uuid: 6c1b608b-be61-4434-baf8-1a9b8b422045
+langcode: en
+status: true
+dependencies: {  }
+id: faolex_legislation
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: null
+label: Legislation
+source:
+  plugin: faolex_legislation
+  key: migrate
+process:
+  title:
+    plugin: skip_on_empty
+    method: row
+    source: title_of_text
+    message: 'Field title is missing'
+  field_abstract: abstract
+  field_original_id: id
+  field_country:
+    plugin: sub_process
+    source: countries
+    process:
+      target_id:
+        plugin: entity_lookup
+        source: iso
+        value_key: field_iso3
+        bundle_key: vid
+        bundle: countries
+        entity_type: taxonomy_term
+        ignore_case: true
+  field_date_consolidation: date_of_consolidation
+  field_date_start: date_of_entry
+  field_last_update: updated
+  field_date_original_text: date_of_original_text
+  field_date_of_text: date_of_text
+  field_entry_into_force_notes: entry_into_force
+  field_notes: comment
+  field_long_title_of_text: long_title_of_text
+  field_legislation_amendment: mere_amendment
+  field_original_title_of_text: original_title_of_text
+  field_publication_reference: publication_reference
+  field_source_language: record_language
+  field_repealed: repealed
+  field_serial_imprint: serial_imprint
+  field_link_url:
+    plugin: url_fix
+    source: internet_reference
+  field_legislation_areas:
+    plugin: sub_process
+    source: legislation_areas
+    process:
+      target_id:
+        plugin: entity_generate
+        source: label
+        value_key: name
+        bundle_key: vid
+        bundle: legislation_areas
+        entity_type: taxonomy_term
+        ignore_case: true
+  field_sub_file_code:
+    plugin: sub_process
+    source: sub_file_code
+    process:
+      value: label
+  field_available_website:
+    plugin: url_fix
+    source: related_web_site
+  field_faolex_url: faolex_url
+  field_type_of_text:
+    plugin: entity_generate
+    source: type_of_text
+    value_key: name
+    bundle_key: vid
+    bundle: types_of_text
+    entity_type: taxonomy_term
+    ignore_case: true
+  field_territorials:
+    plugin: sub_process
+    source: territorials
+    process:
+      value: label
+  field_attached_files:
+    plugin: sub_process
+    source: link_to_full_text
+    process:
+      target_id:
+        plugin: fid_upload
+        source: url
+  field_faolex_organization:
+    plugin: sub_process
+    source: organization
+    process:
+      target_id:
+        plugin: entity_lookup
+        source: label
+        value_key: name
+        bundle_key: vid
+        bundle: organisations
+        entity_type: taxonomy_term
+        ignore_case: true
+  field_legislation_tags:
+    plugin: sub_process
+    source: keywords
+    process:
+      target_id:
+        plugin: entity_generate
+        source: label
+        value_key: name
+        bundle_key: vid
+        bundle: legislation_tags
+        entity_type: taxonomy_term
+        ignore_case: true
+  field_implements:
+    plugin: migration_lookup
+    migration: faolex_legislation
+    source: implements
+    no_stub: true
+  field_amends:
+    plugin: migration_lookup
+    migration: faolex_legislation
+    source: implements
+    no_stub: true
+  field_repeals:
+    plugin: migration_lookup
+    migration: faolex_legislation
+    source: repeals
+    no_stub: true
+  type:
+    plugin: default_value
+    default_value: national_legislation
+destination:
+  plugin: 'entity:node'
+  default_bundle: national_legislation
+migration_dependencies: null

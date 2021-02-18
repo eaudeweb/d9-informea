@@ -1,0 +1,17 @@
+@import "../variables";
+
+.js input.form-autocomplete {
+  border: $input-border-width solid $input-border-color;
+}
+
+.ui-autocomplete {
+  .ui-state-active,
+  .ui-widget-content .ui-state-active,
+  .ui-widget-header .ui-state-active,
+  a.ui-button:active,
+  .ui-button:active,
+  .ui-button.ui-state-active:hover {
+    border: none;
+    background: none;
+  }
+}

@@ -1,0 +1,22 @@
+uuid: 8cd74cba-be8e-4c5b-985f-61b2367d5bcc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: focal_points
+label: 'Focal points'
+type: 'canonical_entities:node'
+pattern: '/countries/[node:field_country:0:entity:field_iso2]/[node:title]'
+selection_criteria:
+  59493111-7254-42bb-818d-275b29b66d83:
+    id: node_type
+    bundles:
+      focal_point: focal_point
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 59493111-7254-42bb-818d-275b29b66d83
+selection_logic: and
+weight: -5
+relationships: {  }

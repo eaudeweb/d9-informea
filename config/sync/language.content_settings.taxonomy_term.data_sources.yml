@@ -1,0 +1,16 @@
+uuid: 6d30ecad-2341-448a-beca-4b3b11763422
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.data_sources
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.data_sources
+target_entity_type_id: taxonomy_term
+target_bundle: data_sources
+default_langcode: site_default
+language_alterable: true

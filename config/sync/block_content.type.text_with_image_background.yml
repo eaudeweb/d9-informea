@@ -1,0 +1,8 @@
+uuid: be77c86b-d585-4a54-b1b1-8858af3ac416
+langcode: en
+status: true
+dependencies: {  }
+id: text_with_image_background
+label: 'Text with image background'
+revision: 0
+description: ''

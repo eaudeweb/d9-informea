@@ -1,0 +1,9 @@
+uuid: 7eadbf2b-04f3-439f-b71c-4f2600b7fcd5
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__country_detail_page__case_studies
+name: 'search_api:views_page__country_detail_page__case_studies'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

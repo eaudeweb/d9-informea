@@ -1,0 +1,27 @@
+uuid: 8cabbd8d-5e76-40ae-a6e0-7944dccb9578
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_treaty_type
+field_name: field_treaty_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: multilateral
+      label: Multilateral
+    -
+      value: bilateral
+      label: Bilateral
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 4c884073-6378-4d71-92ad-707f5daf35bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: support_request
+label: 'Support request'
+type: 'canonical_entities:node'
+pattern: '/technical-assistance/activity-tracker/[node:field_identifier]'
+selection_criteria:
+  79c89ed9-184e-46f8-a7f0-abe30f7be299:
+    id: node_type
+    bundles:
+      support_request: support_request
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 79c89ed9-184e-46f8-a7f0-abe30f7be299
+selection_logic: and
+weight: -5
+relationships: {  }

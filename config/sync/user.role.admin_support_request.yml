@@ -1,0 +1,20 @@
+uuid: 95886d30-6e2c-4704-a0f7-6df00b826852
+langcode: en
+status: true
+dependencies: {  }
+id: admin_support_request
+label: 'Support Requests Manager'
+weight: -3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access unpublished support requests'
+  - 'change support request status'
+  - 'create support_request content'
+  - 'delete any support_request content'
+  - 'delete own support_request content'
+  - 'edit any support_request content'
+  - 'edit own support_request content'
+  - 'use text format full_html'
+  - 'view own unpublished content'

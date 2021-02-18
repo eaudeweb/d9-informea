@@ -1,0 +1,161 @@
+uuid: 43dca475-6c60-42ef-ac19-115ac6084432
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: TlPhjoQIBqzvWVRQ-02dkEAj5OByQba9UdPywV6Z-Rg
+id: unea_resolutions
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: null
+label: Decision
+source:
+  plugin: unea_resolutions
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  ws_url: 'https://www.informea.org/ws/decisions'
+  last_update_state_key: migrate_informea.informea_decision.last_run
+  item_selector: false
+  ids:
+    uuid:
+      type: string
+  fields:
+    -
+      name: uuid
+      label: UUID
+      selector: uuid
+    -
+      name: title
+      label: Title
+      selector: title
+    -
+      name: body
+      label: Body
+      selector: body/en
+    -
+      name: url_title
+      selector: url/en
+    -
+      name: field_decision_number
+      selector: field_decision_number/und
+    -
+      name: field_decision_type
+      selector: field_decision_type/0/label
+    -
+      name: field_decision_status
+      selector: field_decision_status/0/label
+    -
+      name: field_files
+      selector: field_files/en
+    -
+      name: field_tags
+      selector: field_informea_tags
+    -
+      name: field_last_update
+      selector: field_last_update/und/0/value
+    -
+      name: field_meeting
+      selector: field_meeting
+    -
+      name: field_treaty
+      selector: field_treaty
+    -
+      name: field_url
+      selector: field_url/en/0/url
+    -
+      name: field_sorting_date
+      selector: field_sorting_date/und/0/value
+    -
+      name: field_mea_topic
+      selector: field_mea_topic
+    -
+      name: field_region
+      selector: field_region/0/label
+process:
+  status:
+    plugin: default_value
+    default_value: 1
+  title:
+    plugin: skip_on_empty
+    method: row
+    source: title
+    message: 'Field title is missing'
+  body: body
+  field_decision_number: field_decision_number
+  field_decision_status: field_decision_status
+  field_decision_type: field_decision_type
+  field_files:
+    plugin: sub_process
+    source: field_files
+    process:
+      target_id:
+        plugin: fid_download
+        filemime: text/html
+        destination: 'public://unea-resolutions'
+        source: url
+  field_tags:
+    plugin: sub_process
+    source: field_tags
+    process:
+      target_id:
+        plugin: entity_lookup
+        source: label
+        value_key: name
+        bundle_key: vid
+        bundle: thesaurus
+        entity_type: taxonomy_term
+        ignore_case: true
+  field_last_update:
+    plugin: format_date
+    from_format: 'Y-m-d H:i:s'
+    to_format: 'Y-m-d\TH:i:s'
+    source: field_last_update
+  field_meeting:
+    plugin: sub_process
+    source: meeting
+    process:
+      target_id:
+        plugin: entity_lookup
+        source: label
+        value_key: title
+        bundle_key: type
+        bundle: meeting
+        entity_type: node
+        ignore_case: true
+  field_treaty:
+    plugin: sub_process
+    source: treaties
+    process:
+      target_id:
+        plugin: entity_lookup
+        source: title
+        value_key: title
+        bundle_key: type
+        bundle: treaty
+        entity_type: node
+        ignore_case: true
+  field_link:
+    plugin: url_fix
+    source: field_url
+  field_date_of_text:
+    plugin: format_date
+    from_format: 'Y-m-d H:i:s'
+    to_format: Y-m-d
+    source: field_sorting_date
+  field_topics:
+    plugin: entity_lookup
+    source: mea_topics
+    value_key: name
+    bundle_key: vid
+    bundle: topics
+    entity_type: taxonomy_term
+    ignore_case: true
+  field_region: field_region
+  type:
+    plugin: default_value
+    default_value: unea_resolution
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

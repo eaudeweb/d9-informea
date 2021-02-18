@@ -1,0 +1,59 @@
+uuid: 544133fd-1629-4f68-8eb9-9ee368d0352c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.meeting_document.field_document
+    - field.field.paragraph.meeting_document.field_document_type
+    - field.field.paragraph.meeting_document.field_language
+    - field.field.paragraph.meeting_document.field_show_listing
+    - field.field.paragraph.meeting_document.field_title
+    - paragraphs.paragraphs_type.meeting_document
+  module:
+    - file
+id: paragraph.meeting_document.default
+targetEntityType: paragraph
+bundle: meeting_document
+mode: default
+content:
+  field_document:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_document_type:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_language:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_show_listing:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

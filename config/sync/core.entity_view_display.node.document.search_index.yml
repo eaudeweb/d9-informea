@@ -1,0 +1,143 @@
+uuid: 4af8f91d-3be8-49bf-a63a-544641116acb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.document.body
+    - field.field.node.document.field_author
+    - field.field.node.document.field_content
+    - field.field.node.document.field_data_source
+    - field.field.node.document.field_date_of_text
+    - field.field.node.document.field_document_types
+    - field.field.node.document.field_download
+    - field.field.node.document.field_files
+    - field.field.node.document.field_image
+    - field.field.node.document.field_image_header
+    - field.field.node.document.field_keywords
+    - field.field.node.document.field_leo_tags
+    - field.field.node.document.field_link_url
+    - field.field.node.document.field_original_id
+    - field.field.node.document.field_sdgs
+    - field.field.node.document.field_sidebar_content
+    - field.field.node.document.field_standfirst
+    - field.field.node.document.field_support_request_category
+    - field.field.node.document.field_support_request_theme
+    - field.field.node.document.field_topics
+    - node.type.document
+  module:
+    - datetime
+    - link
+    - powertagging
+    - smart_trim
+    - svg_image
+    - user
+id: node.document.search_index
+targetEntityType: node
+bundle: document
+mode: search_index
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 7
+    settings:
+      trim_length: 400
+      trim_type: chars
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      wrap_output: false
+      more_link: false
+      trim_options:
+        text: false
+        trim_zero: false
+    third_party_settings: {  }
+    region: content
+  field_date_of_text:
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: european_date_format
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_document_types:
+    weight: 3
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_download:
+    type: link
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_leo_tags:
+    weight: 8
+    label: above
+    settings:
+      add_hidden_info: {  }
+      tag_sort_order: score
+      freeterms_at_end: false
+      split_terms: 0
+    third_party_settings: {  }
+    type: powertagging_tags_list
+    region: content
+  field_sdgs:
+    weight: 4
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_author: true
+  field_content: true
+  field_data_source: true
+  field_files: true
+  field_image_header: true
+  field_keywords: true
+  field_link_url: true
+  field_original_id: true
+  field_sidebar_content: true
+  field_standfirst: true
+  field_support_request_category: true
+  field_support_request_theme: true
+  field_topics: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,8 @@
+uuid: 491e7f19-8e34-4490-ab03-23d89b399c04
+langcode: en
+status: true
+dependencies: {  }
+id: user-actions
+label: 'User actions'
+description: 'Show possible user actions on user profile'
+locked: false

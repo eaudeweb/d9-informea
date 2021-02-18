@@ -1,0 +1,34 @@
+uuid: 912c2cef-cd34-44c0-b361-885a6195f44c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.meeting_informative_section.field_description
+    - field.field.paragraph.meeting_informative_section.field_title
+    - paragraphs.paragraphs_type.meeting_informative_section
+  module:
+    - text
+id: paragraph.meeting_informative_section.default
+targetEntityType: paragraph
+bundle: meeting_informative_section
+mode: default
+content:
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

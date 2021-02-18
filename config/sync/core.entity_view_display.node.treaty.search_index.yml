@@ -1,0 +1,129 @@
+uuid: cbf7e811-3e6e-4a4f-b27a-140c8a58b374
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.treaty.body
+    - field.field.node.treaty.field_data_source
+    - field.field.node.treaty.field_date_of_text
+    - field.field.node.treaty.field_files
+    - field.field.node.treaty.field_image
+    - field.field.node.treaty.field_keywords
+    - field.field.node.treaty.field_leo_tags
+    - field.field.node.treaty.field_link
+    - field.field.node.treaty.field_official_name
+    - field.field.node.treaty.field_original_id
+    - field.field.node.treaty.field_parent_treaty
+    - field.field.node.treaty.field_region
+    - field.field.node.treaty.field_title_abbreviation
+    - field.field.node.treaty.field_topics
+    - field.field.node.treaty.field_treaty_type
+    - image.style.medium
+    - node.type.treaty
+  module:
+    - datetime
+    - file
+    - options
+    - powertagging
+    - smart_trim
+    - svg_image
+    - user
+id: node.treaty.search_index
+targetEntityType: node
+bundle: treaty
+mode: search_index
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 3
+    settings:
+      trim_length: 400
+      trim_type: chars
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      wrap_output: false
+      more_link: false
+      trim_options:
+        text: false
+        trim_zero: false
+    third_party_settings: {  }
+    region: content
+  field_date_of_text:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: european_date_format
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_files:
+    weight: 6
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_image:
+    type: image
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
+  field_leo_tags:
+    weight: 9
+    label: above
+    settings:
+      add_hidden_info: {  }
+      tag_sort_order: score
+      freeterms_at_end: false
+      split_terms: 0
+    third_party_settings: {  }
+    type: powertagging_tags_list
+    region: content
+  field_region:
+    type: list_default
+    weight: 8
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_treaty_type:
+    type: list_default
+    weight: 7
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_data_source: true
+  field_keywords: true
+  field_link: true
+  field_official_name: true
+  field_original_id: true
+  field_parent_treaty: true
+  field_title_abbreviation: true
+  field_topics: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,21 @@
+uuid: bbc93fb7-aefc-4afe-8b29-ee436249ba02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_data_source
+    - taxonomy.vocabulary.organisations
+  module:
+    - options
+id: taxonomy_term.organisations.field_data_source
+field_name: field_data_source
+entity_type: taxonomy_term
+bundle: organisations
+label: 'Data Source'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

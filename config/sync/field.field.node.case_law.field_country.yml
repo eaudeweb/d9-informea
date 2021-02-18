@@ -1,0 +1,29 @@
+uuid: 6460f38e-fe96-40e6-acf6-07d5a5ab2d3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.case_law
+    - taxonomy.vocabulary.countries
+id: node.case_law.field_country
+field_name: field_country
+entity_type: node
+bundle: case_law
+label: Country
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      countries: countries
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

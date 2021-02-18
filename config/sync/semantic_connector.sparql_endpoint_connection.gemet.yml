@@ -1,0 +1,13 @@
+uuid: 29f86bdf-91ac-4fed-9ca1-aab10e97426b
+langcode: en
+status: true
+dependencies: {  }
+title: GEMET
+id: gemet
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/GEMET'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

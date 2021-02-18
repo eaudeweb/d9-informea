@@ -1,0 +1,29 @@
+uuid: a7f81090-3a22-4545-ba0c-5056ac4d6633
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_source
+    - node.type.treaty
+    - taxonomy.vocabulary.data_sources
+id: node.treaty.field_data_source
+field_name: field_data_source
+entity_type: node
+bundle: treaty
+label: 'Data source'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      data_sources: data_sources
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

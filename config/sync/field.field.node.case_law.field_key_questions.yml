@@ -1,0 +1,21 @@
+uuid: 9ecc38bb-d67e-4f0e-8958-613e531ffe40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_key_questions
+    - node.type.case_law
+  module:
+    - text
+id: node.case_law.field_key_questions
+field_name: field_key_questions
+entity_type: node
+bundle: case_law
+label: "Key environmental legal questions\t"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

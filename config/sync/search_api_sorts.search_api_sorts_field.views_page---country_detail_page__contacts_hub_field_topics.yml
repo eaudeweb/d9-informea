@@ -1,0 +1,11 @@
+uuid: d4f2390b-170c-4303-8896-6e9dec0f72de
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---country_detail_page__contacts_hub_field_topics
+display_id: views_page---country_detail_page__contacts_hub
+field_identifier: field_topics
+default_sort: false
+default_order: asc
+label: Topics
+weight: 0

@@ -1,0 +1,10 @@
+uuid: 002069b0-8c36-4e23-8460-ec96892bc18d
+langcode: en
+status: true
+dependencies: {  }
+id: ratification_status
+label: 'Ratification status'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

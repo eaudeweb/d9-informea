@@ -1,0 +1,29 @@
+uuid: 1a2b0c72-71f0-4208-93ee-661f0fba5a92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_source
+    - node.type.case_law
+    - taxonomy.vocabulary.data_sources
+id: node.case_law.field_data_source
+field_name: field_data_source
+entity_type: node
+bundle: case_law
+label: 'Data source'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      data_sources: data_sources
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

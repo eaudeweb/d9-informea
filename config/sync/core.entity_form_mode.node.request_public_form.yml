@@ -1,0 +1,10 @@
+uuid: 9de94728-41b5-4d37-a92b-be4adcbb55f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.request_public_form
+label: 'Support request public form'
+targetEntityType: node
+cache: true

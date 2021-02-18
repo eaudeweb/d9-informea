@@ -1,0 +1,14 @@
+uuid: d8f43420-6224-4dac-b289-4a46e28291c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.admin_support_request
+  module:
+    - user
+id: user_add_role_action.admin_support_request
+label: 'Add the Admin Support request role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: admin_support_request

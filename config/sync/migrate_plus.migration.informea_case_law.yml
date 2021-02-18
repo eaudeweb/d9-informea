@@ -1,0 +1,179 @@
+uuid: c414b330-bc97-4840-bfd4-862306b80be6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: TlPhjoQIBqzvWVRQ-02dkEAj5OByQba9UdPywV6Z-Rg
+id: informea_case_law
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: null
+label: 'Case law'
+source:
+  plugin: informea_case_law
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  ws_url: 'https://www.informea.org/ws/court-decisions'
+  last_update_state_key: migrate_informea.informea_case_law.last_run
+  item_selector: false
+  ids:
+    uuid:
+      type: string
+  fields:
+    -
+      name: uuid
+      label: UUID
+      selector: uuid
+    -
+      name: title
+      label: Title
+      selector: title
+    -
+      name: body
+      label: Body
+      selector: field_abstract/en
+    -
+      name: field_country
+      label: Country
+      selector: field_country/0
+    -
+      name: field_court_name
+      label: 'Court Name'
+      selector: field_court_name/und/0/value
+    -
+      name: field_seat_of_court
+      label: 'Seat of court'
+      selector: field_city/en/0/value
+    -
+      name: field_date
+      label: Date
+      selector: field_sorting_date/und/0/value
+    -
+      name: field_external_links
+      label: 'External links'
+      selector: field_url/en/0/url
+    -
+      name: field_original_id
+      label: 'Original ID'
+      selector: field_original_id/und/0/value
+    -
+      name: field_related_url
+      label: 'Related website'
+      selector: field_related_url/en/0/url
+    -
+      name: field_files
+      label: Files
+      selector: field_files/en
+    -
+      name: field_glossary_terms
+      label: 'Glossary terms'
+      selector: field_informea_tags
+    -
+      name: field_reference_number
+      label: 'Reference number'
+      selector: field_reference_number/und
+    -
+      name: field_topics
+      label: Topics
+      selector: field_mea_topic
+    -
+      name: field_type_of_text
+      label: 'Type of text'
+      selector: field_type_of_text/0/label
+    -
+      name: field_source_language
+      label: 'Source language'
+      selector: field_source_language/und/0/value
+    -
+      name: field_justices
+      label: Justices
+      selector: field_justices/und
+    -
+      name: url
+      selector: url/default
+process:
+  status:
+    plugin: default_value
+    default_value: 1
+  field_original_id: informea_node_id
+  field_source_language: field_source_language
+  title:
+    plugin: skip_on_empty
+    method: row
+    source: title
+    message: 'Field title is missing'
+  body: body
+  type:
+    plugin: default_value
+    default_value: case_law
+  field_court_name: field_court_name
+  field_link: field_external_links
+  field_available_website:
+    plugin: url_fix
+    source: field_related_url
+  field_reference_number: field_reference_number
+  field_date_of_text:
+    plugin: format_date
+    from_format: 'Y-m-d H:i:s'
+    to_format: Y-m-d
+    source: field_date
+  field_country:
+    plugin: entity_lookup
+    source: field_country
+    value_key: field_iso3
+    bundle_key: vid
+    bundle: countries
+    entity_type: taxonomy_term
+    ignore_case: true
+  field_seat_of_court: field_seat_of_court
+  field_justices: justices
+  field_sources:
+    plugin: default_value
+    default_value: InforMEA
+  field_files:
+    plugin: sub_process
+    source: field_files
+    process:
+      target_id:
+        plugin: fid_download
+        filemime: text/html
+        destination: 'public://court-case'
+        source: url
+  field_keywords:
+    plugin: sub_process
+    source: field_glossary_terms
+    process:
+      target_id:
+        plugin: entity_lookup
+        source: label
+        value_key: name
+        bundle_key: vid
+        bundle: thesaurus
+        entity_type: taxonomy_term
+        ignore_case: true
+  field_type_of_text:
+    plugin: entity_generate
+    source: field_type_of_text
+    value_key: name
+    bundle_key: vid
+    bundle: types_of_text
+    entity_type: taxonomy_term
+    ignore_case: true
+  field_topics:
+    plugin: sub_process
+    source: field_topics
+    process:
+      target_id:
+        plugin: entity_lookup
+        source: label
+        value_key: name
+        bundle_key: vid
+        bundle: topics
+        entity_type: taxonomy_term
+        ignore_case: true
+  field_data_source: data_source
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

@@ -1,0 +1,41 @@
+name: LEAP Theme
+type: theme
+description: 'LEAP Theme'
+version: VERSION
+core: 8.x
+base theme: bootstrap_barrio
+
+ckeditor_stylesheets:
+  - css/ckeditor_style.css
+
+libraries:
+  - leap_theme/bootstrap
+  - leap_theme/global-styling
+
+libraries-override:
+  social_media_links/fontawesome.component:
+    css:
+      component:
+        //maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css: //maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
+regions:
+  top_header: 'Top Header'
+  top_header_form: "Top Header Form"
+  header: Header
+  header_form: "Header Form"
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  breadcrumb: Breadcrumb
+  content: Content
+  full_content: Full Content
+  sidebar_first: 'Sidebar first'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_fourth: 'Footer fourth'
+  footer_fifth: 'Footer fifth'
+

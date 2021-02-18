@@ -1,0 +1,11 @@
+uuid: 58949f63-7ef9-44a1-bb79-eb5a61ac653b
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search__page_1_field_topics
+display_id: views_page---search__page_1
+field_identifier: field_topics
+default_sort: true
+default_order: asc
+label: Topics
+weight: 0

@@ -1,0 +1,10 @@
+uuid: 5e028851-c411-403c-8786-7b253dd9ef88
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.homepage_calendar
+label: 'Homepage Calendar'
+targetEntityType: node
+cache: true

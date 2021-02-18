@@ -1,0 +1,42 @@
+.view-glossary {
+  .views-field-field-featured-terms {
+    margin-top: .5em;
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+  }
+
+  .views-field-field-image {
+    width: 25%;
+  }
+
+  @include font-size(17px);
+
+  .col {
+    margin-top: calculateRem(15px);
+    > .views-field-name {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+
+  }
+
+  //@media #{$tablet} {
+  //  .views-row:not(.row-1) > .col {
+  //    margin-top: calculateRem(75px);
+  //  }
+  //}
+
+  .views-field-view-taxonomy-term a {
+    display: inline-block;
+    margin-top: 1em;
+  }
+
+  .topic-svg-image {
+    width: 25%;
+  }
+  .topic-svg-image {
+    width: 25%;
+  }
+}

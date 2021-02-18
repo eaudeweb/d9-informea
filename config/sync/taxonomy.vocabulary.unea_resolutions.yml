@@ -1,0 +1,8 @@
+uuid: d8aaf724-aa7c-4052-866c-c757165aa5e2
+langcode: en
+status: true
+dependencies: {  }
+name: 'UNEA Resolutions'
+vid: unea_resolutions
+description: ''
+weight: 0

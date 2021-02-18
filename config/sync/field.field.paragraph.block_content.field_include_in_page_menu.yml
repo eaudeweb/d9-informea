@@ -1,0 +1,23 @@
+uuid: b445f2a8-796c-4265-979c-4e2d3d70d935
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_include_in_page_menu
+    - paragraphs.paragraphs_type.block_content
+id: paragraph.block_content.field_include_in_page_menu
+field_name: field_include_in_page_menu
+entity_type: paragraph
+bundle: block_content
+label: 'Include in page menu?'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

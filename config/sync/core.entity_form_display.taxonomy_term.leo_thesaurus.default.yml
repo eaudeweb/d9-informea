@@ -1,0 +1,118 @@
+uuid: a422257b-1c6a-4ff8-af9b-4c4b421be1b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.leo_thesaurus.field_alt_labels
+    - field.field.taxonomy_term.leo_thesaurus.field_exact_match
+    - field.field.taxonomy_term.leo_thesaurus.field_hidden_labels
+    - field.field.taxonomy_term.leo_thesaurus.field_related_concepts
+    - field.field.taxonomy_term.leo_thesaurus.field_scope_notes
+    - field.field.taxonomy_term.leo_thesaurus.field_topics
+    - field.field.taxonomy_term.leo_thesaurus.field_uri
+    - taxonomy.vocabulary.leo_thesaurus
+  module:
+    - link
+    - path
+    - text
+id: taxonomy_term.leo_thesaurus.default
+targetEntityType: taxonomy_term
+bundle: leo_thesaurus
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_alt_labels:
+    type: string_textfield
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_exact_match:
+    type: link_default
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_hidden_labels:
+    type: string_textfield
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_related_concepts:
+    type: link_default
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_scope_notes:
+    type: string_textarea
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_topics:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_uri:
+    type: link_default
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 12
+    region: content
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

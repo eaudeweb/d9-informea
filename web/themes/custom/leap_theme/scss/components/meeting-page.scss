@@ -1,0 +1,31 @@
+.meeting-sections {
+  .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    margin-bottom: -1px;
+    padding: 13px 15px;
+    border: solid $primary-shade;
+    border-width: 0 0 4px;
+    background-color: rgb(242, 242, 242);
+  }
+
+  a.nav-item.nav-link {
+    background-color: rgb(245, 245, 245);
+    border-color: transparent;
+  }
+
+  .tab-content {
+    margin-top: 20px;
+  }
+
+  .nav-tabs .nav-link.active {
+    color: $primary-shade!important;
+  }
+  a.nav-item.nav-link {
+    padding: 13px 15px !important;
+    font-size: 20px;
+  }
+
+  .nav-tabs .nav-link {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}

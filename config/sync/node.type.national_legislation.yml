@@ -1,0 +1,17 @@
+uuid: 6e672120-091a-4221-8615-0c0d8968829e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'National legislation'
+type: national_legislation
+description: 'National legislation mostly imported from FAOLEX. You can add your own legislation, but make sure you select the correct data source.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

@@ -1,0 +1,11 @@
+uuid: d82dd1e9-d541-463a-b01d-82c275b13d54
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.legislation_tags
+id: taxonomy_term.legislation_tags
+target_entity_type_id: taxonomy_term
+target_bundle: legislation_tags
+default_langcode: site_default
+language_alterable: false

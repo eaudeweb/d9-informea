@@ -1,0 +1,22 @@
+uuid: d155ce42-a3d7-4c33-9241-2d842f8d7132
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: documents
+label: Documents
+type: 'canonical_entities:node'
+pattern: '/knowledge/legislative-guidance/[node:title]'
+selection_criteria:
+  8babfce6-1a22-4e56-af04-474552e442d5:
+    id: node_type
+    bundles:
+      document: document
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8babfce6-1a22-4e56-af04-474552e442d5
+selection_logic: and
+weight: -5
+relationships: {  }

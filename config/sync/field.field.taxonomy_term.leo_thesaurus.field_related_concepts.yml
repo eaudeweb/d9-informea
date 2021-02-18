@@ -1,0 +1,23 @@
+uuid: e6a28ac7-939d-4f95-832d-aaf1ac11640b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_related_concepts
+    - taxonomy.vocabulary.leo_thesaurus
+  module:
+    - link
+id: taxonomy_term.leo_thesaurus.field_related_concepts
+field_name: field_related_concepts
+entity_type: taxonomy_term
+bundle: leo_thesaurus
+label: 'Related concepts'
+description: 'URIs to related concepts'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

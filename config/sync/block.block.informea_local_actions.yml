@@ -1,0 +1,20 @@
+uuid: 1f7dc6c7-ffcd-466a-9e41-73bcdd85eab9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - informea
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: informea_local_actions
+theme: informea
+region: content
+weight: -36
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

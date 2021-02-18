@@ -1,0 +1,10 @@
+uuid: 4f9a6f63-4e9a-49a1-8263-fbb10c5da1f7
+langcode: en
+status: true
+dependencies: {  }
+id: image_header
+label: 'Image Header'
+icon_uuid: null
+icon_default: null
+description: 'Add an Image Header which will be displayed prominently at the Featured top section.'
+behavior_plugins: {  }

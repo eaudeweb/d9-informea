@@ -1,0 +1,21 @@
+uuid: 28ba9e8d-7769-4351-a556-98c282afcc4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_update
+    - node.type.national_legislation
+  module:
+    - datetime
+id: node.national_legislation.field_last_update
+field_name: field_last_update
+entity_type: node
+bundle: national_legislation
+label: 'Date of latest amendment'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

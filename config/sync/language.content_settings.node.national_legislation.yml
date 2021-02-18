@@ -1,0 +1,16 @@
+uuid: aefb23a0-07a0-4bc2-b870-f1f97693fd37
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.national_legislation
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.national_legislation
+target_entity_type_id: node
+target_bundle: national_legislation
+default_langcode: site_default
+language_alterable: true

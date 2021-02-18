@@ -1,0 +1,13 @@
+uuid: 88a4640a-a2b3-4db0-bd35-86d78dd2136f
+langcode: en
+status: true
+dependencies: {  }
+title: 'LEO Thesaurus (renamed from Master test 20191112)'
+id: leo_thesaurus_(renamed_from_master_test_20191112)
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/Mastertest'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

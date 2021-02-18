@@ -1,0 +1,11 @@
+uuid: c626cbb6-9389-4935-905c-3255bc416744
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search__page_1_title_string_desc
+display_id: views_page---search__page_1
+field_identifier: title_string_desc
+default_sort: true
+default_order: asc
+label: 'Title desc'
+weight: 0

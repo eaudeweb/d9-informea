@@ -1,0 +1,82 @@
+.meeting {
+  display: flex;
+  flex-direction: column;
+  a.title {
+    color: #303030;
+    font-size: 19px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .col-left {
+    flex: 0 0 65%;
+    font-size: 14px;
+  }
+  .col-right {
+    text-transform: uppercase;
+    display: flex;
+    font-size: 14px;
+    &::before {
+      content: url('../images/icons/application-octet-stream.png');
+      height: 50px;
+      padding: 2px 5px 0 0;
+    }
+    .field__items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    > div {
+      span {
+        background-image: none;
+        margin-left: -16px;
+      }
+    }
+  }
+  .col-right, .tags {
+    padding-left: 2rem;
+    padding-top: 5px;
+  }
+  .content {
+    color: #737373;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 20px;
+    padding-top: 6px;
+    > *:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+  .date {
+    margin: 0 0 0 15px;
+  }
+  .tags {
+    .field__item {
+      margin-left: 10px;
+      border-bottom: 5px solid transparent;
+      span {
+        background: transparent;
+      }
+    }
+    > div {
+      display: flex;
+    }
+    a {
+      font-size: 14px;
+      height: 30px;
+      padding: 3px 15px 3px 15px;
+      background: $primary-shade;
+      border-radius: 20px;
+      color: white;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+  }
+}
+
+.view-meetings {
+  .item-list {
+    width: 100%;
+  }
+}

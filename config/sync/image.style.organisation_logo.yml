@@ -1,0 +1,15 @@
+uuid: 2fbc222b-ea87-4831-9418-4754b1f138d4
+langcode: en
+status: true
+dependencies: {  }
+name: organisation_logo
+label: 'Organisation Logo'
+effects:
+  492dc6ae-c01f-44a1-9e40-851899ae8199:
+    uuid: 492dc6ae-c01f-44a1-9e40-851899ae8199
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      upscale: false

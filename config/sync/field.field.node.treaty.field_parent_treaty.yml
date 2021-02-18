@@ -1,0 +1,27 @@
+uuid: 9d0ab514-4f2e-4469-a428-1f73b147fa24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parent_treaty
+    - node.type.treaty
+id: node.treaty.field_parent_treaty
+field_name: field_parent_treaty
+entity_type: node
+bundle: treaty
+label: 'Parent instrument'
+description: 'Enter parent instrument for protocols and other dependent instruments'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      treaty: treaty
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 5938137d-4cc5-416a-bc31-9853a1dbc9f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - menu_block
+  theme:
+    - informea
+id: informea_useraccountmenu
+theme: informea
+region: header_form
+weight: -41
+provider: null
+plugin: 'menu_block:account'
+settings:
+  id: 'menu_block:account'
+  label: 'User account menu'
+  provider: menu_block
+  label_display: '0'
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 0
+  expand: false
+  parent: 'account:'
+  suggestion: account
+visibility: {  }

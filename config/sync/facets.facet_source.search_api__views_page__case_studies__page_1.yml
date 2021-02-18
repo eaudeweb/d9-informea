@@ -1,0 +1,9 @@
+uuid: 990c38a7-da51-4fbc-8bfb-82967a3cf726
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__case_studies__page_1
+name: 'search_api:views_page__case_studies__page_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

@@ -1,0 +1,8 @@
+uuid: 976d4d0d-e160-40dc-8af7-c77a4bafdff6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Legislation areas'
+vid: legislation_areas
+description: ''
+weight: 0

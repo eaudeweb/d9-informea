@@ -1,0 +1,32 @@
+{
+  "patches": {
+    "drupal/core": {
+      "States API doesn't work with multiple select fields": "https://www.drupal.org/files/issues/2019-05-26/states-multiselect-1149078-109.patch",
+      "Detect node/term id as a NodeInterface or TermInterface": "patches/core/detect-node-id.patch",
+      "Add video and source tags in the allowed HTML tags list": "patches/core/add_iframe_allowed_tags.patch",
+      "Hide rewrite if empty is not working": "https://www.drupal.org/files/issues/2020-09-16/2658232-42.patch"
+    },
+    "drupal/facets": {
+      "Change the E-learning material name when filter by Content type facet ": "patches/facets/rename-elearning-material-filter.patch"
+    },
+    "drupal/migrate_plus": {
+      "Allow callback for Url source, and single item Json plugin": "https://www.drupal.org/files/issues/2019-09-02/migrate_plus-8.x-5.x-source-url-callback-3040427-10.patch",
+      "Item selector not present": "https://www.drupal.org/files/issues/2019-04-22/3050058-1-item_selector_not_present.patch"
+    },
+    "drupal/powertagging": {
+      "Split the terms from string to a list with terms": "patches/powertagging/power_tagging_split_list.patch"
+    },
+    "drupal/semantic_connector": {
+      "Fix error with config import when username/password are not in config": "patches/semantic_connector/semantic-connector-cim-error.patch"
+    },
+    "drupal/dropzonejs": {
+      "Fix upload file size too big - drupal.org issue #2808687": "https://www.drupal.org/files/issues/dropzonejs-widget-context-2808687-29.patch"
+    },
+    "drupal/google_analytics": {
+      "Support new Google Analytics 4 #2808687": "https://www.drupal.org/files/issues/2020-11-19/3178179-13.patch"
+    },
+    "drupal/title_length": {
+      "Title field storage definition update does not respect $settings['node_title_length_chars']": "https://www.drupal.org/files/issues/2020-09-16/fix-hook-install.patch"
+    }
+  }
+}

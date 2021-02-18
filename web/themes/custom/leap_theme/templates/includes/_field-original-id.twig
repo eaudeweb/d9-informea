@@ -1,0 +1,14 @@
+<div class="field--original-id">
+  <div class="field__label">
+    {{ 'Data source'|t }}
+  </div>
+  <div class="field__item">
+    {% if (original_id is not empty) and (field_data_source.0['#plain_text'] in 'InforMEA') %}
+      <a href="http://informea.org/node/{{ original_id }}" target="_blank">{{ 'InforMEA'|t }}</a>
+    {% elseif (original_id is not empty) and (field_data_source.0['#plain_text'] in 'Judicial Portal') %}
+      <a href="https://judicial-portal.edw.ro/node/{{ original_id }}" target="_blank">{{ 'Judicial Portal'|t }}</a>
+    {% else %}
+      {{ field_data_source.0['#plain_text'] }}
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,20 @@
+uuid: 7317cafd-c46f-4ef0-ba1e-1dcd7679f631
+langcode: en
+status: true
+dependencies:
+  module:
+    - masquerade
+  theme:
+    - informea
+id: informea_masquerade
+theme: informea
+region: footer_first
+weight: -53
+provider: null
+plugin: masquerade
+settings:
+  id: masquerade
+  label: Masquerade
+  provider: masquerade
+  label_display: '0'
+visibility: {  }

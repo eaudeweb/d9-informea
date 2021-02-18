@@ -1,0 +1,29 @@
+uuid: cd41ee73-2a6d-431c-a2d6-b74834a1ddd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keywords
+    - node.type.learning_material
+    - taxonomy.vocabulary.leo_thesaurus
+id: node.learning_material.field_keywords
+field_name: field_keywords
+entity_type: node
+bundle: learning_material
+label: Keywords
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      leo_thesaurus: leo_thesaurus
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: keywords
+field_type: entity_reference

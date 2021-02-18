@@ -1,0 +1,16 @@
+uuid: 053ca531-90ce-4d1d-bf22-036c3aef5e52
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.learning_material
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.learning_material
+target_entity_type_id: node
+target_bundle: learning_material
+default_langcode: site_default
+language_alterable: true

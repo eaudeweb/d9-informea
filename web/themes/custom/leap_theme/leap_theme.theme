@@ -1,0 +1,69 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
+use Drupal\taxonomy\TermInterface;
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ *
+ * Example on how to alter theme settings form
+ *
+ */
+function leap_theme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  );
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = array(
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  );
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function leap_theme_preprocess(&$variables) {
+  $variables['base_path'] = base_path();
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK() for taxonomy terms.
+ *
+ * Currently Drupal core's taxonomy term module only provides:
+ *  * $suggestions[] = 'taxonomy_term__' . $term->bundle();
+ *  * $suggestions[] = 'taxonomy_term__' . $term->id() . $term->bundle();
+ *
+ * This is a very basic template suggestion that should be in core:
+ * https://www.drupal.org/project/drupal/issues/2767243
+ *
+ */
+function leap_theme_theme_suggestions_taxonomy_term_alter(&$suggestions, $variables, $hook) {
+  switch ($hook) {
+    case 'taxonomy_term':
+      $term = $variables['elements']['#taxonomy_term'];
+      $suggestions[] = $hook . '__' . $term->bundle() . '__' . $variables['elements']['#view_mode'];
+      $suggestions[] = $hook . '__' . $variables['elements']['#view_mode'];
+      $suggestions[] = $hook . '__' . $term->id() . '__' . $term->bundle() . '__' . $variables['elements']['#view_mode'];
+      $suggestions[] = $hook . '__' . $term->id() . '__' . $variables['elements']['#view_mode'];
+      break;
+  }
+}

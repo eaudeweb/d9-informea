@@ -1,0 +1,21 @@
+uuid: fd3c6b6b-8c2f-4ad8-a807-486f5c20c9f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_support_request_category
+    - node.type.document
+  module:
+    - options
+id: node.document.field_support_request_category
+field_name: field_support_request_category
+entity_type: node
+bundle: document
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

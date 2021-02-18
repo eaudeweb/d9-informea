@@ -1,0 +1,25 @@
+uuid: 5ef8dbc7-1128-49cb-8670-d10d451d383b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.standfirst.field_standfirst
+    - paragraphs.paragraphs_type.standfirst
+  module:
+    - text
+id: paragraph.standfirst.default
+targetEntityType: paragraph
+bundle: standfirst
+mode: default
+content:
+  field_standfirst:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,62 @@
+uuid: 963a3d17-1c14-4f4a-8b6b-e67902a3d01f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.document
+    - paragraphs.paragraphs_type.block_content
+    - paragraphs.paragraphs_type.content
+    - paragraphs.paragraphs_type.heading
+  module:
+    - entity_reference_revisions
+id: node.document.field_content
+field_name: field_content
+entity_type: node
+bundle: document
+label: Content
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      content: content
+      block_content: block_content
+      heading: heading
+    target_bundles_drag_drop:
+      block_content:
+        enabled: true
+        weight: -20
+      content:
+        enabled: true
+        weight: -21
+      heading:
+        enabled: true
+        weight: -19
+      home_page_information:
+        weight: -18
+        enabled: false
+      home_page_slider:
+        weight: -17
+        enabled: false
+      image_header:
+        weight: -16
+        enabled: false
+      meeting_document:
+        weight: -15
+        enabled: false
+      meeting_informative_section:
+        weight: -14
+        enabled: false
+      ratification_status:
+        weight: -13
+        enabled: false
+      standfirst:
+        weight: -12
+        enabled: false
+field_type: entity_reference_revisions

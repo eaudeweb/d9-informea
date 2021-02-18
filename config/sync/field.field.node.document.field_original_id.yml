@@ -1,0 +1,19 @@
+uuid: d6a9c301-9ed8-4d2a-adb3-81fc49518215
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_original_id
+    - node.type.document
+id: node.document.field_original_id
+field_name: field_original_id
+entity_type: node
+bundle: document
+label: 'Original ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

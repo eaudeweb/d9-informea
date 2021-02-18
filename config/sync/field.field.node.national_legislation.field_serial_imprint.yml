@@ -1,0 +1,19 @@
+uuid: 00d2cd6d-5258-4e68-8ef1-3e1d4bd1f68a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_serial_imprint
+    - node.type.national_legislation
+id: node.national_legislation.field_serial_imprint
+field_name: field_serial_imprint
+entity_type: node
+bundle: national_legislation
+label: 'Serial Imprint'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

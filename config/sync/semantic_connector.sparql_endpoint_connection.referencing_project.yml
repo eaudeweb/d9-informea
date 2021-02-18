@@ -1,0 +1,13 @@
+uuid: 0ddcfce6-85e3-47da-9114-948f7b619383
+langcode: en
+status: true
+dependencies: {  }
+title: 'Referencing Project'
+id: referencing_project
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/Referencing_Project'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

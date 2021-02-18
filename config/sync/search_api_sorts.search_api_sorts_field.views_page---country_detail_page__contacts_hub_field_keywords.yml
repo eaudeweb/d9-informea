@@ -1,0 +1,11 @@
+uuid: 660c3e3a-8ff0-4827-bdf9-9ceb3410c29d
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---country_detail_page__contacts_hub_field_keywords
+display_id: views_page---country_detail_page__contacts_hub
+field_identifier: field_keywords
+default_sort: false
+default_order: asc
+label: Keywords
+weight: 0

@@ -1,0 +1,14 @@
+uuid: d8ef29bf-a6e3-4ed1-aad6-db08276e2870
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.montevideo_partner
+  module:
+    - user
+id: user_remove_role_action.montevideo_partner
+label: 'Remove the Montevideo Partner role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: montevideo_partner

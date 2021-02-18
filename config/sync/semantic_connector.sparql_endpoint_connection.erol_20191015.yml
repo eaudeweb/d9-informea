@@ -1,0 +1,13 @@
+uuid: 66a3f997-a124-4087-899f-c05fd57d7bae
+langcode: en
+status: true
+dependencies: {  }
+title: 'EROL 20191015'
+id: erol_20191015
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/EROL20191015'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

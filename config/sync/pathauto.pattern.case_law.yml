@@ -1,0 +1,22 @@
+uuid: 22879fe6-baef-43df-91ef-d8ab04f540c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: case_law
+label: 'Case law'
+type: 'canonical_entities:node'
+pattern: '/countries/[node:field_country:0:entity:field_iso2]/national-case-law/[node:title]'
+selection_criteria:
+  8c4d69d8-f289-49b3-944c-043f6f1d582d:
+    id: node_type
+    bundles:
+      case_law: case_law
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8c4d69d8-f289-49b3-944c-043f6f1d582d
+selection_logic: and
+weight: -5
+relationships: {  }

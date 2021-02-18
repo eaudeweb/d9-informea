@@ -1,0 +1,11 @@
+uuid: 546c3ca7-0554-44fe-b690-e8dd50d0faee
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---country_detail_page__contacts_hub_field_region
+display_id: views_page---country_detail_page__contacts_hub
+field_identifier: field_region
+default_sort: false
+default_order: asc
+label: 'Country » Taxonomy term » Region'
+weight: 0

@@ -1,0 +1,98 @@
+diff --git a/powertagging/src/Plugin/Field/FieldFormatter/PowerTaggingTagsFormatter.php b/powertagging/src/Plugin/Field/FieldFormatter/PowerTaggingTagsFormatter.php
+index 0fff8fcb3..16f599510 100644
+--- a/powertagging/src/Plugin/Field/FieldFormatter/PowerTaggingTagsFormatter.php
++++ b/powertagging/src/Plugin/Field/FieldFormatter/PowerTaggingTagsFormatter.php
+@@ -33,6 +33,7 @@ public static function defaultSettings() {
+       'add_hidden_info' => [],
+       'tag_sort_order' => 'score',
+       'freeterms_at_end' => FALSE,
++      'split_terms' => 0,
+     );
+   }
+ 
+@@ -68,6 +69,13 @@ public function settingsForm(array $form, FormStateInterface $form_state) {
+       '#description' => t('Shift freeterms (concepts without a URI) to the end of the tags list.')
+     );
+ 
++    $form['split_terms'] = array(
++      '#title' => t('Split the terms into a list'),
++      '#type' => 'checkbox',
++      '#default_value' => isset($settings['split_terms']) ? $settings['split_terms'] : 0,
++      '#description' => t('Split the terms from a string to a list with terms')
++    );
++
+     return $form;
+   }
+ 
+@@ -96,6 +104,8 @@ public function settingsSummary() {
+ 
+     $summary_parts[] = t('Freeterms at the end: @end', array('@end' => (isset($settings['freeterms_at_end']) && $settings['freeterms_at_end']) ? t('True') : t('False')));
+ 
++    $summary_parts[] = t('Split the terms: @split', array('@split' => (isset($settings['split_terms']) && $settings['split_terms']) ? t('True') : t('False')));
++
+     return $summary_parts;
+   }
+ 
+@@ -136,7 +146,7 @@ public function viewElements(FieldItemListInterface $items, $langcode) {
+       }
+       $terms = Term::loadMultiple(array_keys($tag_scores));
+       // Sort the tags.
+-      usort($terms, array(new PowerTaggingTagsSorter($tag_scores, (isset($settings['tag_sort_order']) ? $settings['tag_sort_order'] : 'score'), (isset($settings['freeterms_at_end']) ? $settings['freeterms_at_end'] : FALSE)), "sort"));
++      usort($terms, array(new PowerTaggingTagsSorter($tag_scores, (isset($settings['tag_sort_order']) ? $settings['tag_sort_order'] : 'score'), (isset($settings['split_terms']) ? $settings['split_terms'] : FALSE), (isset($settings['freeterms_at_end']) ? $settings['freeterms_at_end'] : FALSE)), "sort"));
+ 
+       $tags_to_theme = array();
+       /** @var Term $term */
+@@ -162,9 +172,24 @@ public function viewElements(FieldItemListInterface $items, $langcode) {
+         );
+       }
+       $powertagging_config = PowerTaggingConfig::load($this->getFieldSetting('powertagging_id'));
+-      $elements[] = array(
+-        '#markup' => SemanticConnector::themeConcepts($tags_to_theme, $powertagging_config->getConnectionId(), $powertagging_config->getProjectId())
+-      );
++
++      if (empty($settings['split_terms'])) {
++        $elements[] = array(
++          '#markup' => SemanticConnector::themeConcepts($tags_to_theme, $powertagging_config->getConnectionId(), $powertagging_config->getProjectId())
++        );
++      }
++      else {
++
++        $list = [];
++        foreach ($tags_to_theme as $item) {
++          $list[] = $item['html'];
++        }
++
++        $elements[] = array(
++          '#theme' => 'item_list',
++          '#items' => $list,
++        );
++      }
+     }
+ 
+     return $elements;
+@@ -175,6 +200,7 @@ class PowerTaggingTagsSorter {
+   private $scores;
+   private $order;
+   private $freeterms_at_end;
++  private $split;
+ 
+   /**
+    * PowerTaggingTagsSorter constructor.
+@@ -183,13 +209,16 @@ class PowerTaggingTagsSorter {
+    *   An associative array of tid => score.
+    * @param string $sort_by
+    *   What to sort by, can be either "score" or "alphabetically"
++   * @param bool $split
++   *   If TRUE the tags will be split.
+    * @param bool $freeterms_at_end
+    *   If TRUE concepts will always be listed before freeterms.
+    */
+-  public function __construct(Array $scores, $sort_by, $freeterms_at_end = FALSE) {
++  public function __construct(Array $scores, $sort_by, $split, $freeterms_at_end = FALSE) {
+     $this->scores = $scores;
+     $this->order = $sort_by;
+     $this->freeterms_at_end = $freeterms_at_end;
++    $this->split = $split;
+   }
+ 
+   public function sort(Term $term_a, Term $term_b) {

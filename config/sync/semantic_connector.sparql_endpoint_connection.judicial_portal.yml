@@ -1,0 +1,13 @@
+uuid: edbdfa8f-50a8-4a7f-bc89-d4b62d6668ea
+langcode: en
+status: true
+dependencies: {  }
+title: 'Judicial Portal'
+id: judicial_portal
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/JudicialPortal'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

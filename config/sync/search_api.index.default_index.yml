@@ -1,0 +1,335 @@
+uuid: a397d075-7154-44ea-b97b-b7d9f2850019
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+    - node
+    - search_api
+    - search_api_attachments
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_country
+    - field.storage.node.field_date_original_text
+    - field.storage.node.field_document_types
+    - field.storage.node.field_sdgs
+    - field.storage.node.field_toolkits
+    - field.storage.node.field_topics
+    - field.storage.node.field_type_of_text
+    - field.storage.node.field_leo_tags
+    - search_api.server.solr
+    - core.entity_view_mode.node.full
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    advanced:
+      index_prefix: ''
+      collection: ''
+      timezone: ''
+id: default_index
+name: 'Default index'
+description: ''
+read_only: false
+field_settings:
+  aggregated_date:
+    label: 'Aggregated date'
+    property_path: aggregated_field
+    type: date
+    configuration:
+      type: first
+      fields:
+        - 'entity:node/field_date:value'
+        - 'entity:node/field_date_of_text'
+        - 'entity:node/field_date_start'
+  aggregated_field:
+    label: Date
+    property_path: aggregated_field
+    type: integer
+    configuration:
+      type: first
+      fields:
+        - 'entity:node/field_date:value'
+        - 'entity:node/field_date_of_text'
+        - 'entity:node/field_date_start'
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_country:
+    label: Country
+    datasource_id: 'entity:node'
+    property_path: field_country
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_country
+  field_date_original_text:
+    label: 'Date of original text'
+    datasource_id: 'entity:node'
+    property_path: field_date_original_text
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_date_original_text
+  field_document_types:
+    label: 'Document type'
+    datasource_id: 'entity:node'
+    property_path: field_document_types
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_document_types
+  field_region:
+    label: 'Aggregated region'
+    property_path: aggregated_field
+    type: string
+    configuration:
+      type: first
+      fields:
+        - 'entity:node/field_country:entity:field_region'
+        - 'entity:node/field_region'
+  field_sdgs:
+    label: SDGs
+    datasource_id: 'entity:node'
+    property_path: field_sdgs
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_sdgs
+  field_toolkits:
+    label: 'Toolkit legislation'
+    datasource_id: 'entity:node'
+    property_path: field_toolkits
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_toolkits
+  field_topics:
+    label: Topics
+    datasource_id: 'entity:node'
+    property_path: field_topics
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_topics
+  field_type_of_text:
+    label: 'Type of text'
+    datasource_id: 'entity:node'
+    property_path: field_type_of_text
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_type_of_text
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    boost: 0.1
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          case_law: default
+          case_study: default
+          course: ''
+          document: default
+          event: ''
+          expert: ''
+          focal_point: default
+          learning_material: default
+          national_legislation: default
+          news: default
+          resource: ''
+          support_request: full
+          treaty: default
+          unea_resolution: ''
+  saa_field_files:
+    label: 'Search api attachments: Files'
+    property_path: saa_field_files
+    type: text
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
+  target_id:
+    label: 'Automatic Tagging » Taxonomy term ID'
+    datasource_id: 'entity:node'
+    property_path: 'field_leo_tags:target_id'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_leo_tags
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 3
+    dependencies:
+      module:
+        - node
+  title_string:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  title_string_desc:
+    label: 'Title desc'
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - case_law
+        - case_study
+        - course
+        - document
+        - expert
+        - focal_point
+        - learning_material
+        - national_legislation
+        - resource
+        - support_request
+        - treaty
+        - unea_resolution
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  double_quote_workaround:
+    all_fields: false
+    fields:
+      - title
+      - title_string
+      - title_string_desc
+      - type
+    replacement: '|9999999998|'
+    weights:
+      postprocess_query: 0
+      preprocess_index: -15
+      preprocess_query: -15
+  entity_status: {  }
+  file_attachments:
+    excluded_extensions: 'aif art avi bmp gif ico mov oga ogv png psd ra ram rgb flv'
+    number_indexed: 0
+    number_first_bytes: '1 MB'
+    max_filesize: '0'
+    excluded_private: 1
+    excluded_mimes: 'audio/x-aiff image/x-jg video/x-msvideo image/x-ms-bmp image/gif image/vnd.microsoft.icon video/quicktime audio/ogg video/ogg image/png image/x-photoshop audio/x-realaudio audio/x-pn-realaudio image/x-rgb video/x-flv'
+  highlight:
+    highlight: always
+    highlight_partial: false
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  html_filter:
+    all_fields: false
+    fields:
+      - title
+      - type
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+  type_boost:
+    boosts:
+      'entity:node':
+        datasource_boost: !!float 1
+        bundle_boosts:
+          case_law: !!float 2
+          case_study: !!float 3
+          course: !!float 5
+          document: !!float 8
+          expert: 0.1
+          focal_point: 0.1
+          learning_material: 0.3
+          national_legislation: !!float 0
+          resource: 0.1
+          support_request: !!float 0
+          treaty: !!float 3
+          unea_resolution: 0.3
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: solr

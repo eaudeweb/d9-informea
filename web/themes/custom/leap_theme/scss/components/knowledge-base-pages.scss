@@ -1,0 +1,103 @@
+.knowledge-base-alphabetically,
+#block-views-block-documents-block-legislative-guidance,
+#block-views-block-documents-block-reports,
+#block-views-block-courses-block-1{
+  border-bottom: unset;
+
+  input.form-autocomplete {
+    border: 1px solid #dddddd;
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+  .view-filters .form-row {
+    align-items: flex-end !important;
+    width: 100%;
+    flex-wrap: wrap;
+    > div {
+      width: 23%;
+    }
+
+    .chosen-container {
+      width: 100% !important;
+    }
+  }
+  position: relative;
+  .view-filters {
+    border-bottom: unset;
+  }
+}
+
+.toolkits {
+  display: flex;
+  width: 100%;
+
+  span {
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: center;
+    color: $primary-blue;
+    font-size: 17px;
+    min-height: 100px;
+    align-items: center;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .row {
+    display: block;
+    width: 45%;
+
+    @media (min-width: 768px) {
+      &:first-child {
+        margin-right: 15px;
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-left: 15px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .col-sm-10,
+  .col-10, .col {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      max-width: 400px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    img {
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    .row {
+      width: auto;
+    }
+  }
+  @media (max-width: 605px) {
+    //flex-direction: column;
+
+    .row {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

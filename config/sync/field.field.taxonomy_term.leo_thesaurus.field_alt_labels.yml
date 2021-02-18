@@ -1,0 +1,19 @@
+uuid: 8e4af826-d6b5-498d-8b20-db8d72482ffc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_alt_labels
+    - taxonomy.vocabulary.leo_thesaurus
+id: taxonomy_term.leo_thesaurus.field_alt_labels
+field_name: field_alt_labels
+entity_type: taxonomy_term
+bundle: leo_thesaurus
+label: 'Alternative labels'
+description: 'A list of synonyms.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,13 @@
+uuid: 642695a3-da27-4ea3-99dd-47bbf08380d8
+langcode: en
+status: true
+dependencies: {  }
+title: Institutions
+id: institutions
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/Institutions'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

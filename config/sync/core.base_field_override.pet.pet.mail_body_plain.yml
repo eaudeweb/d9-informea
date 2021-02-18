@@ -1,0 +1,18 @@
+uuid: 992f0c5c-1587-4ac9-ae2d-c2de25a6c12d
+langcode: en
+status: true
+dependencies:
+  module:
+    - pet
+id: pet.pet.mail_body_plain
+field_name: mail_body_plain
+entity_type: pet
+bundle: pet
+label: 'Mail Body Plain'
+description: 'The plain text body of the email template. May include tokens of any token type specified below. If left empty Mime Mail will use drupal_html_to_text() to create a plain text version of the email.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

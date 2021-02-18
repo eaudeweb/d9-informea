@@ -1,0 +1,8 @@
+uuid: 047b2a8e-610e-45e5-a3af-0a5b2a1e5a2b
+langcode: en
+status: true
+dependencies: {  }
+name: Indicators
+vid: indicators
+description: ''
+weight: 0

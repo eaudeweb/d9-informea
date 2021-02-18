@@ -1,0 +1,38 @@
+uuid: 89063951-a5ac-48e8-a3ff-4e675c61e0a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.countries.field_flag
+    - field.field.taxonomy_term.countries.field_iso2
+    - field.field.taxonomy_term.countries.field_iso3
+    - field.field.taxonomy_term.countries.field_official_name
+    - field.field.taxonomy_term.countries.field_region
+    - field.field.taxonomy_term.countries.field_un_member
+    - taxonomy.vocabulary.countries
+  module:
+    - text
+id: taxonomy_term.countries.default
+targetEntityType: taxonomy_term
+bundle: countries
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_flag: true
+  field_iso2: true
+  field_iso3: true
+  field_official_name: true
+  field_region: true
+  field_un_member: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,39 @@
+uuid: 2245c1b6-48b7-451c-ad2a-3d3501d1e759
+langcode: en
+status: false
+dependencies:
+  config:
+    - block_content.type.tab_information
+    - core.entity_view_mode.block_content.teaser
+    - field.field.block_content.tab_information.body
+    - field.field.block_content.tab_information.field_informations
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.tab_information.teaser
+targetEntityType: block_content
+bundle: tab_information
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_informations:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

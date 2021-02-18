@@ -1,0 +1,19 @@
+<div class="homepage-information">
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            {% for k, item in items %}
+                <a href="#nav-paragraph-{{ k }}" class="nav-item nav-link {% if not k %}active{% endif %}" id="nav-paragraph-{{ k }}-tab"
+                   aria-controls="nav-paragraph-{{ k }}" role="tab" data-toggle="tab" aria-selected="true">
+                    {{ item.content['#paragraph'].field_title.value }}
+                </a>
+            {% endfor %}
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        {% for k, item in items %}
+            <div class="tab-pane fade show {% if not k %}active {% endif %}" id="nav-paragraph-{{ k }}" role="tabpanel" aria-labelledby="nav-paragraph-{{ k }}-tab">
+                {{ item.content['#paragraph'].field_description.value | raw }}
+            </div>
+        {% endfor %}
+    </div>
+</div>

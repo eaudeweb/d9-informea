@@ -1,0 +1,19 @@
+uuid: 63dd222f-4b2b-43f2-98b1-3772d011b69c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_territorials
+    - node.type.national_legislation
+id: node.national_legislation.field_territorials
+field_name: field_territorials
+entity_type: node
+bundle: national_legislation
+label: 'Territorial sub-division'
+description: 'Where relevant state the specific sub-division of the country (eg Scotland, Ireland, Wales for UK; California, Texas etc for United States).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

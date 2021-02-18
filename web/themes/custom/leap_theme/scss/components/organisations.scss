@@ -1,0 +1,69 @@
+.expert-database,
+#block-views-block-organisations-partners,
+#block-views-block-organisations-academic-member,
+#block-views-block-organisations-legal-officers-member,
+#block-views-block-organisations-donors {
+  .view-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .views-row {
+    max-width: 210px;
+    flex: 25%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    &:hover {
+      -webkit-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.57);
+      -moz-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.57);
+      box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.57);
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .views-field.views-field-name {
+    border-top: thin dashed #bcbcbc;
+    padding: 5px;
+  }
+  .views-field.views-field-field-logo {
+    background: #ffffff;
+    margin-bottom: 15px;
+    width: 208px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      padding: 20px;
+      width: 100%;
+      max-height: 180px;
+      object-fit: contain;
+    }
+  }
+}
+
+.expert-database{
+  img {
+    max-width: 100px;
+  }
+
+  .views-field.views-field-field-logo {
+    margin-bottom: 0;
+    height: unset;
+  }
+}
+
+.view-display-id-block_1 {
+  .table thead th {
+    border-top: none;
+    border-bottom: none;
+    background: #757575;
+  }
+}

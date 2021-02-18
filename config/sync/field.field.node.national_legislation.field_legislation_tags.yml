@@ -1,0 +1,29 @@
+uuid: abbd449c-1a61-4d8a-9516-b5de444cc403
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legislation_tags
+    - node.type.national_legislation
+    - taxonomy.vocabulary.legislation_tags
+id: node.national_legislation.field_legislation_tags
+field_name: field_legislation_tags
+entity_type: node
+bundle: national_legislation
+label: 'Legislation tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      legislation_tags: legislation_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

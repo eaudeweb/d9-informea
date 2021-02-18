@@ -1,0 +1,29 @@
+uuid: d6cb6f25-c6c6-4729-a7e2-1721ecf8e3f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_topics
+    - taxonomy.vocabulary.leo_thesaurus
+    - taxonomy.vocabulary.topics
+id: taxonomy_term.leo_thesaurus.field_topics
+field_name: field_topics
+entity_type: taxonomy_term
+bundle: leo_thesaurus
+label: Topics
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topics: topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

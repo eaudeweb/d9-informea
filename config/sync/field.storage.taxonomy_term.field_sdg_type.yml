@@ -1,0 +1,29 @@
+uuid: 0023c720-1b90-499a-a1a0-04e78e54e085
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+_core:
+  default_config_hash: gt6FTTcQEceO1rsjdvafxzX1mufO0TiHKF1sAOuNsr8
+id: taxonomy_term.field_sdg_type
+field_name: field_sdg_type
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: goal
+      label: Goal
+    -
+      value: target
+      label: Target
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

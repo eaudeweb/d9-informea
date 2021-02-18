@@ -1,0 +1,18 @@
+.ratification-status {
+  table tr th, .table tr th {
+    color: #000;
+    background: #fff;
+    border-bottom: 2px solid #ddd;
+  }
+
+  table tbody tr td, .table tbody tr td {
+    border: transparent;
+    border-bottom: 1px solid #ddd;
+    color: #333333;
+  }
+
+  table tbody tr:nth-child(odd), .table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+
+}

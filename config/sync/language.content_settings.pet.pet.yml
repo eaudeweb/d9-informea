@@ -1,0 +1,17 @@
+uuid: 2cb7adfd-caad-49f4-9375-2b169d129851
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_translation
+    - pet
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: pet.pet
+target_entity_type_id: pet
+target_bundle: pet
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,35 @@
+uuid: 72c90c0f-7464-4ec1-8065-72c47cc8895b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+    - system
+  theme:
+    - informea
+id: informea_mainnavigation
+theme: informea
+region: sidebar_first
+weight: -49
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Side Menu: About'
+  provider: menu_block
+  label_display: '0'
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 1
+  expand: false
+  parent: 'main:menu_link_content:bf236e1b-ac52-4608-b689-8b75fa6cf980'
+  suggestion: main
+visibility:
+  request_path:
+    id: request_path
+    pages: "/about/*\r\n/about"
+    negate: false
+    context_mapping: {  }

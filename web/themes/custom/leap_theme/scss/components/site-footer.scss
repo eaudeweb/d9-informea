@@ -1,0 +1,141 @@
+/**
+ * @file
+ * Footer Styling.
+ */
+
+.site-footer {
+  background-color: $blue-cyan;
+  color: #ffffff;
+  padding: 100px 0 $spacer 0;
+  .layout-container {
+    padding: 0 $spacer;
+  }
+
+  .content a {
+    color: #ffffff;
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+
+/* Footer Top Styling. */
+
+.site-footer__top .content {
+    margin-top: 0;
+}
+
+
+/* Footer Bottom Styling. */
+.site-footer__bottom {
+  border-top: none;
+}
+
+.site-footer__bottom .region {
+  margin-top: 10px;
+}
+
+.site-footer__bottom .block {
+    margin: ($spacer / 2) 0;
+}
+
+.site-footer__bottom .content {
+    padding: ($spacer / 2) 0;
+    margin-top: 0;
+}
+
+.site-footer__bottom .block-social-media-links-block {
+  margin-left: auto;
+
+  .content {
+    padding: 0;
+  }
+
+  .fa {
+    font-size: 1.5em;
+  }
+
+  .fa-linkedin:before {
+    content: fa-content($fa-var-linkedin-in);
+  }
+}
+
+.menu--footer {
+  display: flex;
+
+  .copyright,
+  .nav-link {
+    color: #ffffff;
+  }
+
+  .copyright {
+    font-size: 1em;
+  }
+
+  .nav-link {
+    padding: 0 .2em;
+
+    &:before {
+      content: '|';
+      margin-right: .2em;
+    }
+  }
+}
+
+.unep-eu-logo {
+  display: flex;
+  align-items: end;
+  width: 100%;
+
+  a.brand.brand-hover.brand-eu {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: flex-end;
+
+    .row {
+      background: #ffffff;
+      color: #000;
+      padding: 0.5em;
+      -webkit-box-shadow: 0px 0px 15px -3px rgba(99,99,99,0.34);
+      -moz-box-shadow: 0px 0px 15px -3px rgba(99,99,99,0.34);
+      box-shadow: 0px 0px 15px -3px rgba(99,99,99,0.34);
+
+      @media (max-width: 305px) {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+    span {
+      display: block;
+      max-width: 220px;
+      font-size: 14px;
+      padding-left: 15px;
+      line-height: 16px;
+    }
+  }
+
+  &:last-child {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .unep-eu-logo {
+    flex-direction: column;
+    align-items: center;
+
+    a.brand.brand-hover.brand-eu {
+      justify-content: center;
+    }
+  }
+}
+
+#block-masquerade {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}

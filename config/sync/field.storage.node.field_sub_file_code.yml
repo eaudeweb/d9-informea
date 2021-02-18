@@ -1,0 +1,69 @@
+uuid: 654a6875-5649-4579-af62-b57295c7ef94
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_sub_file_code
+field_name: field_sub_file_code
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: AG
+      label: Agriculture
+    -
+      value: AN
+      label: Livestock
+    -
+      value: AT
+      label: 'Air & Atmosphere'
+    -
+      value: EG
+      label: Energy
+    -
+      value: EN
+      label: 'Environment gen.'
+    -
+      value: FD
+      label: 'Food and nutrition'
+    -
+      value: FI
+      label: Fisheris
+    -
+      value: FO
+      label: Forestry
+    -
+      value: LA
+      label: 'Land & soil'
+    -
+      value: MR
+      label: 'Mineral resources'
+    -
+      value: PL
+      label: 'Cultivated plants'
+    -
+      value: SE
+      label: Sea
+    -
+      value: WA
+      label: Water
+    -
+      value: WB
+      label: 'Wild species & ecosystems'
+    -
+      value: WT
+      label: 'Waste & hazardous substances'
+    -
+      value: GE
+      label: General
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

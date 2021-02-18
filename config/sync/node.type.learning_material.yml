@@ -1,0 +1,18 @@
+uuid: 635bf589-9425-449f-8400-52b2347666fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'E-learning material'
+type: learning_material
+description: 'Add e-learning materials related to LEAP project (documents, links to other platform resources, etc.)'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

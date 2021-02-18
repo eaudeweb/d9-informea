@@ -1,0 +1,71 @@
+{#
+/**
+ * @file
+ * Display Suite fluid 2 column stacked template.
+ *
+ * Available variables:
+ * - outer_wrapper: outer wrapper element
+ * - header_wrapper: wrapper element around header region
+ * - left_wrapper: wrapper element around left region
+ * - right_wrapper: wrapper element around right region
+ * - footer_wrapper: wrapper element around footer region
+ * - attributes: layout attributes
+ * - header_attributes: attributes for header region
+ * - left_attributes: attributes for left region
+ * - right_attributes: attributes for right region
+ * - footer_attributes: attributes for footer region
+ * - header: content of header region
+ * - left: content of left region
+ * - right: content of right region
+ * - footer: content of footer region
+ */
+#}
+{{ attach_library('bootstrap_barrio/node') }}
+
+{% set left = left|render %}
+{% set right = right|render %}
+{% set has_sidebar = '' %}
+
+{% if content.field_sidebar_content['#items'] is not empty %}
+  {% set has_sidebar = has_sidebar ~ ' with-sidebar-right' %}
+{% endif %}
+
+{%
+  set classes = [
+  'node',
+  'node--type-' ~ node.bundle|clean_class,
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  'clearfix',
+  has_sidebar,
+  'complex-page',
+]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+  {{ title_suffix.contextual_links }}
+
+  {% if header %}
+  <{{ header_wrapper }}{{ header_attributes.addClass('group-header') }}>
+    {{ header|without('field_image_header') }}
+  </{{ header_wrapper }}>
+  {% endif %}
+
+  <div class="row">
+    {% if left %}
+    <div class="{% if has_sidebar and right|render|striptags|trim is not empty%}col-9 {% endif %} group-left ">
+      {{ left }}
+    </div>
+    {% endif %}
+
+{#    If right sidebar contain only Complex Block: Information wich exists but has no value to display then hide sidebar
+and display left column with full width #}
+    {% if right and right|render|striptags|trim is not empty %}
+    <div class="col-3 group-right">
+      <div class="container">{{ right }}</div>
+    </div>
+    {% endif %}
+  </div>
+</article>

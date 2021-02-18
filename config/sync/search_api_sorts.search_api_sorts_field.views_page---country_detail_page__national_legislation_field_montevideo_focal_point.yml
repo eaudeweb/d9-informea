@@ -1,0 +1,11 @@
+uuid: 96fc2a8c-2b33-4981-9261-c8061960d2b6
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---country_detail_page__national_legislation_field_montevideo_focal_point
+display_id: views_page---country_detail_page__national_legislation
+field_identifier: field_montevideo_focal_point
+default_sort: false
+default_order: asc
+label: 'Montevideo focal point'
+weight: 0

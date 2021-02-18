@@ -1,0 +1,10 @@
+uuid: fe7e92c9-e62f-4195-9217-74e1413a805c
+langcode: en
+status: true
+dependencies: {  }
+id: meeting_informative_section
+label: 'Meeting informative section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

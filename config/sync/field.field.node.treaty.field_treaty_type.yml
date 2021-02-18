@@ -1,0 +1,21 @@
+uuid: b4188b68-e12b-4b91-8356-1d968ce7c257
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_treaty_type
+    - node.type.treaty
+  module:
+    - options
+id: node.treaty.field_treaty_type
+field_name: field_treaty_type
+entity_type: node
+bundle: treaty
+label: 'Treaty type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,42 @@
+uuid: 869543f7-4359-4080-a708-2b089030c37a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leo_tags
+    - node.type.course
+  module:
+    - powertagging
+id: node.course.field_leo_tags
+field_name: field_leo_tags
+entity_type: node
+bundle: course
+label: Keywords
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  include_in_tag_glossary: 0
+  automatically_tag_new_entities: 1
+  custom_freeterms: 1
+  use_shadow_concepts: 0
+  browse_concepts_charttypes:
+    0: 0
+    spider: 0
+    tree: 0
+  fields:
+    title: title
+  default_tags_field: ''
+  limits:
+    concepts_per_extraction: null
+    concepts_threshold: null
+    freeterms_per_extraction: null
+    freeterms_threshold: null
+  file_upload:
+    max_file_size: 2097152
+    max_file_count: 5
+  ac_add_matching_label: 0
+  ac_add_context: 0
+field_type: powertagging_tags

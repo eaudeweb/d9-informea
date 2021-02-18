@@ -1,0 +1,21 @@
+uuid: ad2c4f35-2d1a-46ab-8c68-1f2bae164dab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source_language
+    - node.type.national_legislation
+  module:
+    - languagefield
+id: node.national_legislation.field_source_language
+field_name: field_source_language
+entity_type: node
+bundle: national_legislation
+label: 'Source language'
+description: 'Language of this record (should be one of UN languages or have an abstract in English if not)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: language_field

@@ -1,0 +1,8 @@
+uuid: 87cceae8-66ac-4cad-a711-9964b8986bfb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Legislation tags'
+vid: legislation_tags
+description: ''
+weight: 0

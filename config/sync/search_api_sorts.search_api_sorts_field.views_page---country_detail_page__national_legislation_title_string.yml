@@ -1,0 +1,11 @@
+uuid: f15163c2-8ce4-477d-ac2e-6f3140a5f284
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---country_detail_page__national_legislation_title_string
+display_id: views_page---country_detail_page__national_legislation
+field_identifier: title_string
+default_sort: false
+default_order: asc
+label: Title
+weight: 0

@@ -1,0 +1,611 @@
+uuid: 970e6b08-92b7-49f6-9ae4-cf4f76cf6f43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.national_legislation.body
+    - field.field.node.national_legislation.field_abstract
+    - field.field.node.national_legislation.field_alternative_record_id
+    - field.field.node.national_legislation.field_amended_by
+    - field.field.node.national_legislation.field_amends
+    - field.field.node.national_legislation.field_attached_files
+    - field.field.node.national_legislation.field_available_website
+    - field.field.node.national_legislation.field_country
+    - field.field.node.national_legislation.field_data_source
+    - field.field.node.national_legislation.field_date_consolidation
+    - field.field.node.national_legislation.field_date_of_text
+    - field.field.node.national_legislation.field_date_original_text
+    - field.field.node.national_legislation.field_date_start
+    - field.field.node.national_legislation.field_ecolex_legislation_status
+    - field.field.node.national_legislation.field_ecolex_url
+    - field.field.node.national_legislation.field_entry_into_force_notes
+    - field.field.node.national_legislation.field_faolex_id
+    - field.field.node.national_legislation.field_faolex_organization
+    - field.field.node.national_legislation.field_faolex_url
+    - field.field.node.national_legislation.field_implemented_by
+    - field.field.node.national_legislation.field_implements
+    - field.field.node.national_legislation.field_internet_reference
+    - field.field.node.national_legislation.field_keywords
+    - field.field.node.national_legislation.field_last_update
+    - field.field.node.national_legislation.field_legislation_amendment
+    - field.field.node.national_legislation.field_legislation_areas
+    - field.field.node.national_legislation.field_legislation_tags
+    - field.field.node.national_legislation.field_leo_tags
+    - field.field.node.national_legislation.field_link_url
+    - field.field.node.national_legislation.field_long_title_of_text
+    - field.field.node.national_legislation.field_meas
+    - field.field.node.national_legislation.field_notes
+    - field.field.node.national_legislation.field_original_id
+    - field.field.node.national_legislation.field_original_title_of_text
+    - field.field.node.national_legislation.field_plastic_toolkit_tags
+    - field.field.node.national_legislation.field_publication_reference
+    - field.field.node.national_legislation.field_regulatory_approach
+    - field.field.node.national_legislation.field_repealed
+    - field.field.node.national_legislation.field_repealed_by
+    - field.field.node.national_legislation.field_repeals
+    - field.field.node.national_legislation.field_serial_imprint
+    - field.field.node.national_legislation.field_source_language
+    - field.field.node.national_legislation.field_sub_file_code
+    - field.field.node.national_legislation.field_tags
+    - field.field.node.national_legislation.field_territorials
+    - field.field.node.national_legislation.field_title_abbreviation
+    - field.field.node.national_legislation.field_toolkits
+    - field.field.node.national_legislation.field_topics
+    - field.field.node.national_legislation.field_type_of_text
+    - node.type.national_legislation
+  module:
+    - autocomplete_deluxe
+    - datetime
+    - field_group
+    - file
+    - languagefield
+    - link
+    - path
+    - powertagging
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_overview
+        - group_project_information
+        - group_internal_information
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_overview:
+      children:
+        - title
+        - field_original_title_of_text
+        - field_source_language
+        - field_country
+        - field_territorials
+        - field_data_source
+        - field_toolkits
+        - field_topics
+        - field_regulatory_approach
+        - field_type_of_text
+        - body
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Overview
+    group_internal_information:
+      children:
+        - field_faolex_id
+        - field_alternative_record_id
+        - field_serial_imprint
+        - field_tags
+        - field_legislation_tags
+        - field_date_of_text
+        - field_date_start
+        - field_date_consolidation
+        - field_entry_into_force_notes
+        - field_legislation_areas
+        - field_repealed
+        - field_long_title_of_text
+        - field_sub_file_code
+        - field_title_abbreviation
+        - field_internet_reference
+        - field_link_url
+        - field_ecolex_url
+        - field_faolex_url
+        - field_faolex_organization
+      parent_name: group_tabs
+      weight: 24
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Internal Information'
+    group_project_information:
+      children:
+        - field_attached_files
+        - field_date_original_text
+        - field_last_update
+        - field_legislation_amendment
+        - field_notes
+        - field_abstract
+        - field_ecolex_legislation_status
+        - field_original_id
+        - field_publication_reference
+        - field_amends
+        - field_amended_by
+        - field_implements
+        - field_implemented_by
+        - field_repeals
+        - field_repealed_by
+        - field_meas
+        - field_leo_tags
+        - field_plastic_toolkit_tags
+        - field_available_website
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: closed
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Legislation information'
+id: node.national_legislation.default
+targetEntityType: node
+bundle: national_legislation
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 31
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_abstract:
+    weight: 32
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_alternative_record_id:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_amended_by:
+    weight: 37
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_amends:
+    weight: 36
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      match_limit: 10
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_attached_files:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_available_website:
+    weight: 45
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_country:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_data_source:
+    weight: 26
+    settings:
+      limit: '10'
+      min_length: '0'
+      delimiter: ''
+      not_found_message_allow: '1'
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: '1'
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      match_operator: CONTAINS
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      size: 60
+      selection_handler: default
+    region: content
+    type: autocomplete_deluxe
+    third_party_settings: {  }
+  field_date_consolidation:
+    type: datetime_default
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_of_text:
+    type: datetime_default
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_original_text:
+    type: datetime_default
+    weight: 28
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_start:
+    type: datetime_default
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ecolex_legislation_status:
+    weight: 33
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ecolex_url:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_entry_into_force_notes:
+    type: string_textarea
+    weight: 18
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_faolex_id:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_faolex_organization:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_faolex_url:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_implemented_by:
+    weight: 39
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_implements:
+    weight: 38
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      match_limit: 10
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_internet_reference:
+    weight: 24
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_last_update:
+    weight: 29
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_legislation_amendment:
+    weight: 30
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_legislation_areas:
+    type: entity_reference_autocomplete
+    weight: 19
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_legislation_tags:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_leo_tags:
+    weight: 43
+    settings: {  }
+    third_party_settings: {  }
+    type: powertagging_tags_default
+    region: content
+  field_link_url:
+    weight: 25
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_long_title_of_text:
+    type: string_textarea
+    weight: 21
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_meas:
+    weight: 42
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_notes:
+    weight: 31
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_original_id:
+    weight: 34
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_original_title_of_text:
+    weight: 22
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_plastic_toolkit_tags:
+    weight: 44
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_publication_reference:
+    weight: 35
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_regulatory_approach:
+    weight: 29
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_repealed:
+    type: options_select
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_repealed_by:
+    weight: 41
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_repeals:
+    weight: 40
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      match_limit: 10
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_serial_imprint:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_source_language:
+    weight: 23
+    settings:
+      format:
+        name: name
+    third_party_settings: {  }
+    type: languagefield_select
+    region: content
+  field_sub_file_code:
+    type: options_select
+    weight: 22
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tags:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_territorials:
+    weight: 25
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title_abbreviation:
+    type: string_textfield
+    weight: 23
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_toolkits:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_topics:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_type_of_text:
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 21
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_keywords: true
+  langcode: true

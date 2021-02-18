@@ -1,0 +1,10 @@
+uuid: 476628e5-3d2b-4f28-9b46-19a4b7652e57
+langcode: en
+status: true
+dependencies: {  }
+id: legal_officer
+label: 'Legal Officer'
+weight: -2
+is_admin: null
+permissions:
+  - 'edit terms in organisations'

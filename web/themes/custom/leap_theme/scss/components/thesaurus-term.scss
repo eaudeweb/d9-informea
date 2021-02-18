@@ -1,0 +1,318 @@
+.thesaurus-term {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  .topics {
+    float: right;
+    font-weight: 300;
+    li {
+      margin-top: 0.3em;
+      padding: 0.2em 0.6em 0.1em;
+      text-align: center;
+      margin-left: 0.3em;
+      list-style: none;
+      a {
+        display: block;
+        color: #fff;
+        padding: 0 0.5rem;
+        cursor: none;
+        pointer-events: none;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .definitions, .hierarchy {
+    .title {
+      padding: 5px 3em 0.8em 0;
+      display: inline-block;
+      background-color: transparent;
+      border-bottom: 1px solid #b7b7b7;
+      margin-bottom: 1.5em;
+      margin-top: 0;
+      font-size: 0.9em;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+  .definitions:not(.leo-thesaurus) {
+    .field__items {
+      flex-direction: column;
+    }
+    .field__item:not(:first-child) {
+      &:before {
+        content: '';
+        width: 100%;
+        display: block;
+        margin: 1.5em 0;
+        border-top: 1px dashed #ddd;
+      }
+    }
+  }
+  .hierarchy {
+    margin-top: 1rem;
+  }
+  .related-terms, .field__items, .informea-url {
+    display: flex;
+  }
+  .synonyms .field__items, .related-terms .field--name-field-related-leo-terms {
+    padding: 0 0.3rem;
+  }
+  .synonyms .field__item, .related-terms .field__item {
+    margin-right: 5px;
+    &:not(:last-child):after{
+      content: ',';
+      width: 5px;
+    }
+  }
+
+  .synonyms {
+    display: inline-block;
+
+    * {
+      display: inline
+    }
+  }
+  .children a, .parents a, .related-terms a {
+    color: #0080d5;
+    text-transform: lowercase;
+  }
+  .informea-url, .informea-url a {
+    color: #8F8F8F;
+  }
+  .informea-url a {
+    padding: 0 0.1rem;
+  }
+  .children a, .parents a {
+    margin-right: 5px;
+    &:not(:last-child):after{
+      content: ',';
+    }
+  }
+  .explore-content {
+    > span {
+      align-items: center;
+      color: #2B2B2B;
+      display: flex;
+      font-size: 23px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      &:before, &:after {
+        content: '';
+        display: block;
+        flex: 1;
+        border-top: 1px solid #ddd;
+        margin: 0 4em;
+        margin-right: 2em;
+      }
+    }
+  }
+  .thesaurus-term-explore-content {
+    b {
+      text-transform: lowercase;
+    }
+    a {
+      color: #0080d5;
+      text-transform: lowercase;
+    }
+    ul {
+      background-position: left center;
+      padding-left: 0;
+      padding-right: 0;
+      background-repeat: no-repeat;
+      background-size: 3em 100%;
+      margin-top: 1em;
+      padding-top: 5px;
+    }
+    li {
+      font-size: 1.2em;
+      margin-top: 1em;
+      padding-top: 5px;
+      list-style: none;
+      a {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      a:before {
+        content: '.';
+        color: #FFF;
+        width: 55px;
+        height: 50px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+      }
+      a:before {
+        margin-right: 15px;
+      }
+      a.unea_resolution:before,
+      a.document:before {
+        background-image: url(../images/icons/icon-multilateral-documents.svg);
+      }
+      a.learning_material:before {
+        background-image: url(../images/icons/icon-learning-material.svg);
+      }
+      a.case_study:before {
+        background-image: url(../images/icons/icon-multilateral-treaties.svg);
+      }
+      a.national_legislation:before {
+        background-image: url(../images/icons/icon-national-legislations.svg);
+      }
+      a.case_law:before {
+        background-image: url(../images/icons/icon-case-law.svg);
+      }
+
+      a.course:before {
+        background-image: url(../images/icons/icon-course.svg);
+      }
+      a.resource:before {
+        background-image: url(../images/icons/icon-resource.svg);
+      }
+      a.expert:before {
+        background-image: url(../images/icons/icon-expert.svg);
+      }
+      a.treaty:before {
+        background-image: url(../images/icons/icon-treaty.svg);
+      }
+      a.support_request:before {
+        background-image: url(../images/icons/icon-support-request.svg);
+      }
+    }
+  }
+  li.biological-diversity a {
+    background: #90BC2F;
+  }
+  li.chemicals-and-waste a {
+    background: #E03D0B;
+  }
+  li.land-and-agriculture a {
+    background: #DD920E;
+  }
+  li.environmental-governance-and-rights a {
+    background:#448935;
+  }
+  li.climate-change-and-the-atmosphere a {
+    background: #31A0BA;
+  }
+  li.marine-and-freshwater a {
+    background: #044170;
+  }
+  li.trade-and-investment a {
+    background: #784aba;
+  }
+  li.other a {
+    background: grey;
+  }
+}
+
+#views-exposed-form-thesaurus-knowledge-alphabetically {
+//  fieldset {
+//    padding: 0;
+//    margin: 1rem 0;
+//    border: 0;
+//    width: 45%;
+//  }
+//  legend {
+//    padding: 10px 15px;
+//    border: 1px solid #dedede;
+//    cursor: pointer;
+//    margin-bottom: 0;
+//  }
+//
+  #edit-topics {
+    padding: 1rem;
+    border: 1px solid #dedede;
+  }
+  .form-item_inner {
+    label {
+      margin-left: 26px;
+    }
+  }
+  button:not(:first-child) {
+    display: none;
+  }
+}
+.knowledge-base {
+  li.list-group-item {
+    border: none;
+    padding-top: 0;
+  }
+  .views-row {
+    display: flex;
+  }
+}
+.knowledge-base-alphabetically {
+  .view-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+
+.view-glossary.view-id-glossary {
+  .views-view-grid {
+    padding-left: 0;
+
+    .views-row {
+      margin-bottom: 30px;
+
+      .col:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.thesaurus-column {
+  margin-bottom: 15px;
+}
+
+.view-content > .views-view-unformatted {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.node__content {
+  margin-top: 0;
+}
+
+.node--view-mode-full {
+  margin-bottom: 45px;
+}
+
+
+.types {
+  display: flex;
+  align-items: baseline;
+  &> div:not(.field__items), > div.field__items > div, > span{
+    background: #DCDCDC;
+    padding: 5px 10px;
+    display: inline-block;
+    font-family: helvetica;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 5px 5px 5px 0;
+  }
+}

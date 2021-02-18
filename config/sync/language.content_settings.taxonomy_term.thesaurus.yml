@@ -1,0 +1,11 @@
+uuid: 62f9d524-8d06-4870-9280-92711361094c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.thesaurus
+id: taxonomy_term.thesaurus
+target_entity_type_id: taxonomy_term
+target_bundle: thesaurus
+default_langcode: site_default
+language_alterable: false

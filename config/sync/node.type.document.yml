@@ -1,0 +1,17 @@
+uuid: 56d4c648-ea9f-432f-b260-65f0bc5f7ee7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Document
+type: document
+description: 'Arbitrary documents'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,18 @@
+uuid: 6d761966-140a-4bd4-a1f4-33ee9686f55c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sdgs
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: xDdQP-142hens7AJvdCW5UsNX2-yN8OmJED1rcJpvE0
+id: taxonomy_term.sdgs
+target_entity_type_id: taxonomy_term
+target_bundle: sdgs
+default_langcode: site_default
+language_alterable: false

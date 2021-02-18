@@ -1,0 +1,124 @@
+uuid: f0fb0c5c-c3de-4d1b-9fb9-6edecc8cc671
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.organisations.field_academic_member
+    - field.field.taxonomy_term.organisations.field_data_source
+    - field.field.taxonomy_term.organisations.field_donor
+    - field.field.taxonomy_term.organisations.field_legal_officers_member
+    - field.field.taxonomy_term.organisations.field_logo
+    - field.field.taxonomy_term.organisations.field_montevideo_partners
+    - field.field.taxonomy_term.organisations.field_partner
+    - field.field.taxonomy_term.organisations.field_promote
+    - field.field.taxonomy_term.organisations.field_topics
+    - field.field.taxonomy_term.organisations.field_url
+    - taxonomy.vocabulary.organisations
+  module:
+    - link
+    - svg_image
+    - text
+id: taxonomy_term.organisations.teaser
+targetEntityType: taxonomy_term
+bundle: organisations
+mode: teaser
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_academic_member:
+    weight: 7
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_donor:
+    weight: 9
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_legal_officers_member:
+    weight: 8
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_logo:
+    weight: 1
+    label: hidden
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_montevideo_partners:
+    weight: 11
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_partner:
+    weight: 10
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_topics:
+    weight: 6
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_url:
+    weight: 3
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_data_source: true
+  field_promote: true
+  langcode: true
+  search_api_excerpt: true

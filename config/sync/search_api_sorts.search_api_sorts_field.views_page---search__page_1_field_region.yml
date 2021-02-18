@@ -1,0 +1,11 @@
+uuid: 00e1c3fb-4f31-4145-91ee-3a03cba22f21
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search__page_1_field_region
+display_id: views_page---search__page_1
+field_identifier: field_region
+default_sort: true
+default_order: asc
+label: 'Aggregated region'
+weight: 0

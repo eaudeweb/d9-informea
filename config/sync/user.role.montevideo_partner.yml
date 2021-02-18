@@ -1,0 +1,15 @@
+uuid: 6f63f4b8-71b0-46b7-8858-137c794b033f
+langcode: en
+status: true
+dependencies: {  }
+id: montevideo_partner
+label: 'Montevideo Partner'
+weight: -4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access own unpublished support requests'
+  - 'access unpublished support requests'
+  - 'delete own support_request content'
+  - 'edit own support_request content'
+  - 'view own unpublished content'

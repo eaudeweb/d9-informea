@@ -1,0 +1,14 @@
+uuid: 00b0a42b-1aeb-44ed-8161-912e60d02b71
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.system
+  module:
+    - user
+id: user_add_role_action.system
+label: 'Add the System role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: system

@@ -1,0 +1,10 @@
+uuid: 1b3ed3df-9673-4020-a414-9fa9455638f7
+langcode: en
+status: true
+dependencies: {  }
+id: meeting_document
+label: 'Meeting Document'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

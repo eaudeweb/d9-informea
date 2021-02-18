@@ -1,0 +1,29 @@
+uuid: c10786fa-9104-4cdf-b470-14ae70344b8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_of_text
+    - node.type.national_legislation
+    - taxonomy.vocabulary.types_of_text
+id: node.national_legislation.field_type_of_text
+field_name: field_type_of_text
+entity_type: node
+bundle: national_legislation
+label: 'Type of law'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      types_of_text: types_of_text
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

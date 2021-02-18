@@ -1,0 +1,11 @@
+uuid: 7885c32f-f051-4e88-80f5-5583a786719e
+langcode: en
+status: true
+dependencies: {  }
+id: views_page---country_detail_page__national_legislation_field_date_original_text
+display_id: views_page---country_detail_page__national_legislation
+field_identifier: field_date_original_text
+default_sort: true
+default_order: asc
+label: 'Date of original text'
+weight: 0

@@ -1,0 +1,145 @@
+// @see https://stackoverflow.com/questions/31329177/bootstrap-sass-variable-override-challenge
+%scope {
+  @import "../node_modules/bootstrap/scss/functions";
+  @import "../node_modules/bootstrap/scss/variables";
+
+
+  /* ==========================================================================
+     Custom theme variables
+     ========================================================================== */
+
+  /* ==========================================================================
+   Bootstrap overrides
+   Remember to add the !global flag so the overridden Bootstrap variables are exposed
+   ========================================================================== */
+//  $fs-filter-block-item: 1.5rem !global;
+  /* VARIABLES */
+
+  $container-max-widths: (
+          sm: 540px,
+          md: 720px,
+          lg: 960px,
+          xl: 1350px
+  ) !global;
+
+  // colors
+  $black: #212529 !global;
+  $primary-gray-200: #656565 !global;
+  $primary-shade: #00548a !global;
+  $secondary-shade: #57ac53 !global;
+  $primary-light: lighten($primary-shade, 17%) !global;
+  $primary-dark: darken($primary-shade, 12%) !global;
+  $accent-shade: $secondary-shade !global;
+  $accent-light: lighten($accent-shade, 12%) !global;
+  $accent-dark: darken($accent-shade, 12%) !global;
+  // Reassign color vars to semantic color scheme
+  $primary-blue: #00548a !global;
+  $blue-cyan: #00abf1 !global;
+  $red: #dc3545 !global;
+  $yellow: #ffc107 !global;
+  $green: #28a745 !global;
+  $cyan: #17a2b8 !global;
+  $gray-100: #f8f9fa !global;
+  $gray-300: #303030 !global;
+  $gray-800: #343a40 !global;
+  $gray-999: #999999 !global;
+  $gray-disabled: #c2c2c2 !global;
+  $theme-colors: ( primary: $primary-shade, secondary: $secondary-shade, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800) !global;
+  $brand-primary: $accent-shade !global;
+  $brand-success: $green !global;
+  $brand-info: $teal !global;
+  $brand-warning: $orange !global;
+  $brand-danger: $red !global;
+  $brand-inverse: $secondary-shade !global;
+
+  // @todo: remove
+  $images-path:               '../images/' !global;
+  $mobile:          "screen and (max-width: #{$grid-breakpoints(xs)})" !global;
+  $tablet:          "screen and (min-width: #{$grid-breakpoints(sm)})" !global;
+  $normal:          "screen and (min-width: #{$grid-breakpoints(md)})" !global;
+  $wide:            "screen and (min-width: #{$grid-breakpoints(lg)})" !global;
+
+  $gpw-primary: #aac513 !global;
+  $gpw-secondary: #1378c5 !global;
+
+  $text-muted: #737373 !global;
+  $text-muted-inverse: #fefefe !global;
+
+  $text-light: #666 !global;
+  $text-dark: #737373 !global;
+
+  $border-color: #dedede !global;
+  $facet-filter-background-color: #eee !global;
+
+  $informea-blue: #1378c6 !global;
+
+}
+
+// We add a new scope here so that the Bootstrap variables are already overridden and we can re-use them
+%scope {
+  @import "../node_modules/bootstrap/scss/functions";
+  @import "../node_modules/bootstrap/scss/variables";
+
+  // Body
+  //
+  // Settings for the `<body>` element.
+  $border-color: #ccc !global;
+  $inverse-bg: $primary-shade !global;
+
+  // Links
+  //
+  // Style anchor elements.
+  $link-color: $accent-shade !global;
+  $link-decoration: none !global;
+  $link-hover-color: $primary-light !global;
+  $link-hover-decoration: none !global;
+
+  // Buttons
+  $btn-border-radius: 0 !global;
+
+  // Comments
+  $comment-spacer-x: 1.25em !global;
+  $comment-spacer-y: 1.25em !global;
+
+  $enable-responsive-font-sizes: true !global;
+  $enable-shadows: true !global;
+  $enable-caret: false !global;
+  $caret-width: .4em !global;
+
+  $navbar-light-color: black !global;
+  $navbar-light-hover-color: $primary-shade !global;
+  $navbar-light-active-color: $primary-shade !global;
+  $navbar-light-toggler-border-color: transparent !global;
+
+  $input-bg: #F1F1F1 !global;
+  $input-height: 40px !global;
+  $input-border-color: $input-bg !global;
+  $input-box-shadow: none !global;
+
+  $breadcrumb-bg: transparent !global;
+  $breadcrumb-divider-color: inherit !global;
+  $breadcrumb-padding-x: 0 !global;
+
+  $dropdown-border-color: transparent !global;
+  $dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !global;
+  $dropdown-item-padding-x: 1rem !global;
+  $dropdown-item-padding-y: 0 !global;
+  $dropdown-padding-y: 0 !global;
+  $dropdown-link-hover-bg: $gray-100 !global;
+  $dropdown-link-active-bg: $gray-100 !global;
+
+  $dropdown-border-radius: .5rem !global;
+
+  $nav-tabs-border-color: transparent !global;
+  $nav-tabs-border-width: 3px !global;
+  $nav-tabs-link-hover-border-color:  #ccc !global;
+  $nav-tabs-link-active-color: $component-active-bg !global;
+
+}
+
+// We add a new scope here so that the Bootstrap variables are already overridden and we can re-use them
+%scope {
+  $nav-tabs-link-active-border-color: $nav-tabs-link-active-color !global;
+}
+
+$fa-font-path:         "../webfonts";

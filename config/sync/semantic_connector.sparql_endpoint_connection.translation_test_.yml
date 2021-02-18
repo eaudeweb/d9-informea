@@ -1,0 +1,13 @@
+uuid: d3bf7b7c-e8cb-4043-a548-c13c67fee19e
+langcode: en
+status: true
+dependencies: {  }
+title: 'translation test '
+id: translation_test_
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/LEO'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

@@ -1,0 +1,19 @@
+uuid: aef885f7-22cc-4765-832e-c94984852e49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entry_into_force_notes
+    - node.type.national_legislation
+id: node.national_legislation.field_entry_into_force_notes
+field_name: field_entry_into_force_notes
+entity_type: node
+bundle: national_legislation
+label: 'Entry into force notes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

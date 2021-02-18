@@ -1,0 +1,23 @@
+uuid: 8a07e963-7344-4c84-b0e7-3790520c47a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_montevideo_partners
+    - taxonomy.vocabulary.organisations
+id: taxonomy_term.organisations.field_montevideo_partners
+field_name: field_montevideo_partners
+entity_type: taxonomy_term
+bundle: organisations
+label: 'This is a Montevideo partner'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

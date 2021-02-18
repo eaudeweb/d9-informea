@@ -1,0 +1,27 @@
+uuid: c2fe6b3d-d23f-44bf-a94f-50792f3a32fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_sources
+field_name: field_sources
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: CURIA
+      label: CURIA
+    -
+      value: InforMEA
+      label: InforMEA
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

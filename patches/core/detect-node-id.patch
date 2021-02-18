@@ -1,0 +1,105 @@
+diff --git a/core/modules/taxonomy/src/Plugin/views/argument_default/Tid.php b/core/modules/taxonomy/src/Plugin/views/argument_default/Tid.php
+index eb1bc5a4..e8e89393 100644
+--- a/core/modules/taxonomy/src/Plugin/views/argument_default/Tid.php
++++ b/core/modules/taxonomy/src/Plugin/views/argument_default/Tid.php
+@@ -6,6 +6,8 @@
+ use Drupal\Core\Cache\CacheableDependencyInterface;
+ use Drupal\Core\Form\FormStateInterface;
+ use Drupal\Core\Routing\RouteMatchInterface;
++use Drupal\node\Entity\Node;
++use Drupal\taxonomy\Entity\Term;
+ use Drupal\taxonomy\TermInterface;
+ use Drupal\views\ViewExecutable;
+ use Drupal\views\Plugin\views\display\DisplayPluginBase;
+@@ -180,37 +182,70 @@ public function submitOptionsForm(&$form, FormStateInterface $form_state, &$opti
+   public function getArgument() {
+     // Load default argument from taxonomy page.
+     if (!empty($this->options['term_page'])) {
+-      if (($taxonomy_term = $this->routeMatch->getParameter('taxonomy_term')) && $taxonomy_term instanceof TermInterface) {
+-        return $taxonomy_term->id();
++      if (($taxonomy_term = $this->routeMatch->getParameter('taxonomy_term'))) {
++        if ($taxonomy_term instanceof TermInterface) {
++          return $taxonomy_term->id();
++        }
++        if (is_numeric($taxonomy_term) && ($term = Term::load($taxonomy_term)) instanceof Term) {
++          return $taxonomy_term;
++        }
+       }
+     }
+     // Load default argument from node.
+     if (!empty($this->options['node'])) {
+       // Just check, if a node could be detected.
+-      if (($node = $this->routeMatch->getParameter('node')) && $node instanceof NodeInterface) {
+-        $taxonomy = [];
+-        foreach ($node->getFieldDefinitions() as $field) {
+-          if ($field->getType() == 'entity_reference' && $field->getSetting('target_type') == 'taxonomy_term') {
+-            $taxonomy_terms = $node->{$field->getName()}->referencedEntities();
+-            /** @var \Drupal\taxonomy\TermInterface $taxonomy_term */
+-            foreach ($taxonomy_terms as $taxonomy_term) {
+-              $taxonomy[$taxonomy_term->id()] = $taxonomy_term->bundle();
++      if (($node = $this->routeMatch->getParameter('node'))) {
++        if ($node instanceof NodeInterface) {
++          $taxonomy = [];
++          foreach ($node->getFieldDefinitions() as $field) {
++            if ($field->getType() == 'entity_reference' && $field->getSetting('target_type') == 'taxonomy_term') {
++              $taxonomy_terms = $node->{$field->getName()}->referencedEntities();
++              /** @var \Drupal\taxonomy\TermInterface $taxonomy_term */
++              foreach ($taxonomy_terms as $taxonomy_term) {
++                $taxonomy[$taxonomy_term->id()] = $taxonomy_term->bundle();
++              }
+             }
+           }
+-        }
+-        if (!empty($this->options['limit'])) {
+-          $tids = [];
+-          // filter by vocabulary
+-          foreach ($taxonomy as $tid => $vocab) {
+-            if (!empty($this->options['vids'][$vocab])) {
+-              $tids[] = $tid;
++          if (!empty($this->options['limit'])) {
++            $tids = [];
++            // filter by vocabulary
++            foreach ($taxonomy as $tid => $vocab) {
++              if (!empty($this->options['vids'][$vocab])) {
++                $tids[] = $tid;
++              }
+             }
++            return implode($this->options['anyall'], $tids);
++          }
++          // Return all tids.
++          else {
++            return implode($this->options['anyall'], array_keys($taxonomy));
+           }
+-          return implode($this->options['anyall'], $tids);
+         }
+-        // Return all tids.
+-        else {
+-          return implode($this->options['anyall'], array_keys($taxonomy));
++        if (is_numeric($node) && ($nodeLoad = Node::load($node)) instanceof NodeInterface) {
++          $taxonomy = [];
++          foreach ($node->getFieldDefinitions() as $field) {
++            if ($field->getType() == 'entity_reference' && $field->getSetting('target_type') == 'taxonomy_term') {
++              $taxonomy_terms = $node->{$field->getName()}->referencedEntities();
++              /** @var \Drupal\taxonomy\TermInterface $taxonomy_term */
++              foreach ($taxonomy_terms as $taxonomy_term) {
++                $taxonomy[$taxonomy_term->id()] = $taxonomy_term->bundle();
++              }
++            }
++          }
++          if (!empty($this->options['limit'])) {
++            $tids = [];
++            // filter by vocabulary
++            foreach ($taxonomy as $tid => $vocab) {
++              if (!empty($this->options['vids'][$vocab])) {
++                $tids[] = $tid;
++              }
++            }
++            return implode($this->options['anyall'], $tids);
++          }
++          // Return all tids.
++          else {
++            return implode($this->options['anyall'], array_keys($taxonomy));
++          }
+         }
+       }
+     }

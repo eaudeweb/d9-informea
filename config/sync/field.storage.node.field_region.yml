@@ -1,0 +1,45 @@
+uuid: ee7ce3dc-8bd1-48c8-acc0-745a42ef579d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_region
+field_name: field_region
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Africa
+      label: Africa
+    -
+      value: 'Asia and the Pacific'
+      label: 'Asia and the Pacific'
+    -
+      value: Europe
+      label: Europe
+    -
+      value: 'Latin America and the Caribbean'
+      label: 'Latin America and the Caribbean'
+    -
+      value: 'North America'
+      label: 'North America'
+    -
+      value: 'West Asia'
+      label: 'West Asia'
+    -
+      value: 'Polar: Arctic'
+      label: 'Polar: Arctic'
+    -
+      value: Global
+      label: Global
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

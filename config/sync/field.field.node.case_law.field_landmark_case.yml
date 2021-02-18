@@ -1,0 +1,23 @@
+uuid: f813ecd9-f97e-43f0-b66e-00ec04199e40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_landmark_case
+    - node.type.case_law
+id: node.case_law.field_landmark_case
+field_name: field_landmark_case
+entity_type: node
+bundle: case_law
+label: 'Landmark case'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 481aa46a-1d65-4844-9c3c-72dfccdc542a
+langcode: en
+status: true
+dependencies:
+  module:
+    - pet
+id: pet.pet.mail_body
+field_name: mail_body
+entity_type: pet
+bundle: pet
+label: 'Mail Body'
+description: 'The body of the email template. May include tokens of any token type specified below.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

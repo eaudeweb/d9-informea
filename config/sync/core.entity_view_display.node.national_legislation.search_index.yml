@@ -1,0 +1,185 @@
+uuid: 8e9d1c1d-74b8-4593-bcf8-7db91237682d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.national_legislation.body
+    - field.field.node.national_legislation.field_abstract
+    - field.field.node.national_legislation.field_alternative_record_id
+    - field.field.node.national_legislation.field_amended_by
+    - field.field.node.national_legislation.field_amends
+    - field.field.node.national_legislation.field_attached_files
+    - field.field.node.national_legislation.field_available_website
+    - field.field.node.national_legislation.field_country
+    - field.field.node.national_legislation.field_data_source
+    - field.field.node.national_legislation.field_date_consolidation
+    - field.field.node.national_legislation.field_date_of_text
+    - field.field.node.national_legislation.field_date_original_text
+    - field.field.node.national_legislation.field_date_start
+    - field.field.node.national_legislation.field_ecolex_legislation_status
+    - field.field.node.national_legislation.field_ecolex_url
+    - field.field.node.national_legislation.field_entry_into_force_notes
+    - field.field.node.national_legislation.field_faolex_id
+    - field.field.node.national_legislation.field_faolex_organization
+    - field.field.node.national_legislation.field_faolex_url
+    - field.field.node.national_legislation.field_implemented_by
+    - field.field.node.national_legislation.field_implements
+    - field.field.node.national_legislation.field_internet_reference
+    - field.field.node.national_legislation.field_keywords
+    - field.field.node.national_legislation.field_last_update
+    - field.field.node.national_legislation.field_legislation_amendment
+    - field.field.node.national_legislation.field_legislation_areas
+    - field.field.node.national_legislation.field_legislation_tags
+    - field.field.node.national_legislation.field_leo_tags
+    - field.field.node.national_legislation.field_link_url
+    - field.field.node.national_legislation.field_long_title_of_text
+    - field.field.node.national_legislation.field_meas
+    - field.field.node.national_legislation.field_notes
+    - field.field.node.national_legislation.field_original_id
+    - field.field.node.national_legislation.field_original_title_of_text
+    - field.field.node.national_legislation.field_plastic_toolkit_tags
+    - field.field.node.national_legislation.field_publication_reference
+    - field.field.node.national_legislation.field_regulatory_approach
+    - field.field.node.national_legislation.field_repealed
+    - field.field.node.national_legislation.field_repealed_by
+    - field.field.node.national_legislation.field_repeals
+    - field.field.node.national_legislation.field_serial_imprint
+    - field.field.node.national_legislation.field_source_language
+    - field.field.node.national_legislation.field_sub_file_code
+    - field.field.node.national_legislation.field_tags
+    - field.field.node.national_legislation.field_territorials
+    - field.field.node.national_legislation.field_title_abbreviation
+    - field.field.node.national_legislation.field_toolkits
+    - field.field.node.national_legislation.field_topics
+    - field.field.node.national_legislation.field_type_of_text
+    - node.type.national_legislation
+  module:
+    - datetime
+    - file
+    - powertagging
+    - smart_trim
+    - user
+id: node.national_legislation.search_index
+targetEntityType: node
+bundle: national_legislation
+mode: search_index
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 3
+    settings:
+      trim_length: 400
+      trim_type: chars
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      wrap_output: false
+      more_link: false
+      trim_options:
+        text: false
+        trim_zero: false
+    third_party_settings: {  }
+    region: content
+  field_attached_files:
+    type: file_default
+    weight: 8
+    region: content
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+  field_country:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_date_original_text:
+    type: datetime_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: european_date_format
+    third_party_settings: {  }
+  field_leo_tags:
+    type: powertagging_tags_list
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      add_hidden_info: {  }
+      tag_sort_order: score
+      freeterms_at_end: false
+      split_terms: 0
+    third_party_settings: {  }
+  field_type_of_text:
+    weight: 7
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_abstract: true
+  field_alternative_record_id: true
+  field_amended_by: true
+  field_amends: true
+  field_available_website: true
+  field_data_source: true
+  field_date_consolidation: true
+  field_date_of_text: true
+  field_date_start: true
+  field_ecolex_legislation_status: true
+  field_ecolex_url: true
+  field_entry_into_force_notes: true
+  field_faolex_id: true
+  field_faolex_organization: true
+  field_faolex_url: true
+  field_implemented_by: true
+  field_implements: true
+  field_internet_reference: true
+  field_isis_number: true
+  field_keywords: true
+  field_last_update: true
+  field_legislation_amendment: true
+  field_legislation_areas: true
+  field_legislation_tags: true
+  field_link_url: true
+  field_long_title_of_text: true
+  field_meas: true
+  field_notes: true
+  field_original_id: true
+  field_original_title_of_text: true
+  field_plastic_toolkit_tags: true
+  field_publication_reference: true
+  field_regulatory_approach: true
+  field_repealed: true
+  field_repealed_by: true
+  field_repeals: true
+  field_serial_imprint: true
+  field_source_language: true
+  field_sub_file_code: true
+  field_tags: true
+  field_territorials: true
+  field_title_abbreviation: true
+  field_toolkits: true
+  field_topics: true
+  langcode: true
+  search_api_excerpt: true

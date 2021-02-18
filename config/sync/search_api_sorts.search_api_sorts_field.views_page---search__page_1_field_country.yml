@@ -1,0 +1,11 @@
+uuid: 8d39aedb-bc4e-4556-8212-5aac06ecb85d
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search__page_1_field_country
+display_id: views_page---search__page_1
+field_identifier: field_country
+default_sort: true
+default_order: asc
+label: Country
+weight: 0

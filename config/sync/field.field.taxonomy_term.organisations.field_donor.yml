@@ -1,0 +1,23 @@
+uuid: ae3a701e-f01a-4f79-9c19-b401e305d41c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_donor
+    - taxonomy.vocabulary.organisations
+id: taxonomy_term.organisations.field_donor
+field_name: field_donor
+entity_type: taxonomy_term
+bundle: organisations
+label: 'This is a Donor organisation'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

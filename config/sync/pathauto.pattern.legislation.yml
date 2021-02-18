@@ -1,0 +1,22 @@
+uuid: 823d7766-d53c-44f5-8040-cbaa57580ec3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: legislation
+label: Legislation
+type: 'canonical_entities:node'
+pattern: '/countries/[node:field_country:0:entity:field_iso2]/national-legislation/[node:title]'
+selection_criteria:
+  fd128b06-e388-46fb-a3b7-4bfef7e43303:
+    id: node_type
+    bundles:
+      national_legislation: national_legislation
+    negate: false
+    context_mapping:
+      node: node
+    uuid: fd128b06-e388-46fb-a3b7-4bfef7e43303
+selection_logic: and
+weight: -5
+relationships: {  }

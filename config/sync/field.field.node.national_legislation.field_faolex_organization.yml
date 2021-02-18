@@ -1,0 +1,29 @@
+uuid: 0243af7b-0d83-43ee-b832-b3c00d70ba99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faolex_organization
+    - node.type.national_legislation
+    - taxonomy.vocabulary.organisations
+id: node.national_legislation.field_faolex_organization
+field_name: field_faolex_organization
+entity_type: node
+bundle: national_legislation
+label: 'FAOLEX Organization'
+description: 'Organization related to this record'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      organisations: organisations
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

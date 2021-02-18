@@ -1,0 +1,236 @@
+@import '../mixins';
+@import 'language-switcher';
+@import '../variables';
+
+.header .navbar {
+  //@include font-size(12px);
+  font-size: .8em;
+  padding-top: 0;
+
+  @include media-breakpoint-up(sm) {
+    //@include font-size(14px);
+  }
+
+  @include media-breakpoint-up(xl) {
+    //@include font-size(16px);
+    font-size: 1em;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .navbar-collapse .navbar-form {
+    justify-content: flex-end;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .gpsearch-fulltext-block {
+    padding-right: 0 !important;
+  }
+}
+
+.header .navbar-brand {
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+
+  img.leap-logo {
+    width: 18em;
+    height: auto;
+    @media (min-width: 992px) and (max-width: 1200px) {
+      width: 24em;
+    }
+  }
+
+  img.unep-logo {
+    width: 7em;
+    margin-right: 20px;
+    border-right: 1px solid $primary-shade;
+    padding-right: 20px;
+    width: 6em;
+    height: auto;
+  }
+}
+
+.site-name {
+  border-left: 1px solid #ddd;
+  color: $primary-shade;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1;
+  margin-left: .5em;
+  min-width: 181px;
+  max-width: 200px;
+  padding-left: 1em;
+  white-space: normal;
+}
+.header {
+  .nav-link {
+    color: inherit;
+
+    &.dropdown-toggle:after {
+      margin-left: .2em;
+    }
+  }
+  .menu--main {
+    margin-top: 1em;
+
+    .navbar-nav {
+      justify-content: flex-end;
+
+      .nav-link {
+        font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+        font-weight: 400;
+        color: #656565;
+        font-size: 1.375em;
+        padding-left: .5em;
+        padding-right: .5em;
+
+        @include media-breakpoint-up(lg) {
+          padding-left: 1em;
+          padding-right: 1em;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        &.dropdown-toggle:after {
+          // @todo: remove this if caret is needed
+          display: none;
+        }
+
+        &:hover, &:active {
+          color: $primary-gray-200;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .show > .nav-link {
+        color: $primary-gray-200;
+      }
+    }
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  @include media-breakpoint-down(md) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.navbar-expand-lg .container {
+  @include media-breakpoint-down(md) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.navbar > .container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.header .menu--main .navbar-nav .nav-link {
+  padding-bottom: 0;
+}
+
+#block-useraccountmenu {
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+
+  .nav-link {
+    padding-left: 0 !important;
+    font-size: .9em;
+    color: #666;
+  }
+}
+
+#block-languagedropdownswitcher {
+  padding-left: 0 !important;
+
+  select {
+    padding-left: 0;
+  }
+
+  .chosen-container {
+    width: auto !important;
+    background: transparent;
+    border: none;
+    padding: 0px 0;
+    display: flex !important;
+    height: auto;
+
+    .chosen-single {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      width: 100%;
+      height: auto;
+      padding: 0;
+      span {
+      }
+      > div {
+        display: flex;
+        margin-top: 1px;
+        width: 25px;
+        height: auto;
+        position: absolute;
+        right: 0;
+        > b {
+          background-image: url("../images/chevron-down.svg") !important;
+          content: '';
+          border: none;
+          margin-left: 5px;
+          width: 15px;
+          height: 16px;
+          -webkit-background-size: 17px auto;
+          background-size: 17px auto;
+          background-repeat: no-repeat;
+          vertical-align: middle;
+          display: inline-block;
+          margin-top: 2px;
+        }
+      }
+    }
+    .chosen-results li.highlighted {
+      background-color: $primary-shade;
+      color: #fff;
+      background-image: none;
+    }
+    .chosen-drop {
+      border: 1px solid #ffffff;
+      padding: 5px 0;
+      width: auto;
+      min-width: 100%;
+    }
+    input {
+      width: auto !important;
+    }
+  }
+
+  .chosen-container-active.chosen-with-drop .chosen-single div b {
+    background-position: unset;
+  }
+
+  .form-item-lang-dropdown-select .form-item_inner:after {
+    display: none;
+  }
+
+  .chosen-drop .chosen-search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #block-languagedropdownswitcher{
+    padding-top: 15px;
+  }
+}

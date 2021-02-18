@@ -1,0 +1,19 @@
+uuid: d7fb5df5-9524-4118-8686-b1a41113b2c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.case_law
+id: node.case_law.field_notes
+field_name: field_notes
+entity_type: node
+bundle: case_law
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,8 @@
+uuid: 66ad92f3-9e8d-4a10-914b-b9432955e128
+langcode: en
+status: true
+dependencies: {  }
+id: slider_information
+label: 'Jumbotron image slider'
+revision: 0
+description: ''

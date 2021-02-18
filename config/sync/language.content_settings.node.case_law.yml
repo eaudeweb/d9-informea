@@ -1,0 +1,16 @@
+uuid: 504c0ccb-e7ca-4824-8744-28f27c9b03ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.case_law
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.case_law
+target_entity_type_id: node
+target_bundle: case_law
+default_langcode: site_default
+language_alterable: true

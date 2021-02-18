@@ -1,0 +1,27 @@
+uuid: e1661790-9f67-40a6-b7db-601d56b47680
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attached_files
+    - node.type.national_legislation
+  module:
+    - file
+id: node.national_legislation.field_attached_files
+field_name: field_attached_files
+entity_type: node
+bundle: national_legislation
+label: 'Attached files'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: national-legislation
+  file_extensions: 'txt docx docm dotx dotm docb doc zip pdf xls xlsx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

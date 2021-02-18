@@ -1,0 +1,36 @@
+uuid: 81b262b9-a04c-4294-8511-8134fb2692eb
+langcode: en
+status: true
+dependencies: {  }
+title: 'Informea PoolParty'
+id: informea_poolparty
+connection_id: brs_dev_server
+project_id: 1E14D822-E5A8-0001-74E6-1F7013D017FE
+config:
+  project:
+    languages:
+      en: en
+      fr: fr
+      und: ''
+      zxx: ''
+    taxonomy_id: leo_thesaurus
+    corpus_id: 'corpus:b2c565ef-75dc-4cb1-8bb2-124090f2ac17'
+    mode: annotation
+  limits:
+    concepts_per_extraction:
+      slider: '20'
+    concepts_threshold:
+      slider: '10'
+    freeterms_per_extraction:
+      slider: '0'
+    freeterms_threshold:
+      slider: '50'
+  concept_scheme_restriction:
+    - 'https://dvocabulary.brsmeas.org/Mastertest/0'
+  data_properties:
+    - 'skos:altLabel'
+    - 'skos:hiddenLabel'
+    - 'skos:scopeNote'
+    - 'skos:related'
+    - 'skos:exactMatch'
+  last_batch_tagging: 1590495817

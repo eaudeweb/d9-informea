@@ -1,0 +1,29 @@
+uuid: c53c7ddb-0790-4bd2-b559-048f7e2af2d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.meeting
+    - taxonomy.vocabulary.countries
+id: node.meeting.field_country
+field_name: field_country
+entity_type: node
+bundle: meeting
+label: Country
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      countries: countries
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: countries
+field_type: entity_reference

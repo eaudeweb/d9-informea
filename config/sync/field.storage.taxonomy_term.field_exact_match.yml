@@ -1,0 +1,19 @@
+uuid: 936f9535-8b5d-4d3f-b229-be313c3fd3b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - taxonomy
+id: taxonomy_term.field_exact_match
+field_name: field_exact_match
+entity_type: taxonomy_term
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

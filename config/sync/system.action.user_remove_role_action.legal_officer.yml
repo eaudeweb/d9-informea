@@ -1,0 +1,14 @@
+uuid: 448b185f-c57d-4126-8679-12d7587730d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.legal_officer
+  module:
+    - user
+id: user_remove_role_action.legal_officer
+label: 'Remove the Legal Officer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: legal_officer

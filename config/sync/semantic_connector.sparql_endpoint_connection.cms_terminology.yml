@@ -1,0 +1,13 @@
+uuid: e97801e9-07af-4461-94ce-3d2876dce94a
+langcode: en
+status: true
+dependencies: {  }
+title: 'CMS terminology'
+id: cms_terminology
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/CMSterminology'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

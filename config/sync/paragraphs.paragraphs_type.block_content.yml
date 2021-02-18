@@ -1,0 +1,10 @@
+uuid: 1a139a96-0b1d-4ac1-8858-3069acb4923e
+langcode: en
+status: true
+dependencies: {  }
+id: block_content
+label: 'Block content'
+icon_uuid: null
+icon_default: null
+description: 'Use block content to add an existing block to a page.'
+behavior_plugins: {  }

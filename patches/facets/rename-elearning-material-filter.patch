@@ -1,0 +1,17 @@
+diff --git a/src/Plugin/facets/processor/TranslateEntityProcessor.php b/src/Plugin/facets/processor/TranslateEntityProcessor.php
+index 93102a890..80256b05a 100644
+--- a/src/Plugin/facets/processor/TranslateEntityProcessor.php
++++ b/src/Plugin/facets/processor/TranslateEntityProcessor.php
+@@ -129,6 +129,12 @@ public function build(FacetInterface $facet, array $results) {
+         $entity = $entity->getTranslation($language_interface->getId());
+       }
+
++      if ($entity->id() == 'learning_material') {
++        $title = $this->t('E-Learning material and free online courses');
++        $results[$i]->setDisplayValue($title);
++        continue;
++      }
++
+       // Overwrite the result's display value.
+       $results[$i]->setDisplayValue($entity->label());
+     }

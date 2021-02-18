@@ -1,0 +1,23 @@
+uuid: c998faf0-0362-4014-a015-cd81087e0cf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.case_law
+  module:
+    - text
+id: node.case_law.body
+field_name: body
+entity_type: node
+bundle: case_law
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

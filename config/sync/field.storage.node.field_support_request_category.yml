@@ -1,0 +1,36 @@
+uuid: e5cacc4d-23f8-4db0-aeb9-d067da732af2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_support_request_category
+field_name: field_support_request_category
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: a
+      label: 'Support the development of adequate and effective environmental legislation and legal frameworks to address environmental issues'
+    -
+      value: b
+      label: 'Strengthen the effective implementation of environmental law'
+    -
+      value: c
+      label: 'Support enhanced capacity-building for increased effectiveness of environmental law'
+    -
+      value: d
+      label: 'Support in the development and implementation of environmental rule of law, consistent with decision 27/9 of the Governing Council of the United Nations Environment Programme'
+    -
+      value: e
+      label: 'Promote the role of environmental law in the context of effective environmental governance'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

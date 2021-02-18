@@ -1,0 +1,80 @@
+/* ------------------ Sidebar ----------------- */
+
+.sidebar {
+    .block {
+        border-style: solid;
+        border-width: $border-width;
+        padding: $spacer $spacer;
+        margin: 0 0 $spacer;
+        .content {
+            font-size: $font-size-base;
+            line-height: $line-height-sm;
+        }
+    }
+    h2 {
+        margin: 0 0 ($spacer * .5);
+        border-bottom: $border-width solid $border-color;
+        padding-bottom: 5px;
+        text-shadow: 0 $border-width 0 $white;
+        font-size: $font-size-lg;
+        line-height: $headings-line-height;
+    }
+    tbody {
+        border: none;
+    }
+    tr.even,
+    tr.odd {
+        background: none;
+        border-bottom: $border-width solid $border-color;
+    }
+    nav ul.nav {
+        margin: 0;
+    }
+
+  .menu-country-detail,
+  .block-menu {
+    padding: 0;
+    border: none;
+    display: block;
+    flex: 1;
+    font-size: 18px;
+    margin-right: 1em;
+
+    li {
+      width: 100%;
+      padding: 0;
+      background: #F5F5F5;
+      border: unset;
+      color: #C2C2C2;
+      transition: background-color .2s;
+
+      &:hover,
+      &:focus {
+        background-color: darken(#F5F5F5, 3%);
+      }
+
+      a {
+        color: #3c3c3c;
+      }
+
+    }
+
+    .active, .is-active {
+      background-color: $secondary-shade;
+      color: #fff;
+
+      &:hover,
+      &:focus {
+        background-color: darken($secondary-shade, 3%);
+      }
+    }
+
+    li > span,
+    li > a {
+      width: calc(100% + .2em);
+      display: block;
+      margin: 0;
+      padding: 10px 20px;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.form-control {
+  border: none;
+}
+
+label.checkbox {
+  padding-left: 0;
+}
+
+.chosen-container {
+  display: block;
+  padding-left: 0;
+}
+
+.user-form,
+.node-glass-venture-campaign-form,
+.node-glass-venture-campaign-edit-form,
+#sgg-glass-venture-email-templates-form,
+.sgg-glass-ventureimport-campaign-data {
+  small {
+    display: block;
+  }
+
+  label {
+    display: block;
+  }
+
+  .field--type-daterange fieldset {
+    margin-right: 5px !important;
+  }
+
+  .col-auto {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .details-wrapper {
+    padding: 0;
+  }
+}
+
+.filter-wrapper {
+  display: none;
+}
+
+.dropbutton-wrapper {
+  .dropbutton-widget {
+    max-width: 150px;
+  }
+}
+
+.taxonomy-overview-terms {
+  #edit-help {
+    display: none;
+  }
+
+  .tabledrag-toggle-weight-wrapper {
+    display: none;
+  }
+
+  .tabledrag-handle {
+    display: none;
+  }
+}
+
+.custom-control-input {
+  opacity: 1;
+  z-index: 1;
+}
+
+.node--type-support-request .comment-forbidden {
+  display: none;
+}
+
+.block-views-blocksupport-requests-block-1, .block-views-blocksupport-requests-block-2 {
+  margin-top: 30px;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.node-support-request-edit-form {
+  .chosen-container {
+    display: block !important;
+  }
+}
+
+.node-support-request-request-public-form-form {
+  #edit-field-more-information-0-format-help {
+    display: none;
+  }
+  .field--widget-entity-reference-autocomplete {
+    > div > .form-item {
+      position: relative;
+
+      small {
+        position: absolute;
+        top: 50px;
+        left: 1px;
+      }
+    }
+  }
+
+  th {
+    padding: 10px 0;
+    padding-bottom: 30px;
+    background-color: #fff !important;
+    color: black;
+    border-color: transparent;
+
+    h4 {
+      padding: 10px 0;
+      //background-color: #fff;
+      color: black;
+      border-color: transparent;
+    }
+  }
+
+  small,.field-description {
+    display: block;
+    font-size: 14px;
+    color: #424242 !important;
+  }
+
+  .form-group {
+    padding: 0 15px;
+
+    .form-group {
+      padding: 0;
+    }
+  }
+
+  .chosen-container {
+    display: block !important;
+  }
+
+  legend {
+    margin-bottom: 0;
+  }
+
+  fieldset {
+    small {
+      margin-bottom: 10px;
+    }
+
+    .fieldset-legend {
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+}

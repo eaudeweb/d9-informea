@@ -1,0 +1,13 @@
+uuid: 03241aa3-68a9-4bbc-98bb-cee30beab6a6
+langcode: en
+status: true
+dependencies: {  }
+title: IPBES
+id: ipbes
+type: sparql_endpoint
+url: 'http://dpoolparty.brsmeas.org/PoolParty/sparql/ipbes'
+credentials:
+  username: Cristian
+  password: '*E3tZ@xhcvJk2LDfT-b4'
+config:
+  pp_server_id: 0

@@ -1,0 +1,8 @@
+uuid: e17d7117-353e-4aa2-840a-2ddda04b861e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Types of text'
+vid: types_of_text
+description: ''
+weight: 0
