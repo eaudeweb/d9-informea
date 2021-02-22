@@ -1,0 +1,29 @@
+uuid: eed18f1c-8109-40b1-bab2-4acabf5f0c05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.geographical_site
+    - taxonomy.vocabulary.topics
+id: node.geographical_site.field_topics
+field_name: field_topics
+entity_type: node
+bundle: geographical_site
+label: Topics
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topics: topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

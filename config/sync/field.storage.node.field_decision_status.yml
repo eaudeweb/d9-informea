@@ -1,0 +1,36 @@
+uuid: 85269735-5717-4362-89de-66ab8bb43df7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_decision_status
+field_name: field_decision_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: active
+      label: Active
+    -
+      value: adopted
+      label: Adopted
+    -
+      value: amended
+      label: Amended
+    -
+      value: draft
+      label: Draft
+    -
+      value: retired
+      label: Retired
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

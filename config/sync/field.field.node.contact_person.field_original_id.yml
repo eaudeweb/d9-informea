@@ -1,0 +1,19 @@
+uuid: 973801a1-5fd2-4043-a453-511936ab3a83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_original_id
+    - node.type.contact_person
+id: node.contact_person.field_original_id
+field_name: field_original_id
+entity_type: node
+bundle: contact_person
+label: 'Original ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

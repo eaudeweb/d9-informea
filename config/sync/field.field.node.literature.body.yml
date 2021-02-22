@@ -1,0 +1,23 @@
+uuid: 6b8471c2-532d-4459-ac78-e2dca71a26bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.literature
+  module:
+    - text
+id: node.literature.body
+field_name: body
+entity_type: node
+bundle: literature
+label: Abstract
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+uuid: 0a827faa-7e61-45d5-b9db-74e6807c1981
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_eu_member
+    - taxonomy.vocabulary.countries
+id: taxonomy_term.countries.field_eu_member
+field_name: field_eu_member
+entity_type: taxonomy_term
+bundle: countries
+label: 'EU member'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

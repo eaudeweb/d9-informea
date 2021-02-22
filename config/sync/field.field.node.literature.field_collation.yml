@@ -1,0 +1,19 @@
+uuid: 79e7d8e7-f864-4bfc-adf5-7c8c3d3f9a54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_collation
+    - node.type.literature
+id: node.literature.field_collation
+field_name: field_collation
+entity_type: node
+bundle: literature
+label: Collation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

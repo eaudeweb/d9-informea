@@ -1,0 +1,54 @@
+uuid: dc03b9f9-c587-4a08-ad38-2cf99f29e1f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_event_status
+field_name: field_event_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: approved
+      label: Approved
+    -
+      value: cancelled
+      label: Cancelled
+    -
+      value: concluded
+      label: Concluded
+    -
+      value: confirmed
+      label: Confirmed
+    -
+      value: nodate
+      label: 'No date'
+    -
+      value: over
+      label: Over
+    -
+      value: postponed
+      label: Postponed
+    -
+      value: tentative
+      label: Tentative
+    -
+      value: upcoming
+      label: Upcoming
+    -
+      value: "denied\tedit"
+      label: "denied\tedit"
+    -
+      value: pending
+      label: pending
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

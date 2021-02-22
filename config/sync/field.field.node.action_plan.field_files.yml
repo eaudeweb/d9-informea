@@ -1,0 +1,27 @@
+uuid: 83a7d5f2-38b1-4988-9ca3-118a59e65820
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.action_plan
+  module:
+    - file
+id: node.action_plan.field_files
+field_name: field_files
+entity_type: node
+bundle: action_plan
+label: Files
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'action-plans/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc docx xls xlsx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

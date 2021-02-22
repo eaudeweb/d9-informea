@@ -1,0 +1,21 @@
+uuid: 028c4c42-0173-4833-9da4-489f23af7ec4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_time_range
+    - node.type.geographical_site
+  module:
+    - datetime_range
+id: node.geographical_site.field_date_time_range
+field_name: field_date_time_range
+entity_type: node
+bundle: geographical_site
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

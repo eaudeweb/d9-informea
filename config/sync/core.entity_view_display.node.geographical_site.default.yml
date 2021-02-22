@@ -1,0 +1,156 @@
+uuid: 1196e650-5932-4521-9711-8c8833ef6f5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.geographical_site.body
+    - field.field.node.geographical_site.field_country
+    - field.field.node.geographical_site.field_date_time_range
+    - field.field.node.geographical_site.field_external_url
+    - field.field.node.geographical_site.field_images
+    - field.field.node.geographical_site.field_latitude
+    - field.field.node.geographical_site.field_leo_tags
+    - field.field.node.geographical_site.field_location
+    - field.field.node.geographical_site.field_longitude
+    - field.field.node.geographical_site.field_original_id
+    - field.field.node.geographical_site.field_topics
+    - field.field.node.geographical_site.field_treaty
+    - node.type.geographical_site
+  module:
+    - datetime_range
+    - link
+    - powertagging
+    - svg_image
+    - text
+    - user
+id: node.geographical_site.default
+targetEntityType: node
+bundle: geographical_site
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_country:
+    weight: 17
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_date_time_range:
+    weight: 9
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_external_url:
+    weight: 4
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_images:
+    weight: 15
+    label: above
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_latitude:
+    weight: 20
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_leo_tags:
+    weight: 18
+    label: above
+    settings:
+      add_hidden_info: {  }
+      tag_sort_order: score
+      freeterms_at_end: ''
+      split_terms: '0'
+    third_party_settings: {  }
+    type: powertagging_tags_list
+    region: content
+  field_location:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_longitude:
+    weight: 21
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_original_id:
+    weight: 22
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_topics:
+    weight: 19
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_treaty:
+    weight: 10
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

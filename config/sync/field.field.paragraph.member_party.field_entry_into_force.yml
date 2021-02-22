@@ -1,0 +1,21 @@
+uuid: ac83f510-f7ff-4022-9499-cbfabdd1e397
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_entry_into_force
+    - paragraphs.paragraphs_type.member_party
+  module:
+    - datetime
+id: paragraph.member_party.field_entry_into_force
+field_name: field_entry_into_force
+entity_type: paragraph
+bundle: member_party
+label: 'Entry into force'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

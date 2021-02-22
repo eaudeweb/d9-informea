@@ -1,0 +1,21 @@
+uuid: e9149c98-6d1f-409b-8140-26d731056b40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.declaration
+  module:
+    - datetime
+id: node.declaration.field_date
+field_name: field_date
+entity_type: node
+bundle: declaration
+label: 'Date of text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

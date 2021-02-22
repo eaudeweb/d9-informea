@@ -1,0 +1,36 @@
+uuid: 6e6909aa-5516-4cf8-8854-0e447b9f2011
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_role.field_role
+    - field.field.paragraph.contact_role.field_treaty
+    - paragraphs.paragraphs_type.contact_role
+id: paragraph.contact_role.default
+targetEntityType: paragraph
+bundle: contact_role
+mode: default
+content:
+  field_role:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_treaty:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

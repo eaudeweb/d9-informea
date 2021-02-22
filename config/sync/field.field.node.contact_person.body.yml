@@ -1,0 +1,23 @@
+uuid: 7b725ac6-cec5-468c-871f-641e4afb329d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.contact_person
+  module:
+    - text
+id: node.contact_person.body
+field_name: body
+entity_type: node
+bundle: contact_person
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

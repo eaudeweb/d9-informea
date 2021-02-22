@@ -1,0 +1,23 @@
+uuid: cc3ef692-301e-41fd-b9f2-4e666bd12ed2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_primary_nfp
+    - node.type.contact_person
+id: node.contact_person.field_primary_nfp
+field_name: field_primary_nfp
+entity_type: node
+bundle: contact_person
+label: 'Primary NFP'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

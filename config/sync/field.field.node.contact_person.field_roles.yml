@@ -1,0 +1,61 @@
+uuid: f18c6bb6-a1ef-468c-9a85-601b3d49da34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_roles
+    - node.type.contact_person
+    - paragraphs.paragraphs_type.contact_role
+  module:
+    - entity_reference_revisions
+id: node.contact_person.field_roles
+field_name: field_roles
+entity_type: node
+bundle: contact_person
+label: Roles
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      contact_role: contact_role
+    target_bundles_drag_drop:
+      block_content:
+        weight: 12
+        enabled: false
+      contact_role:
+        enabled: true
+        weight: 13
+      content:
+        weight: 14
+        enabled: false
+      heading:
+        weight: 15
+        enabled: false
+      home_page_information:
+        weight: 16
+        enabled: false
+      home_page_slider:
+        weight: 17
+        enabled: false
+      image_header:
+        weight: 18
+        enabled: false
+      meeting_document:
+        weight: 19
+        enabled: false
+      meeting_informative_section:
+        weight: 20
+        enabled: false
+      ratification_status:
+        weight: 21
+        enabled: false
+      standfirst:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

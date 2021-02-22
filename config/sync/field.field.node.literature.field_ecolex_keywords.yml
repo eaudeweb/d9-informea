@@ -1,0 +1,29 @@
+uuid: 31a03761-4710-4a7e-88ac-b741824f7f5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ecolex_keywords
+    - node.type.literature
+    - taxonomy.vocabulary.ecolex_keywords
+id: node.literature.field_ecolex_keywords
+field_name: field_ecolex_keywords
+entity_type: node
+bundle: literature
+label: 'ECOLEX keywords'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ecolex_keywords: ecolex_keywords
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

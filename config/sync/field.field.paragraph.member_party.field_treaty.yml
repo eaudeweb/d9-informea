@@ -1,0 +1,28 @@
+uuid: 581d6612-a9c6-4707-8e9c-2a5c1b49ecf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_treaty
+    - node.type.treaty
+    - paragraphs.paragraphs_type.member_party
+id: paragraph.member_party.field_treaty
+field_name: field_treaty
+entity_type: paragraph
+bundle: member_party
+label: Treaty
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      treaty: treaty
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

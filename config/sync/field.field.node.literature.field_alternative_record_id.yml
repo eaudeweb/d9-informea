@@ -1,0 +1,19 @@
+uuid: 74068ffd-bb2f-4960-bb2b-5d45a3a9f95f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alternative_record_id
+    - node.type.literature
+id: node.literature.field_alternative_record_id
+field_name: field_alternative_record_id
+entity_type: node
+bundle: literature
+label: 'Alternative Record ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

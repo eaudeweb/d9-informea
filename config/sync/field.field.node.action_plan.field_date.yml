@@ -1,0 +1,21 @@
+uuid: fd2e447e-1d04-407f-917a-74094f233cb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.action_plan
+  module:
+    - datetime
+id: node.action_plan.field_date
+field_name: field_date
+entity_type: node
+bundle: action_plan
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

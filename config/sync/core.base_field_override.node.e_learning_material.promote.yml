@@ -1,0 +1,22 @@
+uuid: 0d4a39e9-6509-4bf8-a98a-dfe43bc70724
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.e_learning_material
+id: node.e_learning_material.promote
+field_name: promote
+entity_type: node
+bundle: e_learning_material
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

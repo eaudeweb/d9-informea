@@ -1,0 +1,28 @@
+uuid: 10c7d991-15ce-49b3-8f41-12f23bf6e5f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting
+    - node.type.decision
+    - node.type.meeting
+id: node.decision.field_meeting
+field_name: field_meeting
+entity_type: node
+bundle: decision
+label: Meeting
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      meeting: meeting
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

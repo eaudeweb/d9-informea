@@ -1,0 +1,33 @@
+uuid: b9fdd3fc-cf59-41dc-9a0d-ecd29561cd63
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_decision_type
+field_name: field_decision_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: decision
+      label: Decision
+    -
+      value: official_document
+      label: 'Official Document'
+    -
+      value: recommendation
+      label: Recommendation
+    -
+      value: resolution
+      label: Resolution
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

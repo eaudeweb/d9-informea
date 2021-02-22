@@ -1,0 +1,30 @@
+uuid: c5162dcb-489f-470d-9717-6083ba505c43
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_event_kind
+field_name: field_event_kind
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: interest
+      label: Interest
+    -
+      value: official
+      label: Official
+    -
+      value: partner
+      label: Partner
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

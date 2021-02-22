@@ -1,0 +1,29 @@
+uuid: 8a9597c2-06fc-4f82-b4d6-52b429c0971c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_person_type
+    - node.type.contact_person
+    - taxonomy.vocabulary.person_types
+id: node.contact_person.field_person_type
+field_name: field_person_type
+entity_type: node
+bundle: contact_person
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      person_types: person_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 1f5a87e9-581c-4581-b3ca-e583df68a3dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.action_plan
+  module:
+    - text
+id: node.action_plan.body
+field_name: body
+entity_type: node
+bundle: action_plan
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

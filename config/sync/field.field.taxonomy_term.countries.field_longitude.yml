@@ -1,0 +1,23 @@
+uuid: ac2ce3f6-5fc6-4987-b704-68d0bb053533
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_longitude
+    - taxonomy.vocabulary.countries
+id: taxonomy_term.countries.field_longitude
+field_name: field_longitude
+entity_type: taxonomy_term
+bundle: countries
+label: 'Center longitude'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

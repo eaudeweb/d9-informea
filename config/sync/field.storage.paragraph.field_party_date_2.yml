@@ -1,0 +1,20 @@
+uuid: b9a4074e-9720-4a90-866f-e0a00d25d22e
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - paragraphs
+id: paragraph.field_party_date_2
+field_name: field_party_date_2
+entity_type: paragraph
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

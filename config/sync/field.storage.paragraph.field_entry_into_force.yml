@@ -1,0 +1,20 @@
+uuid: 33110251-505d-4470-93d6-3778dcfc54b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - paragraphs
+id: paragraph.field_entry_into_force
+field_name: field_entry_into_force
+entity_type: paragraph
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

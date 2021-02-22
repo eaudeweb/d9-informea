@@ -1,0 +1,23 @@
+uuid: dea7e7a3-dbdc-4893-b20a-6bf2d5e0c630
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_zoom
+    - taxonomy.vocabulary.countries
+id: taxonomy_term.countries.field_zoom
+field_name: field_zoom
+entity_type: taxonomy_term
+bundle: countries
+label: Zoom
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

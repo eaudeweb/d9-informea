@@ -1,0 +1,67 @@
+uuid: 00e56924-58ea-4158-878e-4a06102b58c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_parties
+    - node.type.treaty
+    - paragraphs.paragraphs_type.member_party
+  module:
+    - entity_reference_revisions
+id: node.treaty.field_member_parties
+field_name: field_member_parties
+entity_type: node
+bundle: treaty
+label: 'Member parties'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      member_party: member_party
+    target_bundles_drag_drop:
+      block_content:
+        weight: 15
+        enabled: false
+      contact_role:
+        weight: 16
+        enabled: false
+      content:
+        weight: 17
+        enabled: false
+      heading:
+        weight: 18
+        enabled: false
+      home_page_information:
+        weight: 19
+        enabled: false
+      home_page_slider:
+        weight: 20
+        enabled: false
+      image_header:
+        weight: 21
+        enabled: false
+      meeting_document:
+        weight: 22
+        enabled: false
+      meeting_informative_section:
+        weight: 23
+        enabled: false
+      member_party:
+        enabled: true
+        weight: 14
+      ratification_status:
+        weight: 24
+        enabled: false
+      standfirst:
+        weight: 25
+        enabled: false
+      text_paragraph:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

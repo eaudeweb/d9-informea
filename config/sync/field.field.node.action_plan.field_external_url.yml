@@ -1,0 +1,23 @@
+uuid: 676c5ff8-5b2e-4df8-bf6d-9ef29808bae2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_url
+    - node.type.action_plan
+  module:
+    - link
+id: node.action_plan.field_external_url
+field_name: field_external_url
+entity_type: node
+bundle: action_plan
+label: 'Document URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

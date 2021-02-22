@@ -1,0 +1,43 @@
+uuid: 9079a3c6-d692-4bb0-9f6c-f12f0c652d7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.e_learning_material.body
+    - field.field.node.e_learning_material.field_external_url
+    - field.field.node.e_learning_material.field_image
+    - field.field.node.e_learning_material.field_leo_tags
+    - field.field.node.e_learning_material.field_topics
+    - node.type.e_learning_material
+  module:
+    - text
+    - user
+id: node.e_learning_material.teaser
+targetEntityType: node
+bundle: e_learning_material
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_external_url: true
+  field_image: true
+  field_leo_tags: true
+  field_topics: true
+  langcode: true
+  search_api_excerpt: true

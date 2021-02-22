@@ -1,0 +1,21 @@
+uuid: a6674502-fca5-4158-9542-60cbf5b0a197
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_party_date_1
+    - paragraphs.paragraphs_type.member_party
+  module:
+    - datetime
+id: paragraph.member_party.field_party_date_1
+field_name: field_party_date_1
+entity_type: paragraph
+bundle: member_party
+label: 'Date 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,21 @@
+uuid: 51e2f83d-a189-47bc-ab4b-1d3692a74adc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_kind
+    - node.type.event
+  module:
+    - options
+id: node.event.field_event_kind
+field_name: field_event_kind
+entity_type: node
+bundle: event
+label: 'Event kind'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

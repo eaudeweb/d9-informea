@@ -1,0 +1,21 @@
+uuid: dbf2fb9f-d537-4804-8a79-a1f6f21d86c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_action_plan_type
+    - node.type.action_plan
+  module:
+    - options
+id: node.action_plan.field_action_plan_type
+field_name: field_action_plan_type
+entity_type: node
+bundle: action_plan
+label: 'Action plan type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

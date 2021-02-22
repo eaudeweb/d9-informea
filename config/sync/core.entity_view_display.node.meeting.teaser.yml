@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.meeting.body
     - field.field.node.meeting.field_country
-    - field.field.node.meeting.field_date
+    - field.field.node.meeting.field_date_range
     - field.field.node.meeting.field_informative_sections
     - field.field.node.meeting.field_leo_tags
     - field.field.node.meeting.field_meeting_frequency
@@ -16,7 +16,6 @@ dependencies:
     - field.field.node.meeting.field_venue
     - node.type.meeting
   module:
-    - datetime_range
     - entity_reference_revisions
     - text
     - user
@@ -41,16 +40,6 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-  field_date:
-    weight: 7
-    label: above
-    settings:
-      separator: '-'
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: daterange_default
-    region: content
   field_reports:
     weight: 8
     label: above
@@ -85,6 +74,7 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_date_range: true
   field_informative_sections: true
   field_leo_tags: true
   field_meeting_frequency: true

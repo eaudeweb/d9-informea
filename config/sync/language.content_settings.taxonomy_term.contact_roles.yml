@@ -1,0 +1,16 @@
+uuid: eb54acc4-a907-4bc8-9907-f537bc5c3dcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.contact_roles
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.contact_roles
+target_entity_type_id: taxonomy_term
+target_bundle: contact_roles
+default_langcode: site_default
+language_alterable: false

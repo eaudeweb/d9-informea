@@ -1,0 +1,29 @@
+uuid: 15a9a0ad-dd2e-4d3e-9b69-7c0054cd438d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.e_learning_material
+    - taxonomy.vocabulary.topics
+id: node.e_learning_material.field_topics
+field_name: field_topics
+entity_type: node
+bundle: e_learning_material
+label: Topics
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topics: topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

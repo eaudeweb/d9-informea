@@ -1,0 +1,51 @@
+uuid: cdd330a9-9a09-4dec-896f-82a3b0efc396
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_party_status
+field_name: field_party_status
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: acceptance
+      label: Acceptance
+    -
+      value: accession
+      label: Accession
+    -
+      value: approval
+      label: Approval
+    -
+      value: continuation
+      label: Continuation
+    -
+      value: party
+      label: Party
+    -
+      value: ratification
+      label: Ratification
+    -
+      value: signatory
+      label: Signatory
+    -
+      value: signed_not_ratified
+      label: 'Signed but not ratified'
+    -
+      value: succession
+      label: Succession
+    -
+      value: unknown
+      label: Unknown
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -4,12 +4,16 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.countries.field_eu_member
     - field.field.taxonomy_term.countries.field_flag
     - field.field.taxonomy_term.countries.field_iso2
     - field.field.taxonomy_term.countries.field_iso3
+    - field.field.taxonomy_term.countries.field_latitude
+    - field.field.taxonomy_term.countries.field_longitude
     - field.field.taxonomy_term.countries.field_official_name
     - field.field.taxonomy_term.countries.field_region
     - field.field.taxonomy_term.countries.field_un_member
+    - field.field.taxonomy_term.countries.field_zoom
     - taxonomy.vocabulary.countries
   module:
     - svg_image
@@ -36,10 +40,14 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_eu_member: true
   field_iso2: true
   field_iso3: true
+  field_latitude: true
+  field_longitude: true
   field_official_name: true
   field_region: true
   field_un_member: true
+  field_zoom: true
   langcode: true
   search_api_excerpt: true

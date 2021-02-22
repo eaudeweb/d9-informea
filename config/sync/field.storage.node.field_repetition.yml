@@ -1,0 +1,27 @@
+uuid: e127f576-d370-4c82-a5ae-35ebb6d29315
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_repetition
+field_name: field_repetition
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: monthly
+      label: Monthly
+    -
+      value: yearly
+      label: Yearly
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

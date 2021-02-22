@@ -1,0 +1,28 @@
+uuid: 87d97e64-0d1c-42c1-82ac-d46b93a86c1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_treaty
+    - node.type.action_plan
+    - node.type.treaty
+id: node.action_plan.field_treaty
+field_name: field_treaty
+entity_type: node
+bundle: action_plan
+label: Treaty
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      treaty: treaty
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

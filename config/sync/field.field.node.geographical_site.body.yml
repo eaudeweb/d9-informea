@@ -1,0 +1,23 @@
+uuid: 1eaa85b0-efbe-452e-b9fc-b6ad45f9bc17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.geographical_site
+  module:
+    - text
+id: node.geographical_site.body
+field_name: body
+entity_type: node
+bundle: geographical_site
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

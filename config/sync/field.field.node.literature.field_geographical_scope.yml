@@ -1,0 +1,21 @@
+uuid: 8f049660-4cd0-4b5f-b15c-b1c5443494ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geographical_scope
+    - node.type.literature
+  module:
+    - options
+id: node.literature.field_geographical_scope
+field_name: field_geographical_scope
+entity_type: node
+bundle: literature
+label: 'Geographical scope'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

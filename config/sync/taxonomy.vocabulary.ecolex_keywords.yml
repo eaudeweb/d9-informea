@@ -1,0 +1,8 @@
+uuid: 5339d615-53c7-47de-8104-b2c72356a0ba
+langcode: en
+status: true
+dependencies: {  }
+name: 'ECOLEX Keywords'
+vid: ecolex_keywords
+description: ''
+weight: 0

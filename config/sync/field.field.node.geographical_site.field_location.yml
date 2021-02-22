@@ -1,0 +1,19 @@
+uuid: d456a1df-42fa-4a67-8f86-ebcfd28c3848
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.geographical_site
+id: node.geographical_site.field_location
+field_name: field_location
+entity_type: node
+bundle: geographical_site
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

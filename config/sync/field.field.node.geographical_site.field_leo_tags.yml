@@ -1,0 +1,58 @@
+uuid: ec7972de-6d03-4589-9fdc-137451211c81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leo_tags
+    - node.type.geographical_site
+  module:
+    - powertagging
+id: node.geographical_site.field_leo_tags
+field_name: field_leo_tags
+entity_type: node
+bundle: geographical_site
+label: Keywords
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  include_in_tag_glossary: 0
+  automatically_tag_new_entities: 0
+  custom_freeterms: 1
+  use_shadow_concepts: 0
+  browse_concepts_charttypes:
+    spider: 0
+    tree: 0
+  fields:
+    title: title
+    body: body
+    field_abbreviation: 0
+    field_city: 0
+    field_country|countries|name: 0
+    field_country|countries|description: 0
+    field_country|countries|field_iso2: 0
+    field_country|countries|field_iso3: 0
+    field_country|countries|field_official_name: 0
+    field_event_type|event_types|name: 0
+    field_event_type|event_types|description: 0
+    field_location: 0
+    field_treaty|treaty|title: 0
+    field_treaty|treaty|body: 0
+    field_treaty|treaty|field_files: 0
+    field_treaty|treaty|field_official_name: 0
+    field_treaty|treaty|field_original_id: 0
+    field_treaty|treaty|field_title_abbreviation: 0
+  default_tags_field: ''
+  limits:
+    concepts_per_extraction: null
+    concepts_threshold: null
+    freeterms_per_extraction: null
+    freeterms_threshold: null
+  file_upload:
+    max_file_size: 2097152
+    max_file_count: 5
+  ac_add_matching_label: 0
+  ac_add_context: 0
+field_type: powertagging_tags

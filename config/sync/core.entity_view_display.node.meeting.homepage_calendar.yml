@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_mode.node.homepage_calendar
     - field.field.node.meeting.body
     - field.field.node.meeting.field_country
-    - field.field.node.meeting.field_date
+    - field.field.node.meeting.field_date_range
     - field.field.node.meeting.field_informative_sections
     - field.field.node.meeting.field_leo_tags
     - field.field.node.meeting.field_meeting_frequency
@@ -16,7 +16,6 @@ dependencies:
     - field.field.node.meeting.field_venue
     - node.type.meeting
   module:
-    - datetime_range
     - smart_trim
     - user
 id: node.meeting.homepage_calendar
@@ -43,16 +42,6 @@ content:
         text: false
         trim_zero: false
     third_party_settings: {  }
-  field_date:
-    weight: 3
-    label: above
-    settings:
-      separator: '-'
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: daterange_default
-    region: content
   links:
     weight: 0
     region: content
@@ -63,6 +52,7 @@ hidden:
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
   field_country: true
+  field_date_range: true
   field_informative_sections: true
   field_leo_tags: true
   field_meeting_frequency: true

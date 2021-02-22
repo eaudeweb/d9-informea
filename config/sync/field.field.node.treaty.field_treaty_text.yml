@@ -1,0 +1,67 @@
+uuid: a50be025-e4dd-4719-ae74-9000bc1a9a9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_treaty_text
+    - node.type.treaty
+    - paragraphs.paragraphs_type.text_paragraph
+  module:
+    - entity_reference_revisions
+id: node.treaty.field_treaty_text
+field_name: field_treaty_text
+entity_type: node
+bundle: treaty
+label: 'Treaty text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text_paragraph: text_paragraph
+    target_bundles_drag_drop:
+      block_content:
+        weight: 15
+        enabled: false
+      contact_role:
+        weight: 16
+        enabled: false
+      content:
+        weight: 17
+        enabled: false
+      heading:
+        weight: 18
+        enabled: false
+      home_page_information:
+        weight: 19
+        enabled: false
+      home_page_slider:
+        weight: 20
+        enabled: false
+      image_header:
+        weight: 21
+        enabled: false
+      meeting_document:
+        weight: 22
+        enabled: false
+      meeting_informative_section:
+        weight: 23
+        enabled: false
+      member_party:
+        weight: 14
+        enabled: false
+      ratification_status:
+        weight: 24
+        enabled: false
+      standfirst:
+        weight: 25
+        enabled: false
+      text_paragraph:
+        enabled: true
+        weight: 26
+field_type: entity_reference_revisions

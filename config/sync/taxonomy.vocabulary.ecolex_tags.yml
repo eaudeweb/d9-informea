@@ -1,0 +1,8 @@
+uuid: 65d1fc21-4b3e-42ac-9093-c4a57f64bac3
+langcode: en
+status: true
+dependencies: {  }
+name: 'ECOLEX Tags'
+vid: ecolex_tags
+description: ''
+weight: 0

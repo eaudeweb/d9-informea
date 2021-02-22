@@ -24,6 +24,7 @@ module:
   config_translation: 0
   config_update: 0
   contact: 0
+  content_type_clone: 0
   contextual: 0
   crop: 0
   csv_serialization: 0

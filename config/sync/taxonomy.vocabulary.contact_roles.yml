@@ -1,0 +1,8 @@
+uuid: 23b22223-4c59-47d1-860e-b09ab780efba
+langcode: en
+status: true
+dependencies: {  }
+name: 'Contact roles'
+vid: contact_roles
+description: ''
+weight: 0

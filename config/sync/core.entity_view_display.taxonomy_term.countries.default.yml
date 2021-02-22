@@ -3,12 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.countries.field_eu_member
     - field.field.taxonomy_term.countries.field_flag
     - field.field.taxonomy_term.countries.field_iso2
     - field.field.taxonomy_term.countries.field_iso3
+    - field.field.taxonomy_term.countries.field_latitude
+    - field.field.taxonomy_term.countries.field_longitude
     - field.field.taxonomy_term.countries.field_official_name
     - field.field.taxonomy_term.countries.field_region
     - field.field.taxonomy_term.countries.field_un_member
+    - field.field.taxonomy_term.countries.field_zoom
     - taxonomy.vocabulary.countries
   module:
     - text
@@ -24,6 +28,47 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_eu_member:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_latitude:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_longitude:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_zoom:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

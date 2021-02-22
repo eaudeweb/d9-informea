@@ -11,12 +11,14 @@ dependencies:
     - field.field.node.treaty.field_keywords
     - field.field.node.treaty.field_leo_tags
     - field.field.node.treaty.field_link
+    - field.field.node.treaty.field_member_parties
     - field.field.node.treaty.field_official_name
     - field.field.node.treaty.field_original_id
     - field.field.node.treaty.field_parent_treaty
     - field.field.node.treaty.field_region
     - field.field.node.treaty.field_title_abbreviation
     - field.field.node.treaty.field_topics
+    - field.field.node.treaty.field_treaty_text
     - field.field.node.treaty.field_treaty_type
     - image.style.thumbnail
     - node.type.treaty
@@ -24,6 +26,7 @@ dependencies:
     - datetime
     - file
     - link
+    - paragraphs
     - path
     - powertagging
     - svg_image
@@ -84,6 +87,18 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
+  field_member_parties:
+    type: entity_reference_paragraphs
+    weight: 28
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_official_name:
     weight: 2
     settings:
@@ -129,6 +144,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_treaty_text:
+    type: entity_reference_paragraphs
+    weight: 29
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   field_treaty_type:
     weight: 6

@@ -1,0 +1,19 @@
+uuid: 64d71eab-2d7f-4e99-96da-ed0f515fd419
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_original_id
+    - node.type.geographical_site
+id: node.geographical_site.field_original_id
+field_name: field_original_id
+entity_type: node
+bundle: geographical_site
+label: 'Original ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

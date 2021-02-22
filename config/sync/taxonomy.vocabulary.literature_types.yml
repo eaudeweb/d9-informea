@@ -1,0 +1,8 @@
+uuid: acc9ae67-486e-4585-9f5a-6d7362b9f14e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Literature types'
+vid: literature_types
+description: ''
+weight: 0

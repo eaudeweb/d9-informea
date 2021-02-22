@@ -1,0 +1,27 @@
+uuid: d0ab7ae3-68d5-476a-af05-67ba17bffadd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_event_access
+field_name: field_event_access
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: invitation
+      label: Invitation
+    -
+      value: public
+      label: Public
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 4fd8ee50-3f4e-438c-9502-7f3e5185f64d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_url
+    - node.type.decision
+  module:
+    - link
+id: node.decision.field_external_url
+field_name: field_external_url
+entity_type: node
+bundle: decision
+label: 'Link to decision on MEA website'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

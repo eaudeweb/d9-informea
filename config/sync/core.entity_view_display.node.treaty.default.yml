@@ -11,17 +11,20 @@ dependencies:
     - field.field.node.treaty.field_keywords
     - field.field.node.treaty.field_leo_tags
     - field.field.node.treaty.field_link
+    - field.field.node.treaty.field_member_parties
     - field.field.node.treaty.field_official_name
     - field.field.node.treaty.field_original_id
     - field.field.node.treaty.field_parent_treaty
     - field.field.node.treaty.field_region
     - field.field.node.treaty.field_title_abbreviation
     - field.field.node.treaty.field_topics
+    - field.field.node.treaty.field_treaty_text
     - field.field.node.treaty.field_treaty_type
     - image.style.medium
     - node.type.treaty
   module:
     - datetime
+    - entity_reference_revisions
     - file
     - link
     - options
@@ -102,6 +105,15 @@ content:
     third_party_settings: {  }
     type: link
     region: content
+  field_member_parties:
+    type: entity_reference_revisions_entity_view
+    weight: 13
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_official_name:
     type: string
     weight: 2
@@ -132,6 +144,15 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_treaty_text:
+    type: entity_reference_revisions_entity_view
+    weight: 14
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
   field_treaty_type:
     type: list_default

@@ -5,10 +5,27 @@ dependencies:
   config:
     - core.entity_view_mode.node.search_index
     - field.field.node.event.body
-    - field.field.node.event.field_date
+    - field.field.node.event.field_abbreviation
+    - field.field.node.event.field_city
+    - field.field.node.event.field_country
+    - field.field.node.event.field_date_time_range
+    - field.field.node.event.field_event_access
+    - field.field.node.event.field_event_kind
+    - field.field.node.event.field_event_status
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_external_url
+    - field.field.node.event.field_images
+    - field.field.node.event.field_latitude
+    - field.field.node.event.field_leo_tags
+    - field.field.node.event.field_location
+    - field.field.node.event.field_longitude
+    - field.field.node.event.field_original_id
+    - field.field.node.event.field_related_url
+    - field.field.node.event.field_repetition
+    - field.field.node.event.field_topics
+    - field.field.node.event.field_treaty
     - node.type.event
   module:
-    - datetime_range
     - smart_trim
     - user
 id: node.event.search_index
@@ -35,16 +52,6 @@ content:
         trim_zero: false
     third_party_settings: {  }
     region: content
-  field_date:
-    weight: 3
-    label: above
-    settings:
-      separator: '-'
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: daterange_default
-    region: content
   links:
     weight: 0
     region: content
@@ -54,5 +61,24 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_abbreviation: true
+  field_city: true
+  field_country: true
+  field_date_time_range: true
+  field_event_access: true
+  field_event_kind: true
+  field_event_status: true
+  field_event_type: true
+  field_external_url: true
+  field_images: true
+  field_latitude: true
+  field_leo_tags: true
+  field_location: true
+  field_longitude: true
+  field_original_id: true
+  field_related_url: true
+  field_repetition: true
+  field_topics: true
+  field_treaty: true
   langcode: true
   search_api_excerpt: true

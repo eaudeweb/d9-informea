@@ -1,0 +1,29 @@
+uuid: 22bbc422-9371-4d3b-b104-d620e6be00b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ecolex_tags
+    - node.type.literature
+    - taxonomy.vocabulary.ecolex_tags
+id: node.literature.field_ecolex_tags
+field_name: field_ecolex_tags
+entity_type: node
+bundle: literature
+label: 'ECOLEX subject(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ecolex_tags: ecolex_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

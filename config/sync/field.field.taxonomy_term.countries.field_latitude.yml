@@ -1,0 +1,23 @@
+uuid: 46d3fb5a-d7f1-402d-9dae-8218b2a63920
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_latitude
+    - taxonomy.vocabulary.countries
+id: taxonomy_term.countries.field_latitude
+field_name: field_latitude
+entity_type: taxonomy_term
+bundle: countries
+label: 'Center latitude'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

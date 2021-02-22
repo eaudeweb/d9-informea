@@ -1,0 +1,16 @@
+uuid: 5c79fdcd-a794-4184-b633-0393ac3c5541
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.action_plan
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.action_plan
+target_entity_type_id: node
+target_bundle: action_plan
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,29 @@
+uuid: 68fa8159-df4c-4dc6-9ebb-ed3600fa67ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_role
+    - paragraphs.paragraphs_type.contact_role
+    - taxonomy.vocabulary.contact_roles
+id: paragraph.contact_role.field_role
+field_name: field_role
+entity_type: paragraph
+bundle: contact_role
+label: Role
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      contact_roles: contact_roles
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

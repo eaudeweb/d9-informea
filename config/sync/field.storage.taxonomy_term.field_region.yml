@@ -12,25 +12,25 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: Africa
+      value: africa
       label: Africa
     -
-      value: 'Asia and the Pacific'
+      value: asia
       label: 'Asia and the Pacific'
     -
-      value: Europe
+      value: europe
       label: Europe
     -
-      value: 'Latin America and the Caribbean'
+      value: latin_america
       label: 'Latin America and the Caribbean'
     -
-      value: 'North America'
+      value: north_america
       label: 'North America'
     -
-      value: 'West Asia'
+      value: west_asia
       label: 'West Asia'
     -
-      value: 'Polar: Arctic'
+      value: polar
       label: 'Polar: Arctic'
   allowed_values_function: ''
 module: options

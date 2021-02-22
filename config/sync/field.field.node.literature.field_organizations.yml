@@ -1,0 +1,19 @@
+uuid: 480a1966-7b1d-4574-b54a-71a613e88529
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organizations
+    - node.type.literature
+id: node.literature.field_organizations
+field_name: field_organizations
+entity_type: node
+bundle: literature
+label: Organizations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

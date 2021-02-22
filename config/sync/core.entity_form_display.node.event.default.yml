@@ -4,11 +4,33 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
-    - field.field.node.event.field_date
+    - field.field.node.event.field_abbreviation
+    - field.field.node.event.field_city
+    - field.field.node.event.field_country
+    - field.field.node.event.field_date_time_range
+    - field.field.node.event.field_event_access
+    - field.field.node.event.field_event_kind
+    - field.field.node.event.field_event_status
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_external_url
+    - field.field.node.event.field_images
+    - field.field.node.event.field_latitude
+    - field.field.node.event.field_leo_tags
+    - field.field.node.event.field_location
+    - field.field.node.event.field_longitude
+    - field.field.node.event.field_original_id
+    - field.field.node.event.field_related_url
+    - field.field.node.event.field_repetition
+    - field.field.node.event.field_topics
+    - field.field.node.event.field_treaty
+    - image.style.thumbnail
     - node.type.event
   module:
     - datetime_range
+    - link
     - path
+    - powertagging
+    - svg_image
     - text
 id: node.event.default
 targetEntityType: node
@@ -31,11 +53,151 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_date:
-    weight: 1
+  field_abbreviation:
+    weight: 30
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_city:
+    weight: 39
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_country:
+    weight: 40
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_date_time_range:
+    weight: 32
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
+    region: content
+  field_event_access:
+    weight: 36
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_event_kind:
+    weight: 35
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_event_status:
+    weight: 37
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_event_type:
+    weight: 29
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_external_url:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_images:
+    weight: 38
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_latitude:
+    weight: 43
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_leo_tags:
+    weight: 41
+    settings: {  }
+    third_party_settings: {  }
+    type: powertagging_tags_default
+    region: content
+  field_location:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_longitude:
+    weight: 44
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_original_id:
+    weight: 45
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_related_url:
+    weight: 28
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_repetition:
+    weight: 34
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_topics:
+    weight: 42
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_treaty:
+    weight: 33
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   langcode:
     type: language_select

@@ -1,0 +1,23 @@
+uuid: 9954147f-9599-4bf8-a5f7-d66106a7005c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_url
+    - node.type.decision
+  module:
+    - link
+id: node.decision.field_meeting_url
+field_name: field_meeting_url
+entity_type: node
+bundle: decision
+label: 'Meeting URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

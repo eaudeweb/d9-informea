@@ -1,0 +1,71 @@
+uuid: 4dd70ca2-7a6e-40a5-9226-289e1719ff1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact_person.body
+    - field.field.node.contact_person.field_address
+    - field.field.node.contact_person.field_country
+    - field.field.node.contact_person.field_department
+    - field.field.node.contact_person.field_email
+    - field.field.node.contact_person.field_fax
+    - field.field.node.contact_person.field_first_name
+    - field.field.node.contact_person.field_gender
+    - field.field.node.contact_person.field_institution
+    - field.field.node.contact_person.field_last_name
+    - field.field.node.contact_person.field_original_id
+    - field.field.node.contact_person.field_person_prefix
+    - field.field.node.contact_person.field_person_type
+    - field.field.node.contact_person.field_position
+    - field.field.node.contact_person.field_primary_nfp
+    - field.field.node.contact_person.field_roles
+    - field.field.node.contact_person.field_telephone
+    - field.field.node.contact_person.field_topics
+    - field.field.node.contact_person.field_treaty
+    - node.type.contact_person
+  module:
+    - text
+    - user
+id: node.contact_person.teaser
+targetEntityType: node
+bundle: contact_person
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_address: true
+  field_country: true
+  field_department: true
+  field_email: true
+  field_fax: true
+  field_first_name: true
+  field_gender: true
+  field_institution: true
+  field_last_name: true
+  field_original_id: true
+  field_person_prefix: true
+  field_person_type: true
+  field_position: true
+  field_primary_nfp: true
+  field_roles: true
+  field_telephone: true
+  field_topics: true
+  field_treaty: true
+  langcode: true
+  search_api_excerpt: true

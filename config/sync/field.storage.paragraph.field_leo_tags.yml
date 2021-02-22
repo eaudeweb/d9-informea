@@ -1,0 +1,20 @@
+uuid: 191ef38e-2b76-42c5-b799-889f7f672c57
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - powertagging
+id: paragraph.field_leo_tags
+field_name: field_leo_tags
+entity_type: paragraph
+type: powertagging_tags
+settings:
+  powertagging_id: informea_poolparty
+module: powertagging
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

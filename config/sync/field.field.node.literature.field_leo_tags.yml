@@ -1,0 +1,93 @@
+uuid: 9f801b5c-9551-4714-a683-1c9191b63e87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leo_tags
+    - node.type.literature
+  module:
+    - powertagging
+id: node.literature.field_leo_tags
+field_name: field_leo_tags
+entity_type: node
+bundle: literature
+label: Keywords
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  include_in_tag_glossary: 0
+  automatically_tag_new_entities: 0
+  custom_freeterms: 1
+  use_shadow_concepts: 0
+  browse_concepts_charttypes:
+    spider: 0
+    tree: 0
+  fields:
+    title: title
+    body: body
+    field_alternative_record_id: 0
+    field_author: 0
+    field_author_institution: 0
+    field_call_number: 0
+    field_collation: 0
+    field_country|countries|name: 0
+    field_country|countries|description: 0
+    field_country|countries|field_iso2: 0
+    field_country|countries|field_iso3: 0
+    field_country|countries|field_official_name: 0
+    field_data_source|data_sources|name: 0
+    field_data_source|data_sources|description: 0
+    field_ecolex_keywords|ecolex_keywords|name: 0
+    field_ecolex_keywords|ecolex_keywords|description: 0
+    field_ecolex_tags|ecolex_tags|name: 0
+    field_ecolex_tags|ecolex_tags|description: 0
+    field_isbn: 0
+    field_isis_number: 0
+    field_literature_type|literature_types|name: 0
+    field_literature_type|literature_types|description: 0
+    field_organizations: 0
+    field_original_id: 0
+    field_paper_title: 0
+    field_publication_place: 0
+    field_publisher: 0
+    field_related_literature|literature|title: 0
+    field_related_literature|literature|body: 0
+    field_related_literature|literature|field_alternative_record_id: 0
+    field_related_literature|literature|field_author: 0
+    field_related_literature|literature|field_author_institution: 0
+    field_related_literature|literature|field_call_number: 0
+    field_related_literature|literature|field_collation: 0
+    field_related_literature|literature|field_isbn: 0
+    field_related_literature|literature|field_isis_number: 0
+    field_related_literature|literature|field_organizations: 0
+    field_related_literature|literature|field_original_id: 0
+    field_related_literature|literature|field_paper_title: 0
+    field_related_literature|literature|field_publication_place: 0
+    field_related_literature|literature|field_publisher: 0
+    field_related_literature|literature|field_serial_title: 0
+    field_related_literature|literature|field_volume_no: 0
+    field_serial_title: 0
+    field_territorial_subdivision|territorial_subdivisions|name: 0
+    field_territorial_subdivision|territorial_subdivisions|description: 0
+    field_treaty|treaty|title: 0
+    field_treaty|treaty|body: 0
+    field_treaty|treaty|field_files: 0
+    field_treaty|treaty|field_official_name: 0
+    field_treaty|treaty|field_original_id: 0
+    field_treaty|treaty|field_title_abbreviation: 0
+    field_volume_no: 0
+  default_tags_field: ''
+  limits:
+    concepts_per_extraction: '20'
+    concepts_threshold: '10'
+    freeterms_per_extraction: ''
+    freeterms_threshold: '50'
+  file_upload:
+    max_file_size: 2097152
+    max_file_count: 5
+  ac_add_matching_label: 0
+  ac_add_context: 0
+field_type: powertagging_tags

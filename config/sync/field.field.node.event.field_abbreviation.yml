@@ -1,0 +1,19 @@
+uuid: a25f85bc-c0eb-45b8-b915-2ec77748c379
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abbreviation
+    - node.type.event
+id: node.event.field_abbreviation
+field_name: field_abbreviation
+entity_type: node
+bundle: event
+label: Abbreviation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

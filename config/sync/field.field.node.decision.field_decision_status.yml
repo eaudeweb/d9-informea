@@ -1,0 +1,21 @@
+uuid: be94f948-1772-4fdc-8762-0a178e5879dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_decision_status
+    - node.type.decision
+  module:
+    - options
+id: node.decision.field_decision_status
+field_name: field_decision_status
+entity_type: node
+bundle: decision
+label: 'Decision status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

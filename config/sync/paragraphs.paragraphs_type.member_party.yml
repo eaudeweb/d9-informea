@@ -1,0 +1,10 @@
+uuid: c290718f-fc70-40ef-9221-cec0fa01f1b5
+langcode: en
+status: true
+dependencies: {  }
+id: member_party
+label: 'Member party'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,97 @@
+uuid: f57034f3-d6a3-4145-889a-40b64f321a79
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.literature.body
+    - field.field.node.literature.field_alternative_record_id
+    - field.field.node.literature.field_author
+    - field.field.node.literature.field_author_institution
+    - field.field.node.literature.field_call_number
+    - field.field.node.literature.field_collation
+    - field.field.node.literature.field_country
+    - field.field.node.literature.field_data_source
+    - field.field.node.literature.field_date
+    - field.field.node.literature.field_date_of_entry
+    - field.field.node.literature.field_date_of_modification
+    - field.field.node.literature.field_ecolex_keywords
+    - field.field.node.literature.field_ecolex_tags
+    - field.field.node.literature.field_ecolex_url
+    - field.field.node.literature.field_external_url
+    - field.field.node.literature.field_files
+    - field.field.node.literature.field_geographical_scope
+    - field.field.node.literature.field_isbn
+    - field.field.node.literature.field_isis_number
+    - field.field.node.literature.field_leo_tags
+    - field.field.node.literature.field_literature_type
+    - field.field.node.literature.field_organizations
+    - field.field.node.literature.field_original_id
+    - field.field.node.literature.field_paper_title
+    - field.field.node.literature.field_publication_place
+    - field.field.node.literature.field_publisher
+    - field.field.node.literature.field_related_literature
+    - field.field.node.literature.field_serial_title
+    - field.field.node.literature.field_territorial_subdivision
+    - field.field.node.literature.field_topics
+    - field.field.node.literature.field_treaty
+    - field.field.node.literature.field_volume_no
+    - node.type.literature
+  module:
+    - text
+    - user
+id: node.literature.teaser
+targetEntityType: node
+bundle: literature
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_alternative_record_id: true
+  field_author: true
+  field_author_institution: true
+  field_call_number: true
+  field_collation: true
+  field_country: true
+  field_data_source: true
+  field_date: true
+  field_date_of_entry: true
+  field_date_of_modification: true
+  field_ecolex_keywords: true
+  field_ecolex_tags: true
+  field_ecolex_url: true
+  field_external_url: true
+  field_files: true
+  field_geographical_scope: true
+  field_isbn: true
+  field_isis_number: true
+  field_leo_tags: true
+  field_literature_type: true
+  field_organizations: true
+  field_original_id: true
+  field_paper_title: true
+  field_publication_place: true
+  field_publisher: true
+  field_related_literature: true
+  field_serial_title: true
+  field_territorial_subdivision: true
+  field_topics: true
+  field_treaty: true
+  field_volume_no: true
+  langcode: true
+  search_api_excerpt: true

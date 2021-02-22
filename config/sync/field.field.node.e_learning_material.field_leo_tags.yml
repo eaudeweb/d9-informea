@@ -1,0 +1,42 @@
+uuid: fbb716e4-9406-4fe0-8e4e-31eb6d5a5036
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leo_tags
+    - node.type.e_learning_material
+  module:
+    - powertagging
+id: node.e_learning_material.field_leo_tags
+field_name: field_leo_tags
+entity_type: node
+bundle: e_learning_material
+label: Keywords
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  include_in_tag_glossary: 0
+  automatically_tag_new_entities: 0
+  custom_freeterms: 1
+  use_shadow_concepts: 0
+  browse_concepts_charttypes:
+    spider: 0
+    tree: 0
+  fields:
+    title: title
+    body: body
+  default_tags_field: ''
+  limits:
+    concepts_per_extraction: '20'
+    concepts_threshold: '10'
+    freeterms_per_extraction: ''
+    freeterms_threshold: '50'
+  file_upload:
+    max_file_size: 2097152
+    max_file_count: 5
+  ac_add_matching_label: 0
+  ac_add_context: 0
+field_type: powertagging_tags

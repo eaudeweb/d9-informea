@@ -1,0 +1,28 @@
+uuid: 9c0a10c6-2135-4fc1-b731-a0b71300b83a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_treaty
+    - node.type.treaty
+    - paragraphs.paragraphs_type.contact_role
+id: paragraph.contact_role.field_treaty
+field_name: field_treaty
+entity_type: paragraph
+bundle: contact_role
+label: Treaty
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      treaty: treaty
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

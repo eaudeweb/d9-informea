@@ -1,0 +1,16 @@
+uuid: c0f3c019-bbec-459d-b6c9-edc32c89018b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.decision
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.decision
+target_entity_type_id: node
+target_bundle: decision
+default_langcode: site_default
+language_alterable: false

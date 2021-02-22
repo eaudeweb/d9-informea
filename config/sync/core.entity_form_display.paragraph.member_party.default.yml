@@ -1,0 +1,75 @@
+uuid: 2621d8f2-9768-4f11-a581-a28d9adaaa9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.member_party.field_country
+    - field.field.paragraph.member_party.field_entry_into_force
+    - field.field.paragraph.member_party.field_original_status
+    - field.field.paragraph.member_party.field_party_date_1
+    - field.field.paragraph.member_party.field_party_date_2
+    - field.field.paragraph.member_party.field_party_status
+    - field.field.paragraph.member_party.field_treaty
+    - paragraphs.paragraphs_type.member_party
+  module:
+    - datetime
+id: paragraph.member_party.default
+targetEntityType: paragraph
+bundle: member_party
+mode: default
+content:
+  field_country:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_entry_into_force:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_original_status:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_party_date_1:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_party_date_2:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_party_status:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_treaty:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

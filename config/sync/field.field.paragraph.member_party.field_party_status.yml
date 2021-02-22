@@ -1,0 +1,21 @@
+uuid: 6622366f-3c9f-4307-b3e0-f24c09bb2e83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_party_status
+    - paragraphs.paragraphs_type.member_party
+  module:
+    - options
+id: paragraph.member_party.field_party_status
+field_name: field_party_status
+entity_type: paragraph
+bundle: member_party
+label: 'Party status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

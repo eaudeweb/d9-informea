@@ -1,0 +1,27 @@
+uuid: 2086c14c-48ac-434d-913d-3173e020d4eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.decision
+  module:
+    - file
+id: node.decision.field_files
+field_name: field_files
+entity_type: node
+bundle: decision
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'decisions/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt docx docm dotx dotm docb doc zip pdf xls xlsx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

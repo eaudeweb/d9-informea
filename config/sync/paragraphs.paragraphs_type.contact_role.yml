@@ -1,0 +1,10 @@
+uuid: f2478ab1-aafe-4acb-97ed-64864e471757
+langcode: en
+status: true
+dependencies: {  }
+id: contact_role
+label: 'Contact role'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

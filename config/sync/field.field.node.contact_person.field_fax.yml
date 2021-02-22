@@ -1,0 +1,19 @@
+uuid: 58f07e64-0f34-466c-a68f-8dd4dca80e4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fax
+    - node.type.contact_person
+id: node.contact_person.field_fax
+field_name: field_fax
+entity_type: node
+bundle: contact_person
+label: Fax
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

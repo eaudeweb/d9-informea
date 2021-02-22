@@ -1,0 +1,23 @@
+uuid: 29752616-a596-4ef4-86c4-f9efc8fa03db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_url
+    - node.type.event
+  module:
+    - link
+id: node.event.field_related_url
+field_name: field_related_url
+entity_type: node
+bundle: event
+label: 'IISD page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

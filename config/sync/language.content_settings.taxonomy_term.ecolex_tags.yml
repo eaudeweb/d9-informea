@@ -1,0 +1,16 @@
+uuid: 955adb71-26e0-446b-890b-a56ef3eb0306
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ecolex_tags
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.ecolex_tags
+target_entity_type_id: taxonomy_term
+target_bundle: ecolex_tags
+default_langcode: site_default
+language_alterable: false

@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.meeting.body
     - field.field.node.meeting.field_country
-    - field.field.node.meeting.field_date
+    - field.field.node.meeting.field_date_range
     - field.field.node.meeting.field_informative_sections
     - field.field.node.meeting.field_leo_tags
     - field.field.node.meeting.field_meeting_frequency
@@ -116,8 +116,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_date:
-    weight: 24
+  field_date_range:
+    weight: 28
     settings: {  }
     third_party_settings: {  }
     type: daterange_default

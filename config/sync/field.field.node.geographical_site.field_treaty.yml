@@ -1,0 +1,28 @@
+uuid: 4169d4c6-4125-4f98-aeb8-e8fbfdf2c1ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_treaty
+    - node.type.geographical_site
+    - node.type.treaty
+id: node.geographical_site.field_treaty
+field_name: field_treaty
+entity_type: node
+bundle: geographical_site
+label: Treaty
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      treaty: treaty
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

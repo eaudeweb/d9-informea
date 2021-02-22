@@ -1,0 +1,16 @@
+uuid: 0d5cb6aa-5f3e-4013-8ba4-1ebbdf41dcc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.literature
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.literature
+target_entity_type_id: node
+target_bundle: literature
+default_langcode: site_default
+language_alterable: false

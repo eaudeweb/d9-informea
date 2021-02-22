@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e4728770665fe7e6b0a5d4a0f2b9161",
+    "content-hash": "69990648086eb199fc64a6a418089272",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -115,7 +115,7 @@
             "version": "3.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
             },
             "dist": {
@@ -2799,6 +2799,48 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/config_update"
             }
+        },
+        {
+            "name": "drupal/content_type_clone",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/content_type_clone.git",
+                "reference": "e4948ca14f73c98f44dae5139f01b0f3c5a66a1e"
+            },
+            "require": {
+                "drupal/core": "^8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1518973380",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "David Fiaty",
+                    "homepage": "https://www.drupal.org/user/3448299"
+                }
+            ],
+            "description": "Allows to clone content types from a simple link added to each content type in the content type list",
+            "homepage": "https://www.drupal.org/project/content_type_clone",
+            "support": {
+                "source": "https://git.drupalcode.org/project/content_type_clone"
+            },
+            "time": "2018-02-18T16:53:08+00:00"
         },
         {
             "name": "drupal/core",
@@ -12777,6 +12819,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/autocomplete_deluxe": 5,
+        "drupal/content_type_clone": 20,
         "drupal/facets": 20,
         "drupal/purge": 20
     },

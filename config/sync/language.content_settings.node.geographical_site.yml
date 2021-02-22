@@ -1,0 +1,16 @@
+uuid: 927e80ce-f1c0-4522-9b81-ba0ed5386366
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.geographical_site
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.geographical_site
+target_entity_type_id: node
+target_bundle: geographical_site
+default_langcode: site_default
+language_alterable: false

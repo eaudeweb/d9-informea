@@ -12,12 +12,14 @@ dependencies:
     - field.field.node.treaty.field_keywords
     - field.field.node.treaty.field_leo_tags
     - field.field.node.treaty.field_link
+    - field.field.node.treaty.field_member_parties
     - field.field.node.treaty.field_official_name
     - field.field.node.treaty.field_original_id
     - field.field.node.treaty.field_parent_treaty
     - field.field.node.treaty.field_region
     - field.field.node.treaty.field_title_abbreviation
     - field.field.node.treaty.field_topics
+    - field.field.node.treaty.field_treaty_text
     - field.field.node.treaty.field_treaty_type
     - image.style.medium
     - node.type.treaty
@@ -120,10 +122,12 @@ hidden:
   field_data_source: true
   field_keywords: true
   field_link: true
+  field_member_parties: true
   field_official_name: true
   field_original_id: true
   field_parent_treaty: true
   field_title_abbreviation: true
   field_topics: true
+  field_treaty_text: true
   langcode: true
   search_api_excerpt: true

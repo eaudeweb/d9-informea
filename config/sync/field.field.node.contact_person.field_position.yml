@@ -1,0 +1,19 @@
+uuid: 841c1281-269e-4a07-916f-3258d50dc6c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position
+    - node.type.contact_person
+id: node.contact_person.field_position
+field_name: field_position
+entity_type: node
+bundle: contact_person
+label: Position
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
