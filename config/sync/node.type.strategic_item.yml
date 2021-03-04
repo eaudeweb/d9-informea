@@ -1,0 +1,18 @@
+uuid: 6b26b061-a985-4ad5-9ff6-9e9efc825787
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Strategic item'
+type: strategic_item
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

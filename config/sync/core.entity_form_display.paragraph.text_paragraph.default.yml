@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.text_paragraph.field_children_paragraphs
     - field.field.paragraph.text_paragraph.field_leo_tags
+    - field.field.paragraph.text_paragraph.field_strategic_items
     - field.field.paragraph.text_paragraph.field_text
     - paragraphs.paragraphs_type.text_paragraph
   module:
@@ -33,6 +34,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: powertagging_tags_default
+    region: content
+  field_strategic_items:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_text:
     weight: 1

@@ -1,0 +1,16 @@
+uuid: 4f7d9f5b-d419-409b-ad50-8200f0ea6002
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.goal_sources
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.goal_sources
+target_entity_type_id: taxonomy_term
+target_bundle: goal_sources
+default_langcode: site_default
+language_alterable: false

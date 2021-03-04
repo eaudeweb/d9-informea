@@ -1,0 +1,28 @@
+uuid: 61f1c904-6f0c-49e7-bda3-63df859fce4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_strategic_items
+    - node.type.strategic_item
+    - paragraphs.paragraphs_type.text_paragraph
+id: paragraph.text_paragraph.field_strategic_items
+field_name: field_strategic_items
+entity_type: paragraph
+bundle: text_paragraph
+label: 'Strategic items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      strategic_item: strategic_item
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

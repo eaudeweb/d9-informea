@@ -8,15 +8,12 @@ dependencies:
     - field.field.node.case_law.field_country
     - field.field.node.case_law.field_court_name
     - field.field.node.case_law.field_data_source
-    - field.field.node.case_law.field_date_of_text
+    - field.field.node.case_law.field_date
     - field.field.node.case_law.field_files
     - field.field.node.case_law.field_justices
-    - field.field.node.case_law.field_key_questions
     - field.field.node.case_law.field_keywords
-    - field.field.node.case_law.field_landmark_case
     - field.field.node.case_law.field_leo_tags
     - field.field.node.case_law.field_link
-    - field.field.node.case_law.field_make_public
     - field.field.node.case_law.field_meas
     - field.field.node.case_law.field_notes
     - field.field.node.case_law.field_original_id
@@ -90,8 +87,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_date_of_text:
-    weight: 12
+  field_date:
+    weight: 33
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
@@ -110,21 +107,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_key_questions:
-    weight: 15
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  field_landmark_case:
-    weight: 16
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
     region: content
   field_leo_tags:
     weight: 26
@@ -307,7 +289,6 @@ content:
 hidden:
   created: true
   field_keywords: true
-  field_make_public: true
   field_relevance: true
   field_tags: true
   promote: true

@@ -1,0 +1,16 @@
+uuid: 5de7def7-7c1e-4ac2-aa81-d2de39dee7f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.strategic_item
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.strategic_item
+target_entity_type_id: node
+target_bundle: strategic_item
+default_langcode: site_default
+language_alterable: false

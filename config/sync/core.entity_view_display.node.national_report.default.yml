@@ -1,0 +1,128 @@
+uuid: 85b0f005-7565-48ee-a12e-c28270399c19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.national_report.body
+    - field.field.node.national_report.field_country
+    - field.field.node.national_report.field_date
+    - field.field.node.national_report.field_external_url
+    - field.field.node.national_report.field_files
+    - field.field.node.national_report.field_leo_tags
+    - field.field.node.national_report.field_original_id
+    - field.field.node.national_report.field_paragraphs
+    - field.field.node.national_report.field_topics
+    - field.field.node.national_report.field_treaty
+    - node.type.national_report
+  module:
+    - datetime
+    - entity_reference_revisions
+    - file
+    - link
+    - powertagging
+    - text
+    - user
+id: node.national_report.default
+targetEntityType: node
+bundle: national_report
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_country:
+    weight: 2
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_date:
+    weight: 105
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_external_url:
+    weight: 107
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_files:
+    weight: 12
+    label: inline
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_leo_tags:
+    weight: 20
+    label: inline
+    settings:
+      add_hidden_info: {  }
+      tag_sort_order: score
+      freeterms_at_end: ''
+      split_terms: '0'
+    third_party_settings: {  }
+    type: powertagging_tags_list
+    region: content
+  field_original_id:
+    type: string
+    weight: 23
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_paragraphs:
+    weight: 108
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_topics:
+    weight: 11
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_treaty:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

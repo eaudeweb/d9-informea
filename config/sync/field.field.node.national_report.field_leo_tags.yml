@@ -1,0 +1,84 @@
+uuid: 88e475c7-2c42-48c1-ac79-27405e1d9373
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leo_tags
+    - node.type.national_report
+  module:
+    - powertagging
+id: node.national_report.field_leo_tags
+field_name: field_leo_tags
+entity_type: node
+bundle: national_report
+label: Keywords
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  include_in_tag_glossary: 0
+  automatically_tag_new_entities: 1
+  custom_freeterms: 1
+  use_shadow_concepts: 0
+  browse_concepts_charttypes:
+    0: 0
+    spider: 0
+    tree: 0
+  fields:
+    title: title
+    body: body
+    field_court_name: field_court_name
+    field_files: field_files
+    field_justices: field_justices
+    field_original_id: field_original_id
+    field_reference_number: field_reference_number
+    field_data_source|data_sources|name: 0
+    field_data_source|data_sources|description: 0
+    field_key_questions: 0
+    field_notes: 0
+    field_original_title: 0
+    field_relations_court_case|case_law|title: 0
+    field_relations_court_case|case_law|body: 0
+    field_relations_court_case|case_law|field_court_name: 0
+    field_relations_court_case|case_law|field_files: 0
+    field_relations_court_case|case_law|field_justices: 0
+    field_relations_court_case|case_law|field_key_questions: 0
+    field_relations_court_case|case_law|field_notes: 0
+    field_relations_court_case|case_law|field_original_id: 0
+    field_relations_court_case|case_law|field_original_title: 0
+    field_relations_court_case|case_law|field_reference_number: 0
+    field_relations_court_case|case_law|field_seat_of_court: 0
+    field_relations_legislation|national_legislation|title: 0
+    field_relations_legislation|national_legislation|body: 0
+    field_relations_legislation|national_legislation|field_abstract: 0
+    field_relations_legislation|national_legislation|field_alternative_record_id: 0
+    field_relations_legislation|national_legislation|field_attached_files: 0
+    field_relations_legislation|national_legislation|field_entry_into_force_notes: 0
+    field_relations_legislation|national_legislation|field_faolex_id: 0
+    field_relations_legislation|national_legislation|field_long_title_of_text: 0
+    field_relations_legislation|national_legislation|field_notes: 0
+    field_relations_legislation|national_legislation|field_original_id: 0
+    field_relations_legislation|national_legislation|field_original_title_of_text: 0
+    field_relations_legislation|national_legislation|field_publication_reference: 0
+    field_relations_legislation|national_legislation|field_serial_imprint: 0
+    field_relations_legislation|national_legislation|field_territorials: 0
+    field_relations_legislation|national_legislation|field_title_abbreviation: 0
+    field_sdgs|sdgs|name: 0
+    field_sdgs|sdgs|description: 0
+    field_seat_of_court: 0
+    field_topics|topics|name: 0
+    field_topics|topics|description: 0
+  default_tags_field: ''
+  limits:
+    concepts_per_extraction: null
+    concepts_threshold: null
+    freeterms_per_extraction: null
+    freeterms_threshold: null
+  file_upload:
+    max_file_size: '8388608'
+    max_file_count: '5'
+  ac_add_matching_label: 0
+  ac_add_context: 0
+field_type: powertagging_tags

@@ -1,0 +1,19 @@
+uuid: 5f401ee3-dbef-49f9-9b43-d2d1062019b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_original_id
+    - node.type.national_report
+id: node.national_report.field_original_id
+field_name: field_original_id
+entity_type: node
+bundle: national_report
+label: 'Original ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: b2a9ccb8-4734-4118-8383-75319e9268c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_url
+    - node.type.strategic_item
+  module:
+    - link
+id: node.strategic_item.field_external_url
+field_name: field_external_url
+entity_type: node
+bundle: strategic_item
+label: URL
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

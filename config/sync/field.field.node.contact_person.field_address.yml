@@ -1,12 +1,10 @@
-uuid: bf08e85b-4e3c-4397-afc5-f40046f6035f
+uuid: b12318f3-ac65-4a19-81b0-820dd0109118
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_address
     - node.type.contact_person
-  module:
-    - text
 id: node.contact_person.field_address
 field_name: field_address
 entity_type: node
@@ -18,4 +16,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text_long
+field_type: string_long

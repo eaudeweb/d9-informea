@@ -1,0 +1,19 @@
+uuid: e2ce9a1f-3868-4bd4-80ce-067017ef317c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_goal_tools
+field_name: field_goal_tools
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

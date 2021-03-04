@@ -1,0 +1,17 @@
+uuid: 81374e57-0b1d-4c9b-b360-ae2f17e8d33f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'National report'
+type: national_report
+description: 'National reports delivered by the MEA parties'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

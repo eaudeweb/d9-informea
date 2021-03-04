@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
-    - field.field.node.news.field_date_of_text
+    - field.field.node.news.field_date
+    - field.field.node.news.field_external_url
     - field.field.node.news.field_image
     - field.field.node.news.field_leo_tags
-    - field.field.node.news.field_link
     - image.style.thumbnail
     - node.type.news
   module:
@@ -38,11 +38,19 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_date_of_text:
-    weight: 122
+  field_date:
+    weight: 126
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_external_url:
+    weight: 127
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_image:
     weight: 123
@@ -57,14 +65,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: powertagging_tags_default
-    region: content
-  field_link:
-    weight: 124
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
     region: content
   langcode:
     type: language_select

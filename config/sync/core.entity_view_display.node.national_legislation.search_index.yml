@@ -9,20 +9,21 @@ dependencies:
     - field.field.node.national_legislation.field_alternative_record_id
     - field.field.node.national_legislation.field_amended_by
     - field.field.node.national_legislation.field_amends
-    - field.field.node.national_legislation.field_attached_files
     - field.field.node.national_legislation.field_available_website
     - field.field.node.national_legislation.field_country
     - field.field.node.national_legislation.field_data_source
+    - field.field.node.national_legislation.field_date
     - field.field.node.national_legislation.field_date_consolidation
-    - field.field.node.national_legislation.field_date_of_text
     - field.field.node.national_legislation.field_date_original_text
     - field.field.node.national_legislation.field_date_start
     - field.field.node.national_legislation.field_ecolex_legislation_status
     - field.field.node.national_legislation.field_ecolex_url
     - field.field.node.national_legislation.field_entry_into_force_notes
+    - field.field.node.national_legislation.field_external_url
     - field.field.node.national_legislation.field_faolex_id
     - field.field.node.national_legislation.field_faolex_organization
     - field.field.node.national_legislation.field_faolex_url
+    - field.field.node.national_legislation.field_files
     - field.field.node.national_legislation.field_implemented_by
     - field.field.node.national_legislation.field_implements
     - field.field.node.national_legislation.field_internet_reference
@@ -32,7 +33,6 @@ dependencies:
     - field.field.node.national_legislation.field_legislation_areas
     - field.field.node.national_legislation.field_legislation_tags
     - field.field.node.national_legislation.field_leo_tags
-    - field.field.node.national_legislation.field_link_url
     - field.field.node.national_legislation.field_long_title_of_text
     - field.field.node.national_legislation.field_meas
     - field.field.node.national_legislation.field_notes
@@ -56,7 +56,6 @@ dependencies:
     - node.type.national_legislation
   module:
     - datetime
-    - file
     - powertagging
     - smart_trim
     - user
@@ -84,14 +83,6 @@ content:
         trim_zero: false
     third_party_settings: {  }
     region: content
-  field_attached_files:
-    type: file_default
-    weight: 8
-    region: content
-    label: hidden
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
   field_country:
     weight: 2
     label: hidden
@@ -143,15 +134,17 @@ hidden:
   field_amends: true
   field_available_website: true
   field_data_source: true
+  field_date: true
   field_date_consolidation: true
-  field_date_of_text: true
   field_date_start: true
   field_ecolex_legislation_status: true
   field_ecolex_url: true
   field_entry_into_force_notes: true
+  field_external_url: true
   field_faolex_id: true
   field_faolex_organization: true
   field_faolex_url: true
+  field_files: true
   field_implemented_by: true
   field_implements: true
   field_internet_reference: true
@@ -161,7 +154,6 @@ hidden:
   field_legislation_amendment: true
   field_legislation_areas: true
   field_legislation_tags: true
-  field_link_url: true
   field_long_title_of_text: true
   field_meas: true
   field_notes: true

@@ -1,0 +1,177 @@
+uuid: 0ac29512-429f-4319-b52d-0187950bc96e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.strategic_item.body
+    - field.field.node.strategic_item.field_external_url
+    - field.field.node.strategic_item.field_geographical_scope
+    - field.field.node.strategic_item.field_goal_source
+    - field.field.node.strategic_item.field_goal_tools
+    - field.field.node.strategic_item.field_image
+    - field.field.node.strategic_item.field_leo_tags
+    - field.field.node.strategic_item.field_original_id
+    - field.field.node.strategic_item.field_parent_item
+    - field.field.node.strategic_item.field_related_strategic_items
+    - field.field.node.strategic_item.field_related_url
+    - field.field.node.strategic_item.field_summary
+    - field.field.node.strategic_item.field_topics
+    - field.field.node.strategic_item.field_treaty
+    - field.field.node.strategic_item.field_weight
+    - node.type.strategic_item
+  module:
+    - link
+    - options
+    - powertagging
+    - svg_image
+    - text
+    - user
+id: node.strategic_item.default
+targetEntityType: node
+bundle: strategic_item
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_external_url:
+    weight: 109
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_geographical_scope:
+    weight: 112
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_goal_source:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_goal_tools:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 106
+    label: above
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_leo_tags:
+    weight: 107
+    label: above
+    settings:
+      add_hidden_info: {  }
+      tag_sort_order: score
+      freeterms_at_end: false
+      split_terms: 0
+    third_party_settings: {  }
+    type: powertagging_tags_list
+    region: content
+  field_original_id:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_parent_item:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_related_strategic_items:
+    weight: 115
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_related_url:
+    weight: 113
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_summary:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_topics:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_treaty:
+    weight: 114
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_weight:
+    weight: 111
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

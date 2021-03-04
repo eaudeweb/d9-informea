@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: News
 type: news
-description: '<b>NOT IN USE</b> - It used to appear in a block on the home page.'
+description: ''
 help: ''
 new_revision: true
 preview_mode: 0

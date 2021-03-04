@@ -1,0 +1,27 @@
+uuid: ab274242-1cae-4002-9ac6-b049b806abba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parent_item
+    - node.type.strategic_item
+id: node.strategic_item.field_parent_item
+field_name: field_parent_item
+entity_type: node
+bundle: strategic_item
+label: 'Parent item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      strategic_item: strategic_item
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

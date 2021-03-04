@@ -1,0 +1,21 @@
+uuid: 1534e985-1b61-4fb1-9880-a8352261d99f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geographical_scope
+    - node.type.strategic_item
+  module:
+    - options
+id: node.strategic_item.field_geographical_scope
+field_name: field_geographical_scope
+entity_type: node
+bundle: strategic_item
+label: 'Geographical scope'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

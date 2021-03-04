@@ -8,15 +8,12 @@ dependencies:
     - field.field.node.case_law.field_country
     - field.field.node.case_law.field_court_name
     - field.field.node.case_law.field_data_source
-    - field.field.node.case_law.field_date_of_text
+    - field.field.node.case_law.field_date
     - field.field.node.case_law.field_files
     - field.field.node.case_law.field_justices
-    - field.field.node.case_law.field_key_questions
     - field.field.node.case_law.field_keywords
-    - field.field.node.case_law.field_landmark_case
     - field.field.node.case_law.field_leo_tags
     - field.field.node.case_law.field_link
-    - field.field.node.case_law.field_make_public
     - field.field.node.case_law.field_meas
     - field.field.node.case_law.field_notes
     - field.field.node.case_law.field_original_id
@@ -92,14 +89,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_date_of_text:
-    weight: 1
-    label: inline
+  field_date:
+    weight: 24
+    label: above
     settings:
+      format_type: medium
       timezone_override: ''
-      date_format: 'd M Y'
     third_party_settings: {  }
-    type: datetime_custom
+    type: datetime_default
     region: content
   field_files:
     weight: 12
@@ -254,10 +251,7 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
-  field_key_questions: true
   field_keywords: true
-  field_landmark_case: true
-  field_make_public: true
   field_notes: true
   field_relevance: true
   field_status: true

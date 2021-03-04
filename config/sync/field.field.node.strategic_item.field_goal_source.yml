@@ -1,0 +1,29 @@
+uuid: 25e440f9-15e0-4dde-9f2a-e75f915b2120
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_goal_source
+    - node.type.strategic_item
+    - taxonomy.vocabulary.goal_sources
+id: node.strategic_item.field_goal_source
+field_name: field_goal_source
+entity_type: node
+bundle: strategic_item
+label: 'Goal source'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      goal_sources: goal_sources
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

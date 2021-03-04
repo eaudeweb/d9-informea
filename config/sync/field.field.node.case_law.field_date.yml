@@ -1,0 +1,21 @@
+uuid: 041cbb2b-9c06-45e4-b2f2-e615b217fef1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.case_law
+  module:
+    - datetime
+id: node.case_law.field_date
+field_name: field_date
+entity_type: node
+bundle: case_law
+label: 'Date of text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

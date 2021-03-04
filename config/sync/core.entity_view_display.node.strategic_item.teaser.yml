@@ -1,0 +1,63 @@
+uuid: 3e87b9c1-36f5-4ac1-9f6c-6ea5b8546245
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.strategic_item.body
+    - field.field.node.strategic_item.field_external_url
+    - field.field.node.strategic_item.field_geographical_scope
+    - field.field.node.strategic_item.field_goal_source
+    - field.field.node.strategic_item.field_goal_tools
+    - field.field.node.strategic_item.field_image
+    - field.field.node.strategic_item.field_leo_tags
+    - field.field.node.strategic_item.field_original_id
+    - field.field.node.strategic_item.field_parent_item
+    - field.field.node.strategic_item.field_related_strategic_items
+    - field.field.node.strategic_item.field_related_url
+    - field.field.node.strategic_item.field_summary
+    - field.field.node.strategic_item.field_topics
+    - field.field.node.strategic_item.field_treaty
+    - field.field.node.strategic_item.field_weight
+    - node.type.strategic_item
+  module:
+    - text
+    - user
+id: node.strategic_item.teaser
+targetEntityType: node
+bundle: strategic_item
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_external_url: true
+  field_geographical_scope: true
+  field_goal_source: true
+  field_goal_tools: true
+  field_image: true
+  field_leo_tags: true
+  field_original_id: true
+  field_parent_item: true
+  field_related_strategic_items: true
+  field_related_url: true
+  field_summary: true
+  field_topics: true
+  field_treaty: true
+  field_weight: true
+  langcode: true
+  search_api_excerpt: true

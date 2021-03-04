@@ -1,0 +1,50 @@
+uuid: da474cb7-e3b9-41f5-93c5-851633949b1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leo_tags
+    - node.type.strategic_item
+  module:
+    - powertagging
+id: node.strategic_item.field_leo_tags
+field_name: field_leo_tags
+entity_type: node
+bundle: strategic_item
+label: Keywords
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  include_in_tag_glossary: 0
+  automatically_tag_new_entities: 0
+  custom_freeterms: 0
+  use_shadow_concepts: 0
+  browse_concepts_charttypes:
+    spider: 0
+    tree: 0
+  fields:
+    title: title
+    body: body
+    field_goal_source|goal_sources|name: 0
+    field_goal_source|goal_sources|description: 0
+    field_original_id: 0
+    field_parent_item|strategic_item|title: 0
+    field_parent_item|strategic_item|body: 0
+    field_parent_item|strategic_item|field_original_id: 0
+    field_parent_item|strategic_item|field_summary: 0
+    field_summary: 0
+  default_tags_field: ''
+  limits:
+    concepts_per_extraction: '20'
+    concepts_threshold: '10'
+    freeterms_per_extraction: ''
+    freeterms_threshold: '50'
+  file_upload:
+    max_file_size: 2097152
+    max_file_count: 5
+  ac_add_matching_label: 0
+  ac_add_context: 0
+field_type: powertagging_tags

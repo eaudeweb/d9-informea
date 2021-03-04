@@ -1,0 +1,23 @@
+uuid: 5743be8c-3eac-41e7-a02c-a752fe3daace
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_url
+    - node.type.strategic_item
+  module:
+    - link
+id: node.strategic_item.field_related_url
+field_name: field_related_url
+entity_type: node
+bundle: strategic_item
+label: Reference
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

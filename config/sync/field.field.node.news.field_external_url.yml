@@ -1,0 +1,23 @@
+uuid: ab377e4d-15bb-4d42-9129-510cd7059fc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_url
+    - node.type.news
+  module:
+    - link
+id: node.news.field_external_url
+field_name: field_external_url
+entity_type: node
+bundle: news
+label: 'External URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

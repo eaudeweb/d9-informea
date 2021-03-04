@@ -1,0 +1,21 @@
+uuid: 8114cf03-a7d9-481a-a940-ec9d2a5fab3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_goal_tools
+    - node.type.strategic_item
+  module:
+    - text
+id: node.strategic_item.field_goal_tools
+field_name: field_goal_tools
+entity_type: node
+bundle: strategic_item
+label: Tools
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

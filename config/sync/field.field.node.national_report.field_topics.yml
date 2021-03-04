@@ -1,0 +1,29 @@
+uuid: 0de4bee5-ee67-4f0c-9add-decc54c51014
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.national_report
+    - taxonomy.vocabulary.topics
+id: node.national_report.field_topics
+field_name: field_topics
+entity_type: node
+bundle: national_report
+label: Topics
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topics: topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

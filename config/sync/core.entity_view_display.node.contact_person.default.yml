@@ -41,11 +41,11 @@ content:
     third_party_settings: {  }
     region: content
   field_address:
-    weight: 110
+    weight: 120
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: basic_string
     region: content
   field_country:
     weight: 103

@@ -1,0 +1,23 @@
+uuid: b16a4ac1-2889-4348-81d8-16eb359d3838
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.strategic_item
+id: node.strategic_item.field_weight
+field_name: field_weight
+entity_type: node
+bundle: strategic_item
+label: 'Official order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

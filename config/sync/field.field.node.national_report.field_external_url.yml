@@ -1,0 +1,23 @@
+uuid: a654374a-368a-4cd7-bc80-cffc48b0743a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_url
+    - node.type.national_report
+  module:
+    - link
+id: node.national_report.field_external_url
+field_name: field_external_url
+entity_type: node
+bundle: national_report
+label: 'Document URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

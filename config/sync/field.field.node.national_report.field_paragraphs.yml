@@ -1,0 +1,67 @@
+uuid: ca297f0f-48d4-4cba-bed4-f2a81fafcc65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.national_report
+    - paragraphs.paragraphs_type.text_paragraph
+  module:
+    - entity_reference_revisions
+id: node.national_report.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: national_report
+label: Paragraphs
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text_paragraph: text_paragraph
+    target_bundles_drag_drop:
+      block_content:
+        weight: 14
+        enabled: false
+      contact_role:
+        weight: 15
+        enabled: false
+      content:
+        weight: 16
+        enabled: false
+      heading:
+        weight: 17
+        enabled: false
+      home_page_information:
+        weight: 18
+        enabled: false
+      home_page_slider:
+        weight: 19
+        enabled: false
+      image_header:
+        weight: 20
+        enabled: false
+      meeting_document:
+        weight: 21
+        enabled: false
+      meeting_informative_section:
+        weight: 22
+        enabled: false
+      member_party:
+        weight: 23
+        enabled: false
+      ratification_status:
+        weight: 24
+        enabled: false
+      standfirst:
+        weight: 25
+        enabled: false
+      text_paragraph:
+        enabled: true
+        weight: 26
+field_type: entity_reference_revisions
